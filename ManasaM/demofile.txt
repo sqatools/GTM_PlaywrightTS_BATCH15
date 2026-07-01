@@ -1,3 +1,0 @@
-
-Learning Playwright automation tool
-Repository

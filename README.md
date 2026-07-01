@@ -1,2 +1,0 @@
-# GTM_PlaywrightTS_BATCH15
-GTM_PlaywrightTS_BATCH15
