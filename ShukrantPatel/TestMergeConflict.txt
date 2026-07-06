@@ -1,1 +1,2 @@
-main: good morning
+p1, p2: good evening, good afternoon
+
