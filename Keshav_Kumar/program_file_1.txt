@@ -1,1 +1,1 @@
-good afternon
+b1,b2: good afternoon,good evening
