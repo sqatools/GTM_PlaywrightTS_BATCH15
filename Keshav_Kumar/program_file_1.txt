@@ -1,1 +1,1 @@
-good evening
+b1,b2: good afternoon,good evening
