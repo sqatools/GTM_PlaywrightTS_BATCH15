@@ -1,1 +1,6 @@
-main: good morning
+<<<<<<< HEAD
+p1: good afternoon
+=======
+p1, p2: good evening, good afternoon
+
+>>>>>>> origin/main
