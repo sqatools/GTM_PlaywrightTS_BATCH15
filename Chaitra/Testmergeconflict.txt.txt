@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+P1: Good Afternoon
+
+=======
+P1, P2: Good Afternoon, Good Evening
+>>>>>>> ac172e3f78c42bcd3b65ae5c1e7da56508017850

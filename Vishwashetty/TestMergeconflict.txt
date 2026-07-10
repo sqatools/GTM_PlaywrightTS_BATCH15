@@ -1,7 +1,5 @@
 <<<<<<< HEAD
-Main: Good Morning
+Good morning
 =======
-P1,P2 : Good Evening Good Afternoon
-
-
+P2 : Good afternoon 
 >>>>>>> 896619e3cbc003170c68d48133df2538916fd7b3
