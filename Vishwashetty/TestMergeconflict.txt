@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+Good morning
+=======
+P2 : Good afternoon 
+>>>>>>> 896619e3cbc003170c68d48133df2538916fd7b3

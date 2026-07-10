@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+good morning
+=======
+<<<<<<< HEAD
+good afternon
+=======
+b1,b2: good afternoon,good evening
+>>>>>>> origin/main
+>>>>>>> 896619e3cbc003170c68d48133df2538916fd7b3
