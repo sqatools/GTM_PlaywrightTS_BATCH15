@@ -89,3 +89,44 @@ console.log("P1 :", P1)
 // re-assign const variable
 //P1 = 500 // TypeError: Assignment to constant variable.
 // console.log("P1 :", P1)
+
+
+//###########################################
+// rules to declare variable name:
+
+//1. variable name should not start with number.
+var p1 = 400 // valid variable
+//var 123p = 500 // invalid
+
+//2. variable name should not contain special characters except $ and _
+
+var user_name = "John"
+var $Password = "user@1234"
+//var emai&id = "rahul@gmail.com" // invalid.
+
+//3. variable name should not be a reserved keyword.
+//var let = 500 // invalid let is reserved keyword.
+//var class = 800 // invalid
+
+//4. variable name should not contain space.
+var User_pass = "P@ssw0rd"
+var EmailPass = "user1234"
+//var user value = 500 // invalid.
+
+
+//5. variable name should be meaningful.
+var emailI_id = "john@gmail.com"
+var YXTYD = "john@yahoo.com"
+
+
+//6. variable name should be in camelCase.
+var myUserName = "javascriptuser@gmail.com"
+
+//7. Variable name are case sensitive.
+
+let Name = "Rohit"
+let NAME = "Rahul"
+let NAme = "Raghav"
+let NaME = "Ravi"
+console.log(Name, NAME, NAme, NaME)
+
