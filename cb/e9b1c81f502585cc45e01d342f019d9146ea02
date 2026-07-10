@@ -1,0 +1,12 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "cbe9b1c81f502585cc45e01d342f019d9146ea02",
+  "prompts": {},
+  "humans": {
+    "h_65143adcf8b980": {
+      "author": "Dnyaneshwar007 <dnyaneshwar.dandale007@gmail.com>"
+    }
+  }
+}
