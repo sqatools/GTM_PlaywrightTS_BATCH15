@@ -96,15 +96,18 @@ console.log("Work",force*distance)
      console.log("Discount amount :",(price * Discount)/ 100)
 
 //26.Final Price Price − Discount
-
-
+     var final =price-discount
+    console.log("The value of final is "+final)
 
 //27.GST Amount	(Price × GST%) / 100
-
+      var price=10
+      var gst=3
+      var gstamount =(price*gst*100)/100
+      console.log("The gstamount is "+gstamount)
 
 //28.Total Bill with GST	Price + GST
-
-
+       var gst=price+gst
+       console.log("The value of gst "+gst)  
 
 //29.Profit	Selling Price − Cost Price
        var selling_price = 15000
