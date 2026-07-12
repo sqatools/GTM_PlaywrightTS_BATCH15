@@ -37,4 +37,4 @@
 // 34	Average of 5 Numbers	(a+b+c+d+e)/5
 
 Filename : Exercise
-Status : In Progress
+Status : Completed
