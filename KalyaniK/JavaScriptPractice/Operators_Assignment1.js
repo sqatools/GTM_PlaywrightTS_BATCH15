@@ -32,3 +32,18 @@ B2=5;
 let H=3
 Area=((B1+B2)*H)/2
 console.log("Area of Trapezium =",Area)
+
+//Volume of Cylinder
+var radius = 5
+var height = 7
+π = 22 / 7
+var volume = π * (radius**2) * height;
+console.log("Volume of Cylinder =", volume)
+
+//volume of Sphere
+var radius = 5
+var volume = (4/3) * π * (radius**3);
+console.log("Volume of Sphere =", volume)   
+
+//surface Area of a Sphere
+volume = 4 * π * (radius**2);

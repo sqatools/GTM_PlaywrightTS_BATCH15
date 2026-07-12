@@ -36,5 +36,5 @@
 // 33	Percentage	(Obtained / Total) × 100
 // 34	Average of 5 Numbers	(a+b+c+d+e)/5
 
-Filename : Operators.js
-Status : 2
+Filename : Operators_Assignemnt1.js
+Status : 10
