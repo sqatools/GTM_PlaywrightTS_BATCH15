@@ -21,54 +21,54 @@ const Diagoal1 =10
 const Diagonal2 =12
 console.log("Area of Rhombbus:", (Diagoal1*Diagonal2)/2)
 
-console.log("Write a Program to print area of trapezium using base1, base2 and height")
+//"Write a Program to print area of trapezium using base1, base2 and height"
 var base1 = 100
 var base2 = 50
 var height = 30
 var area = ((base1 + base2) * height) / 2
 console.log("Area of Trapezium :", area)
 
-console.log("Write a Program to print volume of cylinder using radius and height")
+//"Volume of Cylinder:	π × Radius² × Height
 var radius = 100
 var height = 50
 var volume = Math.PI * radius**2 * height     // Math.PI * Math.pow(radius, 2) * height
 console.log("Volume of Cylinder :", volume)
 
-console.log("Write a Program to print surface area of cylinder using radius and height")
+//Surface Area of Cylinder	2 × π × Radius × (Radius + Height)
 var radius = 100
 var height = 50
 var surfaceArea = 2 * Math.PI * radius * (radius + height)
 console.log("Surface Area of Cylinder :", surfaceArea)
 
-console.log("Write a Program to print volume of cone using radius and height")
+//Volume of Cone	(π × Radius² × Height) / 3
 var radius = 100
 var height = 50
 var volume = (Math.PI * Math.pow(radius, 2) * height) / 3
 console.log("Volume of Cone :", volume) 
 
-console.log("Write a Program to print volume of sphere using radius")
+//Volume of Sphere	(4/3) × π × Radius³
 var radius = 100
-var volume = (4 / 3) * Math.PI * Math.pow(radius, 3)
+var volume = (4 / 3) * Math.PI * Math.pow(radius,3)
 console.log("Volume of Sphere :", volume)
 
-console.log("Write a Program to print surface area of sphere using radius")
+//Surface Area of Sphere	4 × π × Radius²
 var radius = 100
 var surfaceArea = 4 * Math.PI * Math.pow(radius, 2)
 console.log("Surface Area of Sphere :", surfaceArea)    
 
-console.log("Write a Program to print speed using distance and time")
+//Speed	:Distance / Time
 var distance = 100
 var time = 50
 var speed = distance / time
 console.log("Speed :", speed)
 
-console.log("Write a Program to print distance using speed and time")
+//Distance	Speed × Time
 var speed = 100
 var time = 50
 var distance = speed * time
 console.log("Distance :", distance) 
 
-console.log("Write a program to print time using distance and speed")
+//Time 	Distance / Speed
 var distance = 100
 var speed = 50
 var time = distance / speed
