@@ -105,13 +105,33 @@ if (true){
      
 
      // Rules to declare a variable name
-    //Variable name should not start with number
-    // varaible name should not contain special character except $
+    //1.Variable name should not start with number
+    //2.varaible name should not contain special character except $
 
        var user_name= "harish"
        var $password= "hari@8970"
        //var email&id ="hai@2346@gmail.com"
-    //Variable name should not be reserve keyword
-    // variable name shoul not contain space
+    //3.Variable name should not be reserve keyword
+        //var let =500; // invalid let is a reserve keyword  
+        // var class =800 // invalid class is a reserve keyword
+
+    //4.variable name should not contain space
+
+     var user_name = "harish"
+     var password = "hari@8970"
+     //var user name = "harish" // invalid variable name should not contain space
+
+     //5.variable name should be meaningful
+     var email_id = "javascript@gamil.com"
+
+     //6. variable name should be in camel case
+     var userName = "harish"
+     var userPassword = "hari@8970"
+
+     //7. variable name are case sensitive
+     var UserName = "harish"
+     var USERPASSWORD = "hari@8970"
+
+    
 
 
