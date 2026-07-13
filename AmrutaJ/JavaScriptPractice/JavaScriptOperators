@@ -1,0 +1,13 @@
+var Base = 2
+var Height = 3
+var Area = (Base * Height) / 2
+console.log("Area of Triangle is: " + Area)
+var side1 = 5
+var side2 = 6
+var side3 = 7
+var Perimeter = side1 + side2 + side3
+console.log("Perimeter of Triangle is: " + Perimeter)   
+var Base = 2
+var Height = 3
+console.log("Area of parallelogram is: " + (Base * Height))
+var Dia
