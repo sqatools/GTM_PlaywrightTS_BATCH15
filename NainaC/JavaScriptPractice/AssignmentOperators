@@ -1,0 +1,216 @@
+ 1. // Area of Triangle	(Base * Height) / 2 
+   var base = 20
+   var height = 7
+console.log("Area of triangle :" + (20*7)/2)
+
+
+2. // Perimeter of triangle : side 1+ side 2+ side 3
+var side1 = 20
+var side2= 20
+var side3 = 30
+console.log("perimeter of traingle :" +(20+20+30))
+
+
+3. //Area of parellelogram : base * height
+var base = 7
+var height = 8
+console.log("area of parellelogram:", + (7*8))
+
+
+4. // Area of rhombus : (daigonal1 * daigonal1) /2
+var daigonal1 = 10 
+var daigonal2 = 20
+console.log("area of rhombus:", + (21*20)/2)
+
+
+5. // Area of trapezium :(base1 + base2) * height)/2
+var base1 = 5
+var base2= 7
+var height = 9
+console.log("area of trapezium:",+ (5+7) *9/2)
+
+
+6. // volumn of cylinder : pi * radius^2* *height
+var pi= 3.14
+var radius = 7
+var height = 9
+console.log("volumn of cylinder :", +(3.14*7**2*9))
+
+
+7. // surface area of cylinder : 2 * pi*radius *(radius + height)
+var radius = 9 
+var height = 10 
+var pi = 3.14
+console.log("surface area of cylinder:", + (2*3.14*9*(9+10)))
+
+
+8. //voumn of cone : (pi * radius ** height)/3)
+var pi =3.14
+var radius = 8
+var height = 22
+console.log("volumn of cone :",+(3.14*8**22)/3)
+
+
+9. //volumn of sphere : (4/3)*3.14*radius**3
+var pi =3.14
+var radius = 7
+console.log("volumn of sphere:",+(4/3*3.14*7**3))
+
+
+10.//surface area of sphere: 4* pi* radius**2
+var pi =3.14
+var radius = 7
+console.log("surface area of sphere:",+(4*3.14*7**2))
+
+
+11. // speed : distance / time
+var distance = 100
+var time = 2
+console.log("speed:",+(100/2))
+
+
+12. // distance : speed * time
+var speed = 50
+var time = 2
+console.log("distance:",+(50*2))
+
+
+13. // time : distance / speed
+var distance = 100
+var speed = 50
+console.log("time:",+(100/50))
+
+
+14.// force : mass * acceleration
+var mass = 10
+var acceleration = 5
+console.log("force:",+(10*5))
+
+
+15. // work done : force * distance
+var force = 50
+var distance = 10
+console.log("work done:",+(50*10))
+
+
+16. // power : work / time
+var work = 100
+var time = 5
+console.log("power:",+(100/5))
+
+
+17. // kinetic energy : (1/2) * mass * velocity**2
+var mass = 10
+var velocity = 5
+console.log("kinetic energy:",+(1/2*10*5**2))
+
+
+18. // potential energy : mass * gravity * height
+var mass = 10
+var gravity = 9.8
+var height = 5
+console.log("potential energy:",+(10*9.8*5))
+
+
+19. // momentum : mass * velocity
+var mass = 10
+var velocity = 5
+console.log("momentum:",+(10*5))
+
+
+20. // pressure : force / area
+var force = 100
+var area = 20
+console.log("pressure:",+(100/20))
+
+
+21. // density : mass / volume
+var mass = 10
+var volume = 5
+console.log("density:",+(10/5))
+
+
+22. // simple interest : (principal * rate * time)/100
+var principal = 1000
+var rate = 5
+var time = 2
+console.log("simple interest:",+(1000*5*2)/100)
+
+
+23. // compound interest : principal * (1 + rate/100)**time - principal
+var principal = 1000
+var rate = 5
+var time = 2
+console.log("compound interest:",+(1000*(1+5/100)**2-1000))
+
+
+24. // total amount (SI) : principal + simple interest
+var principal = 1000
+var simpleInterest = (1000*5*2)/100
+console.log("total amount (SI):",+(1000+simpleInterest))
+
+
+25. // discount amount : (price * discount%)/100
+var price = 1000
+var discount = 10
+console.log("discount amount:",+(1000*10)/100)
+
+
+26. // final price : price - discount
+var price = 1000
+var discount = (1000*10)/100
+console.log("final price:",+(1000-discount))
+
+
+27. // GST amount : (price * GST%)/100
+var price = 1000
+var gst = 18
+console.log("GST amount:",+(1000*18)/100)
+
+
+28. // total bill with GST : price + GST
+var price = 1000
+var gst = (1000*18)/100
+console.log("total bill with GST:",+(1000+gst))
+
+
+29. // profit : selling price - cost price
+var sellingPrice = 1500
+var costPrice = 1000
+console.log("profit:",+(1500-1000))
+
+
+30. // loss : cost price - selling price
+var costPrice = 1000
+var sellingPrice = 800
+console.log("loss:",+(1000-800))
+
+
+31. // profit percentage : (profit / cost price) * 100
+var profit = 500
+var costPrice = 1000
+console.log("profit percentage:",+(500/1000)*100)
+
+
+32. // loss percentage : (loss / cost price) * 100
+var loss = 200
+var costPrice = 1000
+console.log("loss percentage:",+(200/1000)*100)
+
+
+33. // percentage : (obtained / total) * 100
+var obtained = 80
+var total = 100
+console.log("percentage:",+(80/100)*100)
+
+
+34. // average of 5 numbers : (a+b+c+d+e)/5
+var a = 10
+var b = 20
+var c = 30
+var d = 40
+var e = 50
+console.log("average of 5 numbers:",+(a+b+c+d+e)/5)
+
+
+	
