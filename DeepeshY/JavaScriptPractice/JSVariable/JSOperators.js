@@ -53,3 +53,112 @@ console.log("multiplication :", 30*3)
 // 32	Loss Percentage	(Loss / Cost Price) × 100
 // 33	Percentage	(Obtained / Total) × 100
 // 34	Average of 5 Numbers	(a+b+c+d+e)/5
+
+console.log("##############################################")
+// Assignment Operators
+
+
+// = : assignment operator
+var x = 50
+console.log("value of x :", x)
+// += : add and assign operator
+x += 10 // x = x + 10
+console.log("value of x :  x += 10:", x) // x += 10: 60
+
+// -= : subtract and assign operator
+x -= 5 // x = x -5
+console.log("value of x : x -= 5:", x) //  x -= 5: 55
+
+// *= : multiply and assign operator
+x *= 10 // x = x * 10
+console.log("value of x : x *= 10:", x) // x *= 10: 550
+// /= : divide and assign operator
+
+x /= 5 // x = x /5
+console.log("value of x : x /= 5:", x) // 110
+
+// %= : modulus and assign operator
+x %= 3 // x = x/11
+console.log("value of x : x %= 11:", x) // 2
+// **= : exponential and assign operator
+
+x **= 4 // x = x**4
+console.log("value of x : x **= 4:", x) // 16
+
+
+console.log("###################################")
+// comparision operator
+var a = 10
+var b = "10"
+var c = 20
+var d = 10
+// == : equal(data only)
+console.log("a == b: ", a == b)
+console.log("a == c: ", a == c)
+
+// === : strict equal(check data and data type)
+console.log("a === b: ", a === b)
+console.log("a === c: ", a === c)
+
+// != : not equal
+console.log("a != b: ", a != b) // false
+console.log("a != c: ", a != c) // true
+
+// ! == : not equal with data type check
+console.log("a !== b: ", a !== b) // true
+console.log("a !== c: ", a !== c) // true
+
+var p = 100
+var q = 200
+var r = 100
+// > : greater than
+console.log("q > p :", q > p) // q > p : true
+
+// < : less than
+console.log("p < r:", r > p) // p < r: false
+
+// >= : greater than equal
+console.log("q >= p:", q >= p) // q >= p: true
+
+// <= : less than equal
+console.log("p <= r:", q >= p)
+
+console.log("############ Logical operator ##################")
+// and codition
+var M = 100
+var N = 200
+var o  = 300 
+// cond1 && cond2 
+//1. false && false : false
+console.log("M > N && N > o: ", M > N && N > o)  // M > N && N > o:  false
+
+// 2. true && false : false
+console.log("N > M && N > o :", N > M && N > o) // N > M && N > o : false
+
+//3. false && true
+console.log("N > o && M > N", N > o && M > N) // false
+
+//4.true && true : true
+console.log("o > N && o > M:", o > N && o > M) // true
+
+
+
+console.log("#############################")
+var M = 100
+var N = 200
+var o  = 300 
+
+// or condition 
+// cond1 || cond2
+
+//1. false || false : false
+console.log("M > N || N > o: ", M > N || N > o)  // M > N || N > o:  false
+
+// 2. true || false : true
+console.log("N > M || N > o :", N > M || N > o) // N > M || N > o : true
+
+//3. false || true
+console.log("N > o || N > M: ", N > o || N > M) // true
+
+//4.true || true : true
+console.log("o > N || o > M:", o > N || o > M) // true
