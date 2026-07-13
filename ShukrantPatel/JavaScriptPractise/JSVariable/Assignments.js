@@ -183,16 +183,16 @@ var loss=(loss1*costprice)*100
 console.log("The value of loss is "+loss)
 // 33	Percentage	(Obtained / Total) × 100
 
-var obtained =526
-var total=600
+var obtained =435
+var total=500
 var percentage =(obtained/total)*100
 console.log("The value of percenatge is "+percentage)
 
 // 34	Average of 5 Numbers	(a+b+c+d+e)/5
 var a =10
-var b=10
-var c=10
-var d=10
-var e=10
+var b=11
+var c=12
+var d=13
+var e=14
 var average =(a+b+c+d+e)/5
 console.log("The average of 5 number is "+average)
