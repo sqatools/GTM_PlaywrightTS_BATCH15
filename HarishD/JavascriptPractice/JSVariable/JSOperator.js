@@ -86,8 +86,8 @@ console.log("Work",force*distance)
 
 //24.Total Amount (SI)	Principal + Simple Interest
      var pricipal =50000
-     var rate =5
-     var time =3
+     var rate =8
+     var time =2
      console.log("Total amount :", pricipal+(pricipal * rate * time) / 100)
 
 //25.Discount Amount (Price × Discount%) / 100
