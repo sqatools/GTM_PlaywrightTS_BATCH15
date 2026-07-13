@@ -5,7 +5,7 @@ var area=(base*height)/2
 console.log("The area of traiangle : " +area)
 
 //   Perimeter of Triangle:	Side1 + Side2 + Side3
-var side1=12
+var side1=30
 var side2=10
 var side3=10
 var permieter=side1+side2+side3
@@ -13,7 +13,7 @@ console.log("The permieter of trainsle is " +permieter)
 
 //Area of Parallelogram:	Base × Height
 let base1=20
-let height1=10
+let height1=40
 var area =base1*height1
 console.log("The area of parallelogram is " +area)
 
