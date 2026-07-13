@@ -83,5 +83,11 @@ console.log("value of pi ",pi);
 p=500
 console.log("value of p ",p); 
 
-p=600;
-console.log("value of p ",p);
+//rules to declear variable in js
+//1. variable name should not be a reserved keyword
+//2. variable name should not start with number
+//3. variable name should not contain space
+//4. variable name should not contain special character except $ and _
+//5. variable name should be meaningful
+// variable name should be case sensitive
+
