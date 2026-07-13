@@ -1,0 +1,151 @@
+// Area of triangle
+var base= 10
+var height= 20
+// area= 0.5*base*height
+console.log("Area of triangle:",(base*height)/2)
+
+// Perimeter of triangle 
+var s1=2
+var s2=3
+var s3=4
+//var perimeter= s1+s2+s3
+console.log("Perimeter of triangle:",s1+s2+s3)
+
+//Area of parallelogram
+var base= 2
+var height = 3
+console.log("Area of parallelogram:",base*height)
+
+//Area of rectangle
+var length= 10
+var breadth= 20
+console.log("Area of rectangle:",length*breadth)        
+
+//Area of rhombus
+var d1= 10
+var d2= 20
+console.log("Area of rhombus:",(d1*d2)/2)
+
+//Area of trapezium
+var a= 10
+var b= 20
+var h= 30
+console.log("Area of trapezium:",((a+b)*h)/2)   
+
+//Volume of cylinder
+var r= 10
+var h= 20
+console.log("Volume of cylinder:",3.14*r*r*h)   
+//surface area of cylinder
+var r= 10
+var h= 20
+console.log("Surface area of cylinder:",2*3.14*r*(r+h)) 
+//Volume of cone
+var r= 10
+var h= 20
+console.log("Volume of cone:",(3.14*r*r*h)/3)   
+//volumne of sphere
+let r1= 10
+console.log("Volume of sphere:",(4/3)*3.14*r1*r1*r1)   
+//surface area of sphere
+let r2= 10
+console.log("Surface area of sphere:",4*3.14*r2*r2)   
+//Speed 
+let d=100
+let t=10
+console.log("Speed:",d/t)   
+//distance
+let s=100
+let t1=10
+console.log("Distance:",s*t)    
+//time
+let s4=100
+let d3=10
+console.log("Time:",d3/s4)    
+//force
+const m=100
+const a1=10
+console.log("Force:",m*a1)   
+//work done
+const f=100
+const d4=10
+console.log("Work done:",f*d4)   
+//16	Power	Work / Time
+var w=100
+var t2=10
+console.log("Power:",w/t2)
+
+// 17	Kinetic Energy	(1/2) × Mass × Velocity²
+var mass=100
+var v=10
+console.log("Kinetic Energy:",0.5*mass*v*v)
+// 18	Potential Energy	Mass × Gravity × Height
+let mass1=100
+var g=9.8
+var h=10
+console.log("Potential Energy:",mass1*g*h)
+// 19	Momentum	Mass × Velocity
+let mass2=100
+var v=10
+console.log("Momentum:",mass2*v)
+// 20	Pressure	Force / Area
+var force=100
+var area=10
+console.log("Pressure:",force/area) 
+// 21	Density	Mass / Volume
+var mass3=100
+var volume=10
+console.log("Density:",mass3/volume)    
+// 22	Simple Interest	(Principal × Rate × Time) / 100
+var principal=100
+var rate=10
+var time=2
+console.log("Simple Interest:",(principal*rate*time)/100)   
+// 23	Compound Interest	Principal × (1 + Rate/100)^Time − Principal
+var principal1=100
+var rate1=10
+var time1=2
+console.log("Compound Interest:",principal1*(Math.pow((1+rate1/100),time1))-principal1) 
+// 24	Total Amount (SI)	Principal + Simple Interest
+    const principal2=100
+    var rate2=10
+    let time2=2  
+    console.log("Total Amount (SI):",principal2+((principal2*rate2*time2)/100))     
+// 25	Discount Amount	(Price × Discount%) / 100
+var price=100
+var discount=10
+console.log("Discount Amount:",(price*discount)/100)    
+// 26	Final Price	Price − Discount
+var price1=100
+var discount1=10
+console.log("Final Price:",price1-((price1*discount1)/100)) 
+// 27	GST Amount	(Price × GST%) / 100
+var price2=100
+var gst=10
+console.log("GST Amount:",(price2*gst)/100) 
+// 28	Total Bill with GST	Price + GST
+var price3=100
+var gst1=10
+console.log("Total Bill with GST:",price3+((price3*gst1)/100))  
+
+// 29	Profit	Selling Price − Cost Price
+var sellingPrice=150
+var costPrice=100
+console.log("Profit:",sellingPrice-costPrice)
+// 30	Loss	Cost Price − Selling Price
+console.log("Loss:",costPrice-sellingPrice)
+// 31	Profit Percentage	(Profit / Cost Price) × 100
+console.log("Profit Percentage:",((sellingPrice-costPrice)/costPrice)*100)
+// 32	Loss Percentage	(Loss / Cost Price) × 100
+console.log("Loss Percentage:",((costPrice-sellingPrice)/costPrice)*100)
+// 33	Percentage	(Obtained / Total) × 100
+var obtained=80
+var total=100
+console.log("Percentage:",(obtained/total)*100)         
+// 34	Average of 5 Numbers	(a+b+c+d+e)/5
+var a=10
+var b=20
+var c=30            
+var d100=40
+var e=50
+console.log("Average of 5 Numbers:",(a+b+c+d+e)/5)  
