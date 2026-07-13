@@ -250,3 +250,112 @@ console.log("Average of 5 numbers is: " + average);
 // 33	Percentage	(Obtained / Total) × 100
 // 34	Average of 5 Numbers	(a+b+c+d+e)/5
 
+// Assigment operators  
+// = : assigment operator
+var x = 50
+console.log("value of x : ", +x )
+
+// += : add and assigment operator
+x+= 10 // x= x+10
+console.log("value of x : ", +x )
+
+// -= : subtract and assigment operator
+x-= 10 // x= x-10
+console.log("value of x : ", +x )
+
+// *= : multiply and assigment operator
+x*= 10 // x= x*10
+console.log("value of x : ", +x )
+
+// /= : divide and assigment operator
+x/= 10 // x= x/10
+console.log("value of x : ", +x )
+
+// %= : modulus and assigment operator
+x%= 10 // x= x%10
+console.log("value of x : ", +x )
+
+// **= : exponentiation and assigment operator
+x**= 10 // x= x**10
+console.log("value of x : ", +x )
+
+// comparison operators
+
+// == : equal to operator
+var x = 10;
+var y = "10";
+console.log("value of x == y : ", + (x == y) ) // true  
+
+// === : equal value and equal type operator
+var x = 10;
+var y = "10";
+console.log("value of x === y : ", + (x === y) ) // false   
+
+// != : not equal operator
+var x = 10;
+var y = 20;
+console.log("value of x != y : ", + (x != y) ) // true  
+
+// !== : not equal value or not equal type operator
+var x = 10;
+var y = "10";
+console.log("value of x !== y : ", + (x !== y) ) // true    
+
+// > : greater than operator
+var x = 10;
+var y = 5;
+console.log("value of x > y : ", + (x > y) ) // true
+
+// < : less than operator
+var x = 10;
+var y = 5;
+console.log("value of x < y : ", + (x < y) ) // false   
+
+// >= : greater than or equal to operator
+var x = 10;
+var y = 5;
+console.log("value of x >= y : ", + (x >= y) ) // true
+
+// <= : less than or equal to operator
+var x = 10;
+var y = 5;
+console.log("value of x <= y : ", + (x <= y) ) // false 
+
+// logical operators
+
+// && : logical AND operator
+var x = 10;
+var y = 5;
+console.log("value of x > 5 && y < 10 : ", + (x > 5 && y < 10) ) // true    
+
+
+// || : logical OR operator
+var x = 10;
+var y = 5;
+console.log("value of x > 5 || y < 10 : ", + (x > 5 || y < 10) ) // true    
+
+// ! : logical NOT operator
+var x = 10;
+console.log("value of !(x > 5) : ", + !(x > 5) ) // false
+
+// typeof : type of operator        
+var x = 10;
+console.log("value of typeof x : ", + typeof x ) // number
+
+// instanceof : instance of operator
+var x = 10;
+console.log("value of x instanceof Number : ", + (x instanceof Number) ) // false   
+
+// in : in operator
+var x = {name: "John", age: 30};
+console.log("value of 'name' in x : ", + ('name' in x) ) // true    
+
+//  delete : delete operator
+var x = {name: "John", age: 30};
+delete x.age;
+console.log("value of x : ", + x ) // {name: "John"}
+
+// new : new operator
+var x = new Date();
+console.log("value of x : ", + x ) // current date and time
+
