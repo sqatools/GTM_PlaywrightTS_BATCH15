@@ -1,0 +1,14 @@
+test.js
+  h_65143adcf8b980 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.13",
+  "base_commit_sha": "2c421976db538452e824aa9a94925b072f8248d2",
+  "prompts": {},
+  "humans": {
+    "h_65143adcf8b980": {
+      "author": "Dnyaneshwar007 <dnyaneshwar.dandale007@gmail.com>"
+    }
+  }
+}
