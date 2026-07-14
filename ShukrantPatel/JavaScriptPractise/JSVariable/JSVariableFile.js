@@ -1,0 +1,1 @@
+//variable declaration and their types

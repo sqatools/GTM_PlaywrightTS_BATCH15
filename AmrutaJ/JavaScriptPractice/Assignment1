@@ -1,0 +1,109 @@
+var Base=4
+var Height=6
+console.log("Area of Rectangle is: " + (Base * Height))
+var side1=5
+var side2=6
+var side3=7
+console.log("Perimeter of Rectangle is: " + (2 * (side1 + side2 + side3)))
+var Base=4
+var Height=6
+console.log("Area of Parallelogram is: " + (Base * Height))
+var diagonal1=5
+var diagonal2=6
+console.log("Area of Rhombus is: " + (0.5 * (diagonal1 * diagonal2)))
+var base1=4
+var base2=6
+var height=5
+console.log("Area of Trapezium is: " + (0.5 * (base1 + base2) * height))
+var radius=5
+var height=10
+console.log("Volume of Cylinder is: " + (3.14 * radius * radius * height))
+var radius=5
+var height=10
+console.log("Surface Area of Cylinder is: " + (2 * 3.14 * radius * (radius + height)))
+var radius=5
+var height=10
+console.log("Volume of Cone is: " + (1/3 * 3.14 * radius * radius * height))
+var radius=5
+console.log("Volume of Sphere is: " + (4/3 * 3.14 * radius * radius * radius))
+var radius=5
+console.log("Surface Area of Sphere is: " + (4 * 3.14 * radius * radius))
+var speed=60
+var time=2
+console.log("Distance is: " + (speed * time))
+var distance=120
+var time=2
+console.log("Speed is: " + (distance / time))
+var time=2
+var distance=120
+console.log("Time is: " + (distance / time))
+var mass=5
+var acceleration=2
+console.log("Force is: " + (mass * acceleration))
+var force=10
+var distance=5
+console.log("Work is: " + (force * distance))
+var mass=5
+var volume=10
+console.log("Density is: " + (mass / volume))
+var work=10 
+var time=2
+console.log("Power is: " + (work / time))
+var velocity1=10
+var mass1=5
+console.log("kinetic Energy is: " + (0.5 * mass1 * velocity1 * velocity1))
+var gravity=9.8 
+var mass=5
+var height=10
+console.log("Potential Energy is: " + (mass * gravity * height))
+var mass=5
+var velocity1=10
+var velocity2=5
+console.log("Momentum is: " + (mass * (velocity1 - velocity2)))
+var area=50
+var force=10
+console.log("Pressure is: " + (force / area))
+var rate=5
+var time=2
+console.log("Simple Interest is: " + (rate * time))
+var principal=1000
+var rate=5
+var time=2
+console.log("Compound Interest is: " + (principal * Math.pow((1 + rate / 100), time) - principal))
+var principal=1000
+var simpleInterest=100
+var totalAmount=principal + simpleInterest
+console.log("Total Amount is: " + totalAmount)
+var price=100
+var discount=10
+console.log("Discounted Amount is: " + (price * discount / 100))
+var price=100
+var discount=10
+console.log("Final Price is: " + (price - (price * discount / 100)))
+var gst=18
+var price=100
+console.log("GST Amount is: " + (price * gst / 100))
+console.log("Total Bill with GST is: " + (price + (price * gst / 100)))
+var sellingPrice=100
+var costPrice=80
+console.log("Profit is: " + (sellingPrice - costPrice))
+console.log("Loss is: " + (costPrice - sellingPrice))
+var profit=20
+var costPrice=80
+console.log("Profit Percentage is: " + (profit / costPrice * 100))
+var loss=20
+var costPrice=80
+console.log("Loss Percentage is: " + (loss / costPrice * 100))
+var obtained=450
+var total=500
+console.log("Percentage is: " + (obtained / total * 100))
+var num1=10
+var num2=20
+var num3=30
+var num4=40
+var num5=50
+console.log("Sum is: " + (num1 + num2 + num3 + num4 + num5))
+console.log("Average is: " + ((num1 + num2 + num3 + num4 + num5) / 5))
+
+//Filename: Assignment1.js
+//Status: Completed
