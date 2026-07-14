@@ -6,44 +6,226 @@ let base =15;
 let height= 10;
 let triAngleArea = (base*height)/2;
 console.log("The Area of Triangle is: " + triAngleArea);
+
 //2     Perimeter of Triangle:  Side1 + Side2 + Side3
 const side_1 = 2;
 const side_2 = 22;
 const side_3 = 222;
 perimeterTriangle = (side_1+side_2+side_3);
 console.log("ThePerimeter of Triangle is : " + perimeterTriangle);
+
+
 //3.    Area of Parallelogram:  Base × Height
+
+const base_1= 25;
+const Height_1= 5;
+const areaParallelogram = (base_1 * Height_1);
+
+console.log("The Area of Parallelogram is "+ areaParallelogram)
+
+
 //4.    Area of Rhombus:    (Diagonal1 × Diagonal2) / 2
+
+const Diagonal1= 25;
+const Diagonal2= 5;
+const areaDiagonal = ((Diagonal1* Diagonal2) / 2);
+
+console.log("The Area of areaDiagonal is "+ areaDiagonal)
+
 //5.    Area of Trapezium:  ((Base1 + Base2) × Height) / 2
+
+const Base1 = 8;
+const Base2 = 4;
+const Height= 15;
+const AreaTrapezium =  (((Base1 + Base2) * Height) / 2);
+console.log("The AreaTrapezium: " + AreaTrapezium);
+
 //6.    Volume of Cylinder: π × Radius² × Height
+const Pi = 3.14;
+const Radius = 7;
+const Height_2= 7;
+const volumeCylinder =  Pi* Radius *Radius * Height_2;
+console.log("The Volume of Cylinder: " + volumeCylinder);
+
 //7.    Surface Area of Cylinder    2 × π × Radius × (Radius + Height)
+const Radius3= 14
+const Height3=7
+areaCylinder = 2 * 3.14 *Radius3 * (Radius3 + Height3)
+console.log("The Surface Area of Cylinder : " + areaCylinder)
+
 // 8    Volume of Cone  (π × Radius² × Height) / 3
+const Radius4= 80
+const Height4=8
+volumeCone = (3.14 *Radius4 **2 * Height4)/3
+console.log("The Volume of Cone : " + volumeCone)
+
 // 9    Volume of Sphere    (4/3) × π × Radius³
+const pi=22/7
+const Radius5= 7
+const volumeSphere= (4/3) * pi * Radius5**3
+console.log("The volumeSphere is :" + volumeSphere);
+
 // 10   Surface Area of Sphere  4 × π × Radius²
+
+const pi1=22/7
+const Radius6= 7
+const areaSphere= (4/3) * pi1 * Radius6 **2
+console.log("The areaSphere is :" + areaSphere);
+
 // 11   Speed   :Distance / Time
+const Distance=85
+const Time= 5
+const Speed = Distance / Time
+console.log("The speed is :" + Speed );
+
 // 12   Distance    Speed × Time
+const Speed2=349
+const Time2= 2
+const Distance2 = Speed * Time
+console.log("The Distance is :" + Distance2 );
+
 // 13   Time    Distance / Speed
+const Speed3=349
+const Distance3= 2
+const Time3 = Distance / Speed
+console.log("The Time3 is :" + Time3 );
+
 // 14   Force   Mass × Acceleration
+const Acceleration=121
+const Mass= 21
+const Force = Mass * Acceleration
+console.log("The Force is :" + Force );
+
 // 15   Work Done   Force × Distance
+const Force4=217
+const Distance1= 98
+const workDone = Force4 * Distance1
+console.log("The workDone is :" + workDone );
+
 // 16   Power   Work / Time
+const Work=60
+const Time5= 100
+const Power = Work*Time5
+console.log("The Power is :" + Power );
+
 // 17   Kinetic Energy  (1/2) × Mass × Velocity²
+const Mass1=450
+const Velocity= 10
+const KE = (1/2)*Mass1*Velocity**2
+console.log("The KE is :" + KE );
+
 // 18   Potential Energy    Mass × Gravity × Height
+
+const Mass2=20
+ const Gravity=8
+ const  Height6=76
+ const PE= Mass2*Gravity*Height6
+ console.log("PE is a :" + PE);
+
 // 19   Momentum    Mass × Velocity
+const Mass6=20
+ const Velocity6=8
+ const Momentum= Mass6*Velocity6
+
+ console.log("Momentum is a :" + Momentum);
 // 20   Pressure    Force / Area
+const Force7 = 56
+const Area111= 3
+const Pressure7 = Area111*Force
+console.log("Pressure is a :" + Pressure7);
+
 // 21   Density Mass / Volume
+const Mass7=20
+ const Volume7=8
+ const Density7 = Mass7*Volume7
+
+ console.log("Density7 is a :" + Density7);
+
 // 22   Simple Interest (Principal × Rate × Time) / 100
-// 23   Compound Interest   Principal × (1 + Rate/100)^Time − Principal
+const Principal = 5000
+const Rate1 = 10
+const time = 20
+const SI= Principal*Rate1*time
+
+// 23   Compound Interest   Principal × (1 + Rate/100)**Time − Principal
+const Principal22 = 75000
+const Rate2 = 90
+const Time9 = 6
+const CI= (Principal22*(1 + Rate2/100)** Time9-Principal22)
+
 // 24   Total Amount (SI)   Principal + Simple Interest
+const Principal23 =1599
+const SI2 = 23000
+const totalSI = SI2+Principal23
+console.log("The totalSI:" + totalSI )
+
 // 25   Discount Amount (Price × Discount%) / 100
+const NewPrice = 2500
+const NewDiscount = 5
+const DiscountAmount= (NewPrice * NewDiscount)/100
+console.log("The DiscountAmount:" + DiscountAmount )
+
 // 26   Final Price Price − Discount
+
+const Price = 600
+const Discount=100
+const finalPrice= Price-Discount
+console.log("The final Price is:" + finalPrice)
+
 // 27   GST Amount  (Price × GST%) / 100
+
+const Price2 = 6000
+const GST = 3
+const gstAmount= (Price2*GST)/100
+console.log("The gstAmount is:" + gstAmount)
+
 // 28   Total Bill with GST Price + GST
+const GstPrice = 6000;
+const GSTnew = 3000;
+
+const totalBill = GstPrice + GSTnew;
+
+console.log("The Total Bill is: " + totalBill);
+
 // 29   Profit  Selling Price − Cost Price
+
+const selingPrice = 22000
+const costPrice = 18000
+const ProfitSP = selingPrice-costPrice
+console.log("The Profit  Selling Price  is :"+ ProfitSP)
+
 // 30   Loss    Cost Price − Selling Price
-// 31   Profit Percentage   (Profit / Cost Price) × 100
+const sellingPrice123 =1111
+const costpriceCing23 = 111
+const loss1 =  costpriceCing23- sellingPrice123
+console.log("The loss1  Selling Price  is :"+ loss1)
+
+// 31   Profit Percentacostpriceing-ge   (Profit / Cost Price) × 100
+const Profit_9= 900
+const CP_9= 7200
+ const PercentagePrice = (Profit_9/CP_9)*100
+console.log("The loss1  Selling Price  is :"+ PercentagePrice+"%")
+
 // 32   Loss Percentage (Loss / Cost Price) × 100
+const Theloss = 750
+const TheCp = 1000
+const Thelossper = (Theloss /TheCp)*100
+console.log("The loss percentage is :"+ Thelossper+ "%")
+
 // 33   Percentage  (Obtained / Total) × 100
+const Obtained  =0.5
+const Totalnew=8
+const PER = (Obtained/Totalnew)*100
+console.log("The  percentage is :"+ PER+ "%")
+
 // 34   Average of 5 Numbers    (a+b+c+d+e)/5
- 
+const a=2
+const b=4
+const c=6
+const d = 8
+const e =10
+const Average = (a+b+c+d+e)/5
+ console.log("The  Average of a,b,c,d,e,is a  :"+ Average)
+
 //Filename : Pooja_Thoravade
-//Status : Started Now 3 done
+//Status : Completed all 34 programs
