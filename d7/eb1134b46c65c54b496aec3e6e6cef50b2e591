@@ -1,0 +1,20 @@
+Dnyaneshwar/Test/JSOperator.js
+  h_65143adcf8b980 28-43
+"Dnyaneshwar/Test/Comparision Operator/Comparision.js"
+  h_65143adcf8b980 1-53
+Dnyaneshwar/Test/DataType/JSdataType.js
+  h_65143adcf8b980 1-26
+"Dnyaneshwar/Test/Logical Operator/logicaloperator.js"
+  h_65143adcf8b980 1-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "d7eb1134b46c65c54b496aec3e6e6cef50b2e591",
+  "prompts": {},
+  "humans": {
+    "h_65143adcf8b980": {
+      "author": "Dnyaneshwar007 <dnyaneshwar.dandale007@gmail.com>"
+    }
+  }
+}
