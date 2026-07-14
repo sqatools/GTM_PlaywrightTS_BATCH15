@@ -1,0 +1,30 @@
+Dnyaneshwar/LogicalProgram/Factorial.js
+  h_65143adcf8b980 1-9
+Dnyaneshwar/LogicalProgram/MaxNumberInArray.js
+  h_65143adcf8b980 1-12
+Dnyaneshwar/LogicalProgram/LargestOfThreeNumber.js
+  h_65143adcf8b980 1-10
+Dnyaneshwar/LogicalProgram/SwapNumber.js
+  h_65143adcf8b980 1-9
+Dnyaneshwar/LogicalProgram/ReverseString.js
+  h_65143adcf8b980 1-10
+Dnyaneshwar/LogicalProgram/MinimumNumberOfArray.js
+  h_65143adcf8b980 1-12
+Dnyaneshwar/LogicalProgram/SumOfArray.js
+  h_65143adcf8b980 1-9
+Dnyaneshwar/LogicalProgram/RemoveDuplicateFromArray.js
+  h_65143adcf8b980 1-5
+Dnyaneshwar/LogicalProgram/FibonanciiSeries.js
+  h_65143adcf8b980 1-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "cdd73f71586912024fa35b6c19cd1cc2a5fbfe92",
+  "prompts": {},
+  "humans": {
+    "h_65143adcf8b980": {
+      "author": "Dnyaneshwar007 <dnyaneshwar.dandale007@gmail.com>"
+    }
+  }
+}
