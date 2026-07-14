@@ -1,0 +1,20 @@
+{
+  "name": "gtm_playwrightts_batch15_new",
+  "version": "1.0.0",
+  "description": "GTM_PlaywrightTS_BATCH15",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqatools/GTM_PlaywrightTS_BATCH15.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sqatools/GTM_PlaywrightTS_BATCH15/issues"
+  },
+  "homepage": "https://github.com/sqatools/GTM_PlaywrightTS_BATCH15#readme"
+}

@@ -96,6 +96,9 @@ console.log("Work",force*distance)
      console.log("Discount amount :",(price * Discount)/ 100)
 
 //26.Final Price Price − Discount
+
+      var price =4000
+     var discount = 200
      var final =price-discount
     console.log("The value of final is "+final)
 
@@ -139,6 +142,9 @@ console.log("Work",force*distance)
        var social = 87
        var language =81
        console.log("Average :", (english+maths+science+social+language)/5)
+
+
+
 
 
 
