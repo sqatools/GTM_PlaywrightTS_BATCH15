@@ -2,7 +2,7 @@
 // Q2. Write a program to check whether the given number is divisible by  7 and 11
 // Q3. Write a program to check the student marks grade
 
-voteage = 17;
+let voteage = 17;
 if(voteage >= 18){
     console.log("Eligible to vote")
 }
@@ -10,7 +10,7 @@ else {
     console.log("Not Eligible to vote")
 }
 
-number1 = 77;
+let number1 = 77;
 if(number1 % 7 == 0 && number1 % 11 == 0){
     console.log("Divisible by 7 and 11")
 }
@@ -18,7 +18,7 @@ else {
     console.log("Not Divisible by 7 and 11")
 }
 
-marks = 90
+let marks = 90
 if (marks >= 90 && marks <= 100){
     console.log("Grade A")
 }
