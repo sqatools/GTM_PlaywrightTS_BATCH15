@@ -6,4 +6,4 @@ for(let i=1;i<=num;i++)
 {
     fact +=i;
 }
-console.log(fact)
+console.log("Fctorial of 5 is : ",fact)
