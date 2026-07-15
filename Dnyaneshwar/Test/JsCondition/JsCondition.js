@@ -41,7 +41,7 @@ console.log("fail")
 }
 else if(marks>=35 && marks<50)
 {
-
+console.log("grade C")
 }
 else if(marks>=50 && marks<60)
 {
