@@ -1,0 +1,28 @@
+Dnyaneshwar/Test/Assignment-2/EmainContain.js
+  h_65143adcf8b980 1-10
+Dnyaneshwar/Test/Assignment-2/MobileNumberCheck.js
+  h_65143adcf8b980 1-12
+Dnyaneshwar/Test/Assignment-2/CheckAdminUser.js
+  h_65143adcf8b980 1-13
+Dnyaneshwar/Test/Assignment-2/PersonAgeAndHasMovieTicket.js
+  h_65143adcf8b980 1-11
+Dnyaneshwar/Test/Assignment-2/NumberDivisibleBy2or3.js
+  h_65143adcf8b980 1-10
+Dnyaneshwar/Test/Assignment-2/NumberPositiveAndEven.js
+  h_65143adcf8b980 1-11
+Dnyaneshwar/Test/Assignment-2/CheckUserLogin.js
+  h_65143adcf8b980 1-12
+Dnyaneshwar/Test/Assignment-2/NumberISFourDigit.js
+  h_65143adcf8b980 1-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "44445a1791c311d3d8ed7aa66ccfd870c25aa171",
+  "prompts": {},
+  "humans": {
+    "h_65143adcf8b980": {
+      "author": "Dnyaneshwar007 <dnyaneshwar.dandale007@gmail.com>"
+    }
+  }
+}
