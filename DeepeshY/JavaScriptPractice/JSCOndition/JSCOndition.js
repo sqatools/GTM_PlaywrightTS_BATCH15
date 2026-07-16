@@ -90,3 +90,7 @@ if (x > y && x > z) {
     console.log("No one has greater value:", z)
 }
 
+
+// Q1. write a if condition program to check person is eligible to vote or not.
+// Q2. write a if condition check given number is divisible 7 and 11.
+// Q3. write a if else-if  program to check the student grade as per marks received.
