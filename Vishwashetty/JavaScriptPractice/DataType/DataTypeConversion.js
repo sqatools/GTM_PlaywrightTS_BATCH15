@@ -22,4 +22,3 @@ console.log(n1, typeof(n1))
 var n2 = 45454353
 var s2 = String(n2)
 console.log(s2, typeof s2, s2[0]) // 45454353 string 4
-
