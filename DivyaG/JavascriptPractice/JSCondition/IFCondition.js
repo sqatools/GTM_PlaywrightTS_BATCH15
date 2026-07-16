@@ -34,9 +34,9 @@ if (a%2 == 0) {
     var total=300
     if(total >= 400){
         console.log("A Grade")
-    }else if(total>=300){
+    }else if(total>=300 && total < 400){
         console.log("B Grade")
-    }else if (total>=350){
+    }else if (total>=250 && total < 300){
         console.log("C Grade")
     }else{
         console.log("fail")

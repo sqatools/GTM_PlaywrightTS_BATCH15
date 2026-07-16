@@ -81,7 +81,7 @@ console.log("#################################")
 
 
 var person = {name: "Rohit", age: 40, email: 'rohit@gmail.com', phone: 68767687690}
-console.log(person)
+//console.log(person)
 
 // Add new peoperty to object data type
 person.address = "Pune, Baner"

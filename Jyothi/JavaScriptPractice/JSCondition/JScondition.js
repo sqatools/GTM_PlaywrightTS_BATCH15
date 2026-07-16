@@ -34,11 +34,11 @@ else
 //write a program if else if condition to check student grade as per marks
 
 var marks=85
-if(marks>=90 && marks<=100)
+if(marks>90 && marks<100)
 {
     console.log("Student grade: A");
 }
-else if(marks>=80)
+else if(marks>80 && marks<90)
 {
     console.log("Student grade: B");
 }
