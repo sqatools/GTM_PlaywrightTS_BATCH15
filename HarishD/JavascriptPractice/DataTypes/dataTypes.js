@@ -111,4 +111,12 @@ function addition(n1,n2)
 }
 //call function
 addition(20, 30)
+addition(44, "Hello")
+
+//##############
+function addition(n1,n2)
+{
+  console.log("addition :", 100+20)
+}
+
 
