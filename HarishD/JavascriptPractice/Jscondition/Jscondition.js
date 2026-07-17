@@ -94,3 +94,51 @@ if (x > y && x > z) {
 // Q1. write a if condition program to check person is eligible to vote or not.
 // Q2. write a if condition check given number is divisible 7 and 11.
 // Q3. write a if else-if  program to check the student grade as per marks received.
+
+var age =46
+if (age >= 18) {
+    console.log("Person is eligible to vote :",age)
+} else {
+    console.log("Person is not eligible to vote :",age)
+}
+
+console.log("###############################")
+
+var num=23
+if (num%7 == 0 && num%11 == 0) {
+    console.log("Number is divisible by 7 and 11:", num)
+} else if (num%7 == 0 || num%11 ==0) {
+    console.log("Number is divisible by 7 or 11:", num )
+} 
+ else {
+    console.log("Number is not divisible by 7 or 11:", num)
+}
+
+// Q3. write a if else-if  program to check the student grade as per marks received.
+var marks = 80;
+
+if(marks <35 ){
+
+console.log("fail")
+}
+else if(marks>=35 && marks<50)
+{
+console.log("grade C")
+}
+else if(marks>=50 && marks<60)
+{
+    console.log("grade C")
+}
+else if(marks>=60 && marks<80)
+{
+    console.log("grade B")
+}
+else if (marks>=80 && marks<100)
+{
+    console.log("grade A")
+}   
+else
+{
+    console.log("invalid marks")
+
+}
