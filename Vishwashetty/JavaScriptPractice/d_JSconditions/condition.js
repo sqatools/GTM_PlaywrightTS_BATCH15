@@ -90,3 +90,56 @@ if (x > y && x > z) {
     console.log("No one has greater value:", z)
 }
 
+
+// Q1. write a if condition program to check person is eligible to vote or not.
+// Q2. write a if condition check given number is divisible 7 and 11.
+// Q3. write a if else-if  program to check the student grade as per marks received.
+
+console.log("####################################")
+// Nested if condition 
+/*
+if cond1 {
+    code block
+    if cond2 {
+        code block
+        if cond3 {
+            code block
+            } else {
+                code block
+            }
+    } else {
+        code block
+    }        
+} else {
+    code block    
+}
+
+*/
+
+
+var round1 = "fail"
+var round2 = "pass"
+var round3 = "fail"
+
+if (round1 == "pass") {
+    console.log("1st round is clear")
+    if (round2 == "pass") {
+        console.log("2nd round is clear")
+    } else {
+        console.log("failed in 2nd round, try nest time.")
+    }
+} else {
+    console.log("failed in 1sr round")
+}
+
+
+console.log("##############################")
+// ternary operator ?
+
+var num = 10
+var result = num%2 == 0 ? "even" : "odd"
+console.log(result)
+
+var var1 = 21
+var result2 = var1%5 == 0 ? "divisible by 5": "not divisible by 5"
+console.log(result2)
