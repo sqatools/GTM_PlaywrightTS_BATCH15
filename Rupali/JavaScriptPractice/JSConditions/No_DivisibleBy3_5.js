@@ -9,7 +9,7 @@ else{
 console.log(num, "number is not divisible by 3 and 5");
 }
 
-// number divisible by 3 and 5   using AND operator
+// number divisible by 3 and 5   using OR operator
 
 var numA =30;
 
