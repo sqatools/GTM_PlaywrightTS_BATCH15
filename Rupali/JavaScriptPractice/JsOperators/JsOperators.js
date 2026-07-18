@@ -88,3 +88,18 @@ var O = 300;
 console.log("M<N && N<O :", M<N && N<O);
 console.log("M<N || N<O :", M<N || N<O);
 console.log("!(M<N) :", !(M<N));
+
+
+console.log("#######################################")
+//Ternary Operator
+var num = 10;
+var result = (num%2==0) ? "Even Number" : "Odd Number";
+console.log(num, "is", result);
+
+var age = 18;
+var eligibility = (age>=18) ? "Eligible to vote" : "Not Eligible to vote";
+console.log("Age:", age, "-", eligibility);
+
+var num1 = 15;
+var result1 = (num1%3==0) ? "Divisible by 3" : "Not Divisible by 3";
+console.log(num1, "is", result1);
