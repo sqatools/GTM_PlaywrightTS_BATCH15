@@ -90,3 +90,8 @@ if (x > y && x > z) {
     console.log("No one has greater value:", z)
 }
 
+//need to do assignment given in the documents 
+
+//17-07-2026 class
+// Nested if condition
+
