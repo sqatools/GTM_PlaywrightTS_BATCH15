@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sqatools/GTM_PlaywrightTS_BATCH15/issues"
   },
-  "homepage": "https://github.com/sqatools/GTM_PlaywrightTS_BATCH15#readme"
+  "homepage": "https://github.com/sqatools/GTM_PlaywrightTS_BATCH15#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }

@@ -95,51 +95,50 @@ if (x > y && x > z) {
 // Q2. write a if condition check given number is divisible 7 and 11.
 // Q3. write a if else-if  program to check the student grade as per marks received.
 
-console.log("####################################")
-// Nested if condition 
-/*
-if cond1 {
-    code block
-    if cond2 {
-        code block
-        if cond3 {
-            code block
-            } else {
-                code block
-            }
-    } else {
-        code block
-    }        
+var age =46
+if (age >= 18) {
+    console.log("Person is eligible to vote :",age)
 } else {
-    code block    
+    console.log("Person is not eligible to vote :",age)
 }
 
-*/
+console.log("###############################")
 
-
-var round1 = "fail"
-var round2 = "pass"
-var round3 = "fail"
-
-if (round1 == "pass") {
-    console.log("1st round is clear")
-    if (round2 == "pass") {
-        console.log("2nd round is clear")
-    } else {
-        console.log("failed in 2nd round, try nest time.")
-    }
-} else {
-    console.log("failed in 1sr round")
+var num=23
+if (num%7 == 0 && num%11 == 0) {
+    console.log("Number is divisible by 7 and 11:", num)
+} else if (num%7 == 0 || num%11 ==0) {
+    console.log("Number is divisible by 7 or 11:", num )
+} 
+ else {
+    console.log("Number is not divisible by 7 or 11:", num)
 }
 
+// Q3. write a if else-if  program to check the student grade as per marks received.
+var marks = 80;
 
-console.log("##############################")
-// ternary operator ?
+if(marks <35 ){
 
-var num = 10
-var result = num%2 == 0 ? "even" : "odd"
-console.log(result)
+console.log("fail")
+}
+else if(marks>=35 && marks<50)
+{
+console.log("grade C")
+}
+else if(marks>=50 && marks<60)
+{
+    console.log("grade C")
+}
+else if(marks>=60 && marks<80)
+{
+    console.log("grade B")
+}
+else if (marks>=80 && marks<100)
+{
+    console.log("grade A")
+}   
+else
+{
+    console.log("invalid marks")
 
-var var1 = 21
-var result2 = var1%5 == 0 ? "divisible by 5": "not divisible by 5"
-console.log(result2)
+}
