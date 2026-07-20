@@ -20,6 +20,8 @@ else
 }
 
 
+
+
 //2.Write a program to check given number is divisible by 7 and 11
 var n1=77
 if(n1%7==0 && n1%11==0)
@@ -145,3 +147,28 @@ else
 
 //Check whether a mobile number has exactly 10 digits.
 //Check whether a number is divisible by either 2 or 3.
+
+
+//nested if condition
+
+var round1="fail"
+var round2="pass"
+var rund3="pass"
+
+if(round1=="pass")
+{
+    console.log("1st round clear")
+    if(round2=="pass")
+    {
+       console.log("2st round clear") 
+    }
+
+else 
+{
+    console.log("failed in 2nd round")
+}
+}
+else
+{
+    console.log("failed in 1st round")
+}
