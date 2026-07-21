@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch jSOperators.js",
+      "program": "${workspaceFolder}/Hema_Manjunath/JavaScriptPractice/jSOperators.js",
+      "console": "internalConsole",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
