@@ -1,0 +1,22 @@
+Dnyaneshwar/Test/Loop_Fundamental/doWhileloop.js
+  h_65143adcf8b980 1-42
+Dnyaneshwar/Test/Loop_Fundamental/PrintPrimeNumber.js
+  h_65143adcf8b980 1-62
+Dnyaneshwar/Test/Loop_Fundamental/WhileLoop.js
+  h_65143adcf8b980 1-38
+Dnyaneshwar/LogicalProgram/prime.js
+  h_65143adcf8b980 1-13
+Dnyaneshwar/LogicalProgram/MaxNumberInArray.js
+  h_65143adcf8b980 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "dcc83b08204ee323f2bdf83c31a4c464300531b7",
+  "prompts": {},
+  "humans": {
+    "h_65143adcf8b980": {
+      "author": "Dnyaneshwar007 <dnyaneshwar.dandale007@gmail.com>"
+    }
+  }
+}
