@@ -1,0 +1,18 @@
+Dnyaneshwar/LogicalProgram/MaxNumberArray.js
+  h_65143adcf8b980 1-13
+Dnyaneshwar/LogicalProgram/SecondMaxNumber.js
+  h_65143adcf8b980 1-18
+Dnyaneshwar/LogicalProgram/MinNumberOfArray.js
+  h_65143adcf8b980 1-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "15cffdc67457e1a714802eaacd8c0c1e7452b618",
+  "prompts": {},
+  "humans": {
+    "h_65143adcf8b980": {
+      "author": "Dnyaneshwar007 <dnyaneshwar.dandale007@gmail.com>"
+    }
+  }
+}
