@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+main: good morning
+=======
+<<<<<<< HEAD
+p1: good afternoon
+=======
+p1, p2: good evening, good afternoon
+
+>>>>>>> origin/main
+>>>>>>> 896619e3cbc003170c68d48133df2538916fd7b3

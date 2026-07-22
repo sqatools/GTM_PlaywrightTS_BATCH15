@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../Users/shukr/OneDrive/Desktop/Java Course"
+		},
+		{
+			"path": "../../../Users/shukr/Documents/java-samples"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic"
+	}
+}

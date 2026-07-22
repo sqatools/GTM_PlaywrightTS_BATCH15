@@ -1,0 +1,60 @@
+10th July 2026
+# Program for Operators to practice:
+
+//1.    Area of Triangle	(Base × Height) / 2
+//2	    Perimeter of Triangle:	Side1 + Side2 + Side3
+//3.	Area of Parallelogram:	Base × Height
+//4.	Area of Rhombus:	(Diagonal1 × Diagonal2) / 2
+//5.	Area of Trapezium:	((Base1 + Base2) × Height) / 2
+//6.	Volume of Cylinder:	π × Radius² × Height
+//7.	Surface Area of Cylinder	2 × π × Radius × (Radius + Height)
+// 8	Volume of Cone	(π × Radius² × Height) / 3
+// 9	Volume of Sphere	(4/3) × π × Radius³
+// 10	Surface Area of Sphere	4 × π × Radius²
+// 11	Speed	:Distance / Time
+// 12	Distance	Speed × Time
+// 13	Time 	Distance / Speed
+// 14	Force	Mass × Acceleration
+// 15	Work Done	Force × Distance
+// 16	Power	Work / Time
+// 17	Kinetic Energy	(1/2) × Mass × Velocity²
+// 18	Potential Energy	Mass × Gravity × Height
+// 19	Momentum	Mass × Velocity
+// 20	Pressure	Force / Area
+// 21	Density	Mass / Volume
+// 22	Simple Interest	(Principal × Rate × Time) / 100
+// 23	Compound Interest	Principal × (1 + Rate/100)^Time − Principal
+// 24	Total Amount (SI)	Principal + Simple Interest
+// 25	Discount Amount	(Price × Discount%) / 100
+// 26	Final Price	Price − Discount
+// 27	GST Amount	(Price × GST%) / 100
+// 28	Total Bill with GST	Price + GST
+// 29	Profit	Selling Price − Cost Price
+// 30	Loss	Cost Price − Selling Price
+// 31	Profit Percentage	(Profit / Cost Price) × 100
+// 32	Loss Percentage	(Loss / Cost Price) × 100
+// 33	Percentage	(Obtained / Total) × 100
+// 34	Average of 5 Numbers	(a+b+c+d+e)/5
+
+Filename : Formulas
+Status : Completed
+
+
+
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$//
+
+// 15 July 2026.
+// Programs to Practice.
+1. Assign a grade based on marks.   -- Completed
+2. Check whether a number is a three-digit number.  --Completed
+3. Check whether a number is a four-digit number.  --Completed
+4. Check whether a number is positive and even.   --Completed
+5. Check whether a person can enter a movie (age >= 18 and has a ticket).  --Completed
+6. Check whether a username is "admin".  --Completed
+7. Check whether a user is logged in.  
+8. Check whether an email contains "@". 
+9. Check whether a mobile number has exactly 10 digits.
+10.Check whether a number is divisible by either 2 or 3.  --Completed
+
+Filename : Formulas
+Status : inprogress
