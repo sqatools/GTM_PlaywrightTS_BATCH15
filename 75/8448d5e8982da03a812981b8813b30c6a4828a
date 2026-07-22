@@ -1,0 +1,18 @@
+Dnyaneshwar/Test/JsFunctions/functions.js
+  h_65143adcf8b980 1-80
+Dnyaneshwar/Test/JsFunctions/FunctionWithRetuenValue.js
+  h_65143adcf8b980 1-13
+Dnyaneshwar/Test/JsFunctions/functionWithObject.js
+  h_65143adcf8b980 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "758448d5e8982da03a812981b8813b30c6a4828a",
+  "prompts": {},
+  "humans": {
+    "h_65143adcf8b980": {
+      "author": "Dnyaneshwar007 <dnyaneshwar.dandale007@gmail.com>"
+    }
+  }
+}
