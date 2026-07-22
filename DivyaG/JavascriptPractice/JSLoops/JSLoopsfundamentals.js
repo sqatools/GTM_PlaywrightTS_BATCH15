@@ -1,3 +1,4 @@
+//https://sqatools.in/javascript-loop/
 //Print 1 to 10 numbers using for loop
 
 for(var i=0;i<=10;i++){
