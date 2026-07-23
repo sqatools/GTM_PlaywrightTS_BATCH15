@@ -55,3 +55,90 @@ function factorial(num)
 }
 var output=factorial(5)
 console.log("Factorial:",output)
+
+
+
+
+//Sum of all even numbers
+var sumeven=(num) =>
+{
+    var sum=0
+    for(var i=0;i<=num;i++)
+    {
+       if(i%2==0)
+        sum=sum+i
+   
+    }
+    return sum
+}
+
+var sumtotal=sumeven(10)
+    console.log("Sum of even numbers",sumtotal)
+    
+   //sum of all values are divisiblr by 3 and 5 between 1 to 100
+   var sumvalues=(num) =>
+{
+    var sum=0
+    for(var i=0;i<=num;i++)
+    {
+       if(i%3==0 && i%5==0)
+        sum=sum+i
+   
+    }
+    return sum
+}
+
+var sumtotal=sumvalues(100)
+    console.log("Number is divisible by 3 & 5",sumtotal)
+    
+//To remove duplicate numbers from string
+
+    var removeDuplicates = (str) => 
+        {
+           var result = ""
+
+          for (var i = 0; i < str.length; i++) 
+            {
+              if (!result.includes(str[i])) 
+                {
+                   result += str[i]
+                }
+            }
+
+          return result;
+        }
+
+var output = removeDuplicates("112233445566778899");
+console.log(output)
+
+
+//Write arrow function create a calculate add ,multiplication,subtraction,division
+
+//Write arrow function given number is prime or not
+var isPrime = (num) =>
+     {
+         var prime = true
+
+
+         for (var i = 2; i < num; i++) 
+            {
+               if (num % i == 0) 
+                {
+                   prime = false
+                   break
+                }
+            }
+
+    if (prime) 
+        {
+        console.log("Prime number", num)
+        } 
+    else 
+        {
+          console.log("Not prime number", num)
+        }
+
+         return num
+      }
+ var primeno=isPrime(13)
+
