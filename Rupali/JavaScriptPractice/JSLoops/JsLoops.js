@@ -70,3 +70,12 @@ for(var a of s3)
 {
     console.log(a);
 }
+
+// while loop
+
+var n1 =0;
+while(n1<=10){
+    console.log("value of n1:", n1);
+   // n1++;
+    n1+=1;
+}

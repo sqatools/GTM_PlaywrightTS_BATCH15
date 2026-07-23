@@ -143,3 +143,15 @@ console.log(result)
 var var1 = 21
 var result2 = var1%5 == 0 ? "divisible by 5": "not divisible by 5"
 console.log(result2)
+
+
+console.log("##############################")
+// ternary operator ?
+
+var num = 10
+var result = num%2 == 0 ? "even" : "odd"
+console.log(result)
+
+var var1 = 21
+var result2 = var1%5 == 0 ? "divisible by 5": "not divisible by 5"
+console.log(result2)
