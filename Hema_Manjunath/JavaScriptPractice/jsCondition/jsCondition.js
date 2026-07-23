@@ -1,6 +1,6 @@
 // if condition is a considtion which is used to check the condition and if the condition 
 // is true then it will execute the block of code inside the if statement
-
+/*
 var a=10
 var b=20
 if(a<b){
@@ -22,4 +22,25 @@ if(a%3==0){
     console.log("Even:",a)
 }else{
     console.log("Odd:",a)
+}
+*/
+
+let num = 13;
+let prime = true; // 🚩 Assume it IS prime (raise the flag)
+for (let i = 2; i < num; i++) 
+    {  
+    if (num % i === 0)
+        { 
+          // % means "remainder". 0 remainder = divides evenly   
+    prime = false;     
+          //   // ❌ Not prime! Lower the flag  
+            break;              
+          //  // 🛑 Stop checking, no point continuing 
+        }}
+if (prime)
+{  console.log(num + " is prime");
+
+} else
+{  console.log(num + " is NOT prime");
+
 }
