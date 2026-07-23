@@ -132,3 +132,58 @@ function factorial(num) {
 // this function has property to return a value, that we have to store in variable.
 var output = factorial(5)
 console.log("factorial output :", output)
+
+
+console.log("########################################")
+// arrow function: arrow function is nothing but anonymous function that we can define anywhere
+// without providing the name of function.
+
+var SumResult = (num) => {
+    var sum = 0
+    for(var i=1; i<=num; i++) {
+        sum += i
+    }
+    return sum
+}
+
+var sumvalue = SumResult(10)
+console.log("sum of values :", sumvalue)
+
+
+console.log("########################################")
+// callback function, when we provide function as parameter to another function, then it is called
+// callback function.
+function RepeatString(n, func) {
+    for(var i=1; i<=n; i++) {
+        func()
+    }
+}
+
+function hello() {
+    console.log("Hello, good morning")
+}
+
+// provide custom function as parameter.
+RepeatString(5, hello)
+
+
+// provide arrow function as parameter.
+RepeatString(7, ()=> {
+    console.log("Learning JavaScript")
+})
+
+console.log("####################")
+var result = (strInput) => {
+    return strInput.split(" ")
+}
+
+var output = result("Learning Programming is Fun")
+console.log(output)
+// [ 'Learning', 'Programming', 'is', 'Fun' ]
+
+
+//Q1 write arrow function to check given number is prime or not
+//Q2 write a arrow function to removed duplicate numbers from string.
+//Q3 write a arrow program to sum of all even number from 1to 30
+//Q4 write a arrow function create a calculate add, multi , subtraction, division
+//Q5 write a arrow function to find sum all value are divisible 3 and 5 between 1 to 100
