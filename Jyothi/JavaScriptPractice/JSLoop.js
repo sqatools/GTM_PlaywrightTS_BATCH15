@@ -142,3 +142,29 @@ if (str == reverse) {
 } else {
     console.log("Not Palindrome")
 }
+
+
+//Prime number
+
+for(var num=1;num<=100;num++)
+{
+    var prime=true
+    for(var i=2;i<num;i++)
+    {
+        if(num%i==0)
+        {
+            prime=false
+            break
+        }
+    }
+    if(prime)
+    {
+        console.log("prime number",num)
+
+    }
+    else
+    {
+        console.log("Not prime number",num)
+
+    }
+}
