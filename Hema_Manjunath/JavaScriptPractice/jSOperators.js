@@ -113,7 +113,7 @@ console.log("Value of c",5**3)
 */
 
 
-
+/*
 //1. Area of Triangle = (Base × Height) / 2
 var a1=10
 var b1=20
@@ -160,4 +160,24 @@ console.log("Volume of Sphere",(4/3)*Math.PI*s1**3)
 var s2=10
 console.log("Surface Area of Sphere",4*Math.PI*s2**2)
 
- 
+*/
+
+let num = 13;
+let prime = true; // 🚩 Assume it IS prime (raise the flag)
+for (let i = 2; i < num; i++) 
+    {  
+    if (num % i === 0)
+        { 
+          // % means "remainder". 0 remainder = divides evenly   
+    prime = false;     
+          //   // ❌ Not prime! Lower the flag  
+            break;              
+          //  // 🛑 Stop checking, no point continuing 
+        }}
+if (prime)
+{  console.log(num + " is prime");
+
+} else
+{  console.log(num + " is NOT prime");
+
+}
