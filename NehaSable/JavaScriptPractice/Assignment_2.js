@@ -92,3 +92,20 @@ else{
 
     console.log("The number is not divisible by 2 or 3 ",num)
 }
+
+//Write a program  count the number of vowels in given 
+var s2="We are learning javascript"
+var vowels="aeiouAEIOU";
+var count=0;
+for(var i=0; i<s2.length; i++){
+    if(vowels.includes(s2[i])){
+        count++;
+    }
+    
+}
+console.log("The number of vowels in the string is: ", count);
+ 
+    
+
+
+
