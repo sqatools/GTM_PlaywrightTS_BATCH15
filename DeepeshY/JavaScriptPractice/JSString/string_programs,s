@@ -11,5 +11,8 @@ for (var chr of str1) { // Cricbuzz,
     }
 
 }
-
 console.log("ouput :", output)
+
+
+// Q1 : write a program to count the number of vowels in given.
+var s2 = "we are Learning JavaScript"
