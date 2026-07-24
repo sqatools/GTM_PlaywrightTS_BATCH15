@@ -1,0 +1,18 @@
+// Q1 : remove duplicate characters from
+var str1  ="Cricbuzz is not associated"
+var output = "" // Cr
+
+for (var chr of str1) { // Cricbuzz, 
+
+    if (output.includes(chr)) {
+      continue   
+    } else {
+        output += chr // output = output + char
+    }
+
+}
+console.log("ouput :", output)
+
+
+// Q1 : write a program to count the number of vowels in given.
+var s2 = "we are Learning JavaScript"

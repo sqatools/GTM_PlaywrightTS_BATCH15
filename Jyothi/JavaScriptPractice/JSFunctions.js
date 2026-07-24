@@ -142,3 +142,16 @@ var isPrime = (num) =>
       }
  var primeno=isPrime(13)
 
+//
+
+var s2="We are learrninf=g javaScript"
+var vowels=" "
+for(var i=0;i<s2.length;i++)
+{
+    if("aeiou".includes(s2[i]))
+    
+    {
+        vowels=vowels+s2[i]
+    }
+}
+console.log("Vowels:",vowels)
