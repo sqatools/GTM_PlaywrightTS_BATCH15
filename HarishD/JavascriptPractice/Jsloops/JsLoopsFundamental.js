@@ -179,35 +179,17 @@ do
     m+=1
 }while(m<=20)
 
-
- var db_user = "Admin"
-var db_password = "admin123"
-var ActiveStatus = true
-
-var username = "Admin"
-var password = "admin123"
-
-var num = 3
-
-do {
-    if (db_user == username && db_password == password) {
-        console.log("Login Successful")
-    } else {
-        console.log("Login Failed")
-        ActiveStatus = false
-    }
-
-    if (ActiveStatus) {
-        for (var i = 1; i<=10; i++) {
-            console.log(i, "*", num, ":", i*num)
+//
+ //Find largest number in array  
+    var num =[20,50,10,30,80,40,60,5]
+    var largest= num[0]
+    for(var i=0;i=num.length;i++)
+    {
+        if(num[i]>largest)
+        {
+            largest =largest[i]
         }
-    
     }
-    num += 1
+    console.log(largest)
 
-    if (num == 10) {
-        break
-    }
-} while(ActiveStatus)
 
-   
