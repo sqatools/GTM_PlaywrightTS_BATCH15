@@ -41,3 +41,4 @@ if (marks >= 80 ) {
 } else {
     console.log("Grade obtained is fail", marks)
 }
+
