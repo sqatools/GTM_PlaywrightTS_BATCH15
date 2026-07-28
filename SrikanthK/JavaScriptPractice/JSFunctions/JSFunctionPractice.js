@@ -1,3 +1,5 @@
+import *  as module1 from '../module1/mathOperations'
+
 // write arrow function to check whether given no is prime or not
 // write a arrow function to remove duplicate numbers from string
 // write a arrow function to sum all even numbers from  1 to 30.
@@ -80,3 +82,10 @@ console.log("Subtraction of 10 and 3: " + Calculator("subtract", 10, 3));
 console.log("Multiplication of 5 and 3: " + Calculator("multiply", 5, 3));
 console.log("Division of 10 and 0: " + Calculator("divide", 10, 0));
 console.log("Test123" + Calculator("test", 10, 5));
+
+
+var result  = module1.addition (20,30)
+console.log('addition = ', result)
+
+var squareofnumber = module1.square(10)
+console.log('squre of num =  ', squareofnumber)
