@@ -25,6 +25,7 @@ if(a%3==0){
 }
 */
 
+/*
 let num = 13;
 let prime = true; // 🚩 Assume it IS prime (raise the flag)
 for (let i = 2; i < num; i++) 
@@ -97,4 +98,32 @@ var numb=6
 for(var i=1; i<=10 ;i++)
 {
     console.log(numb,"*",i,"=",i*numb)
+}
+
+// Factonial is the product of all positive integers less than or equal to a given positive integer.
+//  It is denoted by n! where n is a positive integer. The factorial of 0 is 1.
+//  The factorial of a negative integer is undefined. 
+// The factorial of a positive integer n is the product of all positive integers less than or equal to n.
+//  The factorial of a positive integer n can be calculated using the following formula:
+// n! = n * (n-1) * (n-2) * (n-3) * ... * 1
+*/
+
+
+//var fact=1
+const prompt=require('prompt-sync')
+const numb=prompt("Enter the number to find the factorial value: ")
+for(i=5;i>=1;i--){
+fact*=i
+}   
+console.log("Factorial Value of num 5 is :",fact)
+
+var arr = [1, 2, 3, 4, 5];
+for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+
+var result1=85 
+if(result1){
+    console.log("")
 }
