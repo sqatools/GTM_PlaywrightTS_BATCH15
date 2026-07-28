@@ -62,5 +62,6 @@ console.log(str5)//[ 'we', 'JavaScript', 'are', 'learning', 'typescript' ]
 str5.splice(1,1,"Python")//Deleting 1 position
 console.log(str5)//[ 'we', 'Python', 'are', 'learning', 'typescript' ]
 
+//add JAVA at index 1 and remove 2 values from that position.
 str5.splice(1,2,"JAVA")//Deleting 2 positions
 console.log(str5)//[ 'we', 'JAVA', 'learning', 'typescript' ]
