@@ -77,7 +77,7 @@ if (cond1) {
 
 */
 
-var x = 19
+var x = 500
 var y = 400
 var z = 50
 if (x > y && x > z) {
