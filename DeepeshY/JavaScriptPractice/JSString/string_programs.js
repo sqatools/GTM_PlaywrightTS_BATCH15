@@ -60,4 +60,29 @@ var str1 = "Rohit Virat Vaibhav Surya Rohit Abhishek Surya Virat"
 var array1 = [4, 5, 6, 8] 
 array1.forEach((y) => {
   console.log(y**2)  
-});
+});p
+
+console.log("##################################")
+/*
+8. Find the Most Frequently Repeated Character
+Description: Find the character with the highest frequency.
+*/
+
+var Input= "mpromgrammingppm"
+var MFchar = ""
+var MCOunt = 0
+var output = {}
+for(var char of Input) {
+    if (Object.hasOwn(output, char)) {
+        output[char] += 1
+        if (output[char] >= MCOunt) {
+            MCOunt = output[char]
+            MFchar = char
+        }
+    } else {
+        output[char] = 1
+    }
+    console.log("Max frequency character :", MFchar, MCOunt)
+}
+console.log(output)
+console.log("Max frequency character :", MFchar, MCOunt)
