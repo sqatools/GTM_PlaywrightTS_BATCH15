@@ -178,3 +178,18 @@ do
     console.log(m)
     m+=1
 }while(m<=20)
+
+//
+ //Find largest number in array  
+    var num =[20,50,10,30,80,40,60,5]
+    var largest= num[0]
+    for(var i=0;i=num.length;i++)
+    {
+        if(num[i]>largest)
+        {
+            largest =largest[i]
+        }
+    }
+    console.log(largest)
+
+
