@@ -101,4 +101,35 @@ if (a%2 == 0) {
     console.log("It is not divisible by either 2 or 3")
    }
 
-   
+   //Nested If cond
+
+   /*if cond(){
+   code of block
+   if Cond(){
+   code of block
+   }else
+    {
+    code of block
+}else{
+    code of block
+}
+} */
+
+var round1="fail"
+var round2="pass"
+if(round1=="pass"){
+    console.log("Round1 is clear")
+if(round2=="pass"){
+    console.log("Round2 is clear")
+}else
+    {
+      console.log("Failed in round2. Try it next time")
+    }
+}else{
+   console.log("Failed in round1")
+}
+
+//ternary operator
+var num=9
+var result= num%2==0 ? "Even": "odd"
+console.log(result)

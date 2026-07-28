@@ -7,9 +7,9 @@ if cond1 {
 */
 
 var n1 = 20
-console.log(n1%2 == 0)
+console.log(n1 % 2 == 0)
 
-if (n1%2 == 0) {
+if (n1 % 2 == 0) {
     console.log("Even :", n1)
 } else {
     console.log("odd :", n1)
@@ -38,7 +38,7 @@ if (a == b) {
 // }
 
 var num = 15
-if (num%3 == 0 && num%5 == 0) {
+if (num % 3 == 0 && num % 5 == 0) {
     console.log("This number is divisible by 3 and 5:", num)
 } else {
     console.log("This number is not divisible by 3 and 5:", num)
@@ -57,7 +57,7 @@ var numA = 25
 // False || False : False 
 // False || True : True
 
-if (numA%3 == 0 || numA%5 == 0) {
+if (numA % 3 == 0 || numA % 5 == 0) {
     console.log("Number is divisible by 3 or 5:", numA)
 } else {
     console.log("Number is not divisible by 3 or 5:", numA)
@@ -82,9 +82,9 @@ var y = 400
 var z = 50
 if (x > y && x > z) {
     console.log("X has greater value:", x)
-} else if (y > x && y> z) {
+} else if (y > x && y > z) {
     console.log("Y has greater value :", y)
-} else if ( z>x && z> y ) {
+} else if (z > x && z > y) {
     console.log("Z has greater value")
 } else {
     console.log("No one has greater value:", z)
@@ -95,50 +95,131 @@ if (x > y && x > z) {
 // Q2. write a if condition check given number is divisible 7 and 11.
 // Q3. write a if else-if  program to check the student grade as per marks received.
 
-var age =46
+var age = 46
 if (age >= 18) {
-    console.log("Person is eligible to vote :",age)
+    console.log("Person is eligible to vote :", age)
 } else {
-    console.log("Person is not eligible to vote :",age)
+    console.log("Person is not eligible to vote :", age)
 }
 
 console.log("###############################")
 
-var num=23
-if (num%7 == 0 && num%11 == 0) {
+var num = 23
+if (num % 7 == 0 && num % 11 == 0) {
     console.log("Number is divisible by 7 and 11:", num)
-} else if (num%7 == 0 || num%11 ==0) {
-    console.log("Number is divisible by 7 or 11:", num )
-} 
- else {
+} else if (num % 7 == 0 || num % 11 == 0) {
+    console.log("Number is divisible by 7 or 11:", num)
+}
+else {
     console.log("Number is not divisible by 7 or 11:", num)
 }
 
 // Q3. write a if else-if  program to check the student grade as per marks received.
 var marks = 80;
 
-if(marks <35 ){
+if (marks < 35) {
 
-console.log("fail")
+    console.log("fail")
 }
-else if(marks>=35 && marks<50)
-{
-console.log("grade C")
-}
-else if(marks>=50 && marks<60)
-{
+else if (marks >= 35 && marks < 50) {
     console.log("grade C")
 }
-else if(marks>=60 && marks<80)
-{
+else if (marks >= 50 && marks < 60) {
+    console.log("grade C")
+}
+else if (marks >= 60 && marks < 80) {
     console.log("grade B")
 }
-else if (marks>=80 && marks<100)
-{
+else if (marks >= 80 && marks < 100) {
     console.log("grade A")
-}   
-else
-{
+}
+else {
     console.log("invalid marks")
 
 }
+
+//Nested if condition
+
+/*
+if cond1 
+{
+    code block
+    if cond2
+     {
+        code block
+        if cond3 
+        {
+            code block
+        } 
+            else 
+                {
+                code block
+                }
+    } else 
+        {
+        code block
+        }        
+} else 
+    {
+    code block    
+    }
+*/
+// Example -1
+var a = 40;
+var b = 30;
+var c = 50;
+
+if (a > b) {
+    console.log("A is greatest :", a)
+    if (a > c) {
+        console.log("A is the greatest:", a);
+    } else {
+        console.log("C is the greatest:", c);
+    }
+} else {
+    if (b > c) {
+        console.log("B is the greatest:", b);
+    } else {
+        console.log("C is the greatest:", c);
+    }
+}
+
+
+// Example -2
+var round1 = "pass";
+var round2 = "pass";
+var round3 = "pass";
+
+if (round1 == "pass") {
+    console.log("1st round is clear");
+
+    if (round2 == "pass") {
+        console.log("2nd round is clear");
+
+        if (round3 == "pass") {
+            console.log("3rd round is clear");
+            console.log("Congratulations! You are selected.");
+        } else {
+            console.log("Failed in 3rd round, try next time.");
+        }
+
+    } else {
+        console.log("Failed in 2nd round, try next time.");
+    }
+
+ } else {
+    console.log("Failed in 1st round.");
+}
+
+
+// ternary operator ?  
+// if wea are checking a condition and want to execute code in one line then we can use ternary operator
+
+
+var num = 10
+var result = num%2 == 0 ? "even" : "odd"
+console.log(result)
+
+var var1 = 21
+var result2 = var1%5 == 0 ? "divisible by 5": "not divisible by 5"
+console.log(result2)

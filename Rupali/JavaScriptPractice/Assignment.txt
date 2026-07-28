@@ -36,5 +36,25 @@
 // 33	Percentage	(Obtained / Total) × 100
 // 34	Average of 5 Numbers	(a+b+c+d+e)/5
 
-Filename : Exercise
+Filename : Formulas
 Status : Completed
+
+
+
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$//
+
+// 15 July 2026.
+// Programs to Practice.
+1. Assign a grade based on marks.   -- Completed
+2. Check whether a number is a three-digit number.  --Completed
+3. Check whether a number is a four-digit number.  --Completed
+4. Check whether a number is positive and even.   --Completed
+5. Check whether a person can enter a movie (age >= 18 and has a ticket).  --Completed
+6. Check whether a username is "admin".  --Completed
+7. Check whether a user is logged in.  
+8. Check whether an email contains "@". 
+9. Check whether a mobile number has exactly 10 digits.
+10.Check whether a number is divisible by either 2 or 3.  --Completed
+
+Filename : Formulas
+Status : inprogress
