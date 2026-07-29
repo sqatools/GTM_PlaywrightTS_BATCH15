@@ -92,3 +92,49 @@ else{
 
     console.log("The number is not divisible by 2 or 3 ",num)
 }
+
+//Write a program  count the number of vowels in given 
+var s2="We are learning javascript"
+var vowels="aeiouAEIOU";
+var count=0;
+for(var i=0; i<s2.length; i++){
+    if(vowels.includes(s2[i])){
+        count++;
+    }
+    
+}
+console.log("The number of vowels in the string is: ", count);
+
+
+//write a program to repeat of first character of each word twice
+var str="Rohit Virat Vaibhav Abhishek Survya"
+var words=str.repeat(" Rohit Virat Vaibhav Abhishek Survya").split(" ");
+var result="";
+for(var i=0; i<words.length; i++){
+    result+=words[i][0]+words[i][0]+" ";
+}
+console.log("The string with first characters repeated is: ", result);
+
+//write a program to get first and last character of each word 
+var str="Rohit Virat Vaibhav Abhishek Survya"
+var words=str.split(" ");
+var result="";
+for(var i=0; i<words.length; i++){
+    result+=words[i][0]+words[i][words[i].length-1]+" ";
+}
+console.log("The string with first and last characters of each word is: ", result);
+
+
+//write a program to remove duplicate words from a string
+
+var str="Rohit Virat Vaibhav Abhishek Survya Rohit Virat Vaibhav Abhishek Survya";
+var words=str.split(" ");
+console.log("The original string is: ", str);
+var uniqueWords=[];
+for(var i=0; i<words.length; i++){
+    if(uniqueWords.includes(words[i])==false){
+        uniqueWords.push(words[i]);
+    }
+}
+console.log("The string with duplicate words removed is: ", uniqueWords.join(" "));
+
