@@ -1,3 +1,4 @@
+
 /*
 var vAge=18
 if(vAge>=18){
@@ -6,7 +7,7 @@ if(vAge>=18){
     console.log("You are not eligible to vote.");
 }
 */
-
+/*
 var num1=47
 if(num1%7==0 || num1%11==0){
     console.log(num1 + " is divisible by both 7 and 11.");
@@ -51,4 +52,27 @@ console.log("Grade Marks C")
         console.log("Grade Marks D")
     }
 
+*/
 
+var numb=15
+var prime=true
+for (var i=2; i<numb; i++){
+    if(numb%i==0){
+        prime=false
+    }
+} 
+    if(prime){
+        console.log("The number is a prime")
+    }else{
+        console.log("The number is not a prime")
+    }
+
+
+
+   // Functions
+function functionName(){
+    console.log("This is the function")
+}
+functionName()
+functionName()
+functionName()

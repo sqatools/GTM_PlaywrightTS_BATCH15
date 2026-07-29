@@ -44,7 +44,7 @@ for(var val of arr1){
 
 
 //Prime number
-var num=13
+var num=14
 var prime=true
 for(var i=2;i<num;i++)
 {
@@ -149,4 +149,36 @@ do{
             break
         }
     }while(ActiveStatus)
-    
+
+        //Reverse a string using loop
+        var str= "divya"
+        var rev = " "
+        for(var i=str.length-1 ; i>=0 ; i--) 
+        {
+            
+            rev += str[i]
+
+        }
+        console.log(rev)
+
+        //Find largest number in array
+        var arr1 = [3 , 13, 2, 11, 0]
+        var temp = 0
+        for(var val of arr1){
+            if(val > temp){
+                 temp = val
+               
+            }
+            
+           }
+        console.log(temp)
+
+        //Create star pattern using nested loop
+        
+        for (let i = 1; i <= 3; i++) {
+  let row = "";
+  for (let j = 1; j <= 3; j++) {
+    row += "* ";
+  }
+  console.log(row);
+}

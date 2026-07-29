@@ -22,6 +22,24 @@ console.log("*****************************");
 
 //Q2 write a arrow function to removed duplicate numbers from string.
 
+var removeDuplicate = (str) => {
+    var len=str.length;
+    var NewStr=" ";
+    for (var i=0;i<=len;i++){
+        for (var j=i+1;j<=len;j++){
+            if(str[i]==str[j])
+            {
+              continue;
+            }else{
+                NewStr+=str[i];
+            }
+        }
+    }
+    console.log(NewStr);
+}
+
+removeDuplicate("RAM")
+
 
 console.log("*****************************");
 
