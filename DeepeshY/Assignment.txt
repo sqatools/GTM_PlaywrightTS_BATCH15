@@ -52,3 +52,8 @@ Check whether a user is logged in.
 Check whether an email contains "@".
 Check whether a mobile number has exactly 10 digits.
 Check whether a number is divisible by either 2 or 3.
+
+
+#########################################
+// 29 July 2026
+// Practice all array methods.

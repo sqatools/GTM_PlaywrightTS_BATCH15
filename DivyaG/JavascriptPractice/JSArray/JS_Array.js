@@ -62,6 +62,86 @@ console.log(str5)//[ 'we', 'JavaScript', 'are', 'learning', 'typescript' ]
 str5.splice(1,1,"Python")//Deleting 1 position
 console.log(str5)//[ 'we', 'Python', 'are', 'learning', 'typescript' ]
 
-//add JAVA at index 1 and remove 2 values from that position.
+//add JAVA at index 1 and remove 2 values from that position
 str5.splice(1,2,"JAVA")//Deleting 2 positions
 console.log(str5)//[ 'we', 'JAVA', 'learning', 'typescript' ]
+
+var arrA=[5,6,7,2,4,12,56]
+//Add 3 value at index 3 and remove 1 value
+arrA.splice(3,1,200,100,'Hello')
+console.log(arrA)//[ 5, 6, 7, 200, 100, 'Hello', 4, 12, 56 ]
+
+var arrA=[5,6,7,2,4,12,56]
+//Add 3 value at index 3 and remove 1 value
+arrA.splice(2,3,500,700,'Javascript')
+console.log(arrA)//[ 5, 6, 500, 700, 'Javascript', 12, 56 ]
+
+var arrB =[5,7,8,2,4,15]
+var out = arrB.pop()*100
+console.log(out)//1500
+
+//foreach loop:Iterate through each value of array.
+var arrC=[5,7,8,2,34]
+arrC.forEach((item) => console.log(item,item**2))
+/*
+5 25
+7 49
+8 64
+2 4
+34 1156
+*/
+
+//slice method: It will return sub array from target array
+//slice(start index,end index)
+//output will include start index and end index
+var arrD = ['John', 'Jack','Frank',3,5,6,7]
+console.log(arrD.slice(1,5))//[ 'Jack', 'Frank', 3, 5 ]
+console.log(arrD)//[ 'John', 'Jack', 'Frank', 3, 5, 6, 7 ]
+
+var arrD = ['John', 'Jack','Frank',3,3,6,7]
+console.log(arrD.slice(1,4))//[ 'Jack', 'Frank', 3 ]
+console.log(arrD)//[ 'John', 'Jack', 'Frank', 3, 5, 6, 7 ]
+
+//include method: It will return true or false if value is available
+var a1 = [5,7,8,23,25]
+console.log(a1.includes(23))//true
+console.log(a1.includes(2))//false
+console.log(a1.includes(8))//true
+
+//sort of array.default it is in acending order
+var S1 = [15,6,7,8,23,45,2]
+var out = S1.sort((a,b) => a-b)
+console.log(out)//[2,  6,  7, 8,15, 23, 45]
+
+
+//sort array in desc order
+var S1 = [15,6,7,8,23,45,2]
+var out = S1.sort((a,b) => b-a)
+console.log(out)//[45, 23, 15, 8,7,  6,  2]
+
+//reverse methood
+var arrT = [5,6,2,7,12,45]
+var output = arrT.reverse()
+console.log(output)//[ 45, 12, 7, 2, 6, 5 ]
+
+var arrU = [50,6,20,7,12,45]
+var result=[]
+for(var val of arrU){
+    console.log(result)
+result.unshift(val)
+}
+console.log(result)
+/*[]
+[ 50 ]
+[ 6, 50 ]
+[ 20, 6, 50 ]
+[ 7, 20, 6, 50 ]
+[ 12, 7, 20, 6, 50 ]
+[ 45, 12, 7, 20, 6, 50 ]*/
+
+//join method: this method joins the values
+var Users = ["Rahul", "Rohit", "Roman", "Raghav"]
+var result = Users.join(" ")
+console.log(result)
+
+//Practice all array methods

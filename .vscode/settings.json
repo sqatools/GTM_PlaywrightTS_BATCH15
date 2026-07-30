@@ -15,5 +15,6 @@
         "markdown": false,
         "scminput": false,
         "javascript": true
-    }
+    },
+    "workbench.editor.enablePreview": false
 }
