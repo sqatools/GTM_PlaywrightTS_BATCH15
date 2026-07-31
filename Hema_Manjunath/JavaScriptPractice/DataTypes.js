@@ -36,3 +36,5 @@ console.log(b2, ":", typeof b2)
 //1. Object
 //2. Array
 //3. Function
+
+//  Write a Program to count the number of vowels in given
