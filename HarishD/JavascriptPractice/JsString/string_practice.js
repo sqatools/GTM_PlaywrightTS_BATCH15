@@ -1,18 +1,14 @@
 // Q1 : remove duplicate characters from string
 var str1 = "Cricbuzz is not associated";
 var output = "";
-
 for (var chr1 of str1) {
-
     if (output.includes(chr1)) {
         continue;
     }
     else {
         output += chr1;
     }
-
 }
-
 console.log("output :", output);
 
 console.log("################################")
@@ -78,5 +74,134 @@ var result = store.repeat(4)
 console.log(result)
 
 
+//5. Count Occurrences of a Substring
+
+var str5 = "banana"
+var substring = "an"
+var count = 0
+for (var i = 0; i < str5.length - 1; i++) {
+    if (str5.substring(i, i + substring.length) == substring) {
 
 
+        count++;
+    }
+
+}
+console.log(count);
+
+//7. Find the Longest and Shortest Word
+var str7 = "I love learning JavaScript";
+var word = str7.split(" ");
+console.log(word);
+var largest = "";
+var smallest = word[0] || "";
+
+for (var i = 0; i < word.length; i++) {
+    if (word[i].length > largest.length) {
+        largest = word[i];
+    }
+    if (word[i].length < smallest.length) {
+        smallest = word[i];
+    }
+}
+console.log(largest);
+console.log(smallest);
+
+
+//write a program to repeat the first character of word twice
+var str8 = "Rohit virat vibav surya abhishek"
+var word_array = str8.split(" ")
+console.log(word_array)
+for (var word of word_array) {
+    console.log("print :", word)
+    var first_word = word[0]
+    var newWord = `${first_word}${word}`
+    output = output + " " + newWord
+}
+
+
+//write a program  first  and last character of word
+var str9 = "Rohit virat vibav surya abhishek";
+var word_array = str9.split(" ");
+console.log(word_array);
+
+for (var word of word_array) {
+    var first_word = word[0];
+    var second_word = word[word.length - 1];
+
+    var result = `${first_word}${second_word}`;
+
+    console.log(result);
+
+}
+//###############################################  
+
+//8. Find the duplicate character in the word
+
+var s10 = "programming";
+var output = "";
+var count = 0;
+
+for (var char of s10) {
+    if (output.includes(char)) {
+        count++;
+        console.log("Duplicate character:", char);
+    } else {
+        output = output + char;
+    }
+}
+
+console.log("Duplicate count:", count);  
+
+
+//9. Calculate String Length Without Using length Property
+
+var str11 = "JAVASCRIPT"
+var count = 0
+for (var word of str11) {
+    console.log(word)
+    count++
+}
+console.log(count)
+
+
+ //Combine Two Strings
+    var str1="Hello"
+    var str2="World"
+    var output= str1+" "+str2
+    console.log(output)
+
+    //Count Total Consonants
+  var str1="JavaScrIpt"
+  var str2="aeiouAEIO"
+  var count=0
+  for(var val of str1)
+  if(!str2.includes(val))
+  {
+    count++
+  }
+  console.log("Count of consonants:",count)
+
+  //Print Characters at Even Positions
+  var str1="JavaScript"
+  var output=""
+  var i=0
+  for(i=0; i<=str1.length-1; i++){
+
+    if(i%2==0){
+        output+=str1[i]
+    }
+  }
+  console.log(output)
+
+  // //Print Characters at odd Positions
+  var str1="abcdefg"
+  var output=""
+  var i=0
+  for(i=0; i<=str1.length-1; i++){
+
+    if(i%2!=0){
+        output+=str1[i]
+    }
+  }
+  console.log(output)
