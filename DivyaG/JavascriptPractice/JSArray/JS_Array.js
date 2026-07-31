@@ -144,4 +144,4 @@ var Users = ["Rahul", "Rohit", "Roman", "Raghav"]
 var result = Users.join(" ")
 console.log(result)
 
-//Practise all array methods
+//Practice all array methods
