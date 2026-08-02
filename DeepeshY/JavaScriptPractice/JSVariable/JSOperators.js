@@ -161,4 +161,4 @@ console.log("N > M || N > o :", N > M || N > o) // N > M || N > o : true
 console.log("N > o || N > M: ", N > o || N > M) // true
 
 //4.true || true : true
-console.log("o > N || o > M:", o > N || o > M) // true
+console.log("o > N || o > M:", o > N || o > M) // true-
