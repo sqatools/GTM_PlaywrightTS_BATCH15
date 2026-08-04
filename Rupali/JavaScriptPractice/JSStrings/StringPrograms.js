@@ -5,10 +5,11 @@ var vowels ="aeiouAEIOU"
 var count =0;
 
 for(var val of s1){
-    if(vowels.includes(val))
+    if(vowels.includes(val)){   
         count +=1;
 }
-console.log(count)
+}
+console.log("number of vowels:", count)
 
 //******************************************* *//
 
@@ -24,31 +25,47 @@ console.log("first 2 letters:", s2.slice(0,2), " and last 2 characters:", s2.sli
 var str1 ="Rohit Virat Vaibhav Abhishek Surya"
 
 var result_array = str1.split(" ")
-var output = " "
+//var output = " "
 for (let word of result_array) {
-    console.log(word)
+   // console.log(word)
     var firstChar =word[0]
-    var newWord =`${firstChar}+${word}`
-
-   // console.log(word.charAt(0).repeat(2)+result);
+    var newWord =`${firstChar}${word}`
+    console.log(newWord)
 } 
-output = output + " " + newWord
 
-//******************************************* *//
 
-// //
+//*********************************************//
 
-// var str2 = "Rohit Virat Vaibhav Abhishek Surya Rohit Surya";
+// remove duplicate words
+var str2 = "Rohit Virat Vaibhav Abhishek Surya Rohit Surya";
 
-// let words = str2.split(" ");
-// console.log(words)
-// let result = [];
+var words = str2.split(" ");
+console.log(words);
+var result = [];
 
-// for (let word of words) {
-//     if (result.includes.words) {
-//         continue
-//     }
-//     result=result
-// }
+for (var word of words) {
+    if (!result.includes(word)) {
+        result.push(word);
+    }
+}
+console.log(result);
 
-// console.log();
+// remove duplicate characters from string
+
+var str = "cricket is lovely game to play"
+var output = ""
+for(var chr of str){
+    if(output.includes(chr))
+    {
+        continue
+    }else{
+        output += chr
+    }
+}
+console.log("output:", output)
+
+
+//1. Get the First and Last 2 Characters
+
+
+
