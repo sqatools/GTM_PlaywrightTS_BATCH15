@@ -95,3 +95,9 @@ let str = "Playwright";
 
 console.log(str.endsWith("Play"));
 console.log(str.endsWith("wright"));
+
+
+// length of string
+
+var str = "Playwright";
+console.log("length of string:", str.length)

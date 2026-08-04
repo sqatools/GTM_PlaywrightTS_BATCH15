@@ -1,39 +1,31 @@
-// write program to get values from array which are prime num
+var arr =[21, 'Rupali', 4.5,true,34234324, [1,2,4,8], {a:2,b:4}, false]
 
-var primeValues =[4,6,7,11,13,16,25,29]
+console.log(arr)
 
-for(var num of primeValues){
-    var prime =true;
-    for(var i=2;i<num;i++){
-        if(num%i==0){
-            prime =false;
-            break;
-        }
-    }
-    if (prime){
-        console.log(num,": is a prime number")
-    }
+// get values from array
+console.log(arr[0])
+console.log(arr[5])
+console.log(arr[5][2])
+console.log(arr[6])
+console.log(arr[6].a)
+console.log(arr[6]['b'])
+
+// traverse array using for loop
+var a1 =[11,23,45,67,78,89,90]
+for(var i=0; i<a1.length; i++){
+    console.log(a1[i])
 }
 
+for(var val of a1){
+    console.log(val)
+}
 
-// write a program to get combination of number whose sum is 10
+// apply loop and get indexing of each value in array
+var c2 =[1,3,5,7,9,11,13,15]
+for(var i=0; i<c2.length; i++){
+    console.log("index of ", c2[i], "is ", i)
+}
 
-var array1 =[4,6,7,12,9,3,-2,8,2,1]
-
-
-// write  a program to print square of even values and cube of odd values
-
-var array2= [4,7,9,3,6,12,15]
-
-for(var num of array2){
-    for(var i=0; i<num ;i++){
-        if(num%2==0){
-            console.log(num, "is even and its square is ", num**2)
-            break
-        }
-        else{
-            console.log(num, " is odd number and its cube is ", num**3)
-            break
-        }
-    }
+for(var i in c2){
+    console.log(i, c2[i])
 }
