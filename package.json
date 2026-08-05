@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "description": "GTM_PlaywrightTS_BATCH15",
   "main": "index.js",
-<<<<<<< HEAD
-  "type":"module",
-=======
   "type": "module",
->>>>>>> e6e408bc3ccfb862b9b3fac6bb7d5cef50975460
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
