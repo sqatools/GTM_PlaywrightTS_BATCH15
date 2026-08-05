@@ -59,3 +59,20 @@ else
 {
     console.log("invalid marks")
 }
+
+
+console.log("####### Nested IF condition ######")
+
+var round1="pass";
+var round2="pass";
+var round3="pass";
+
+if(round1=="pass")
+{
+    if(round2=="pass")
+        console.log("eligible for round 3")
+}
+else
+{
+    console.log("not eligible for round 3")
+}

@@ -42,3 +42,14 @@ if (num > 0) {
         console.log("Positive odd number");
     }
 }
+//program for if number is divisible by 2 or 6
+var num=12
+if(num%2==0 || num%6==0){
+    console.log("The number is divisible by 2 or 6",num)
+}
+else
+{
+console.log("The number is not divisible by 2 or 6",num)
+
+}
+
