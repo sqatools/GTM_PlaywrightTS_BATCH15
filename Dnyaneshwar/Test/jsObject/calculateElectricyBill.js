@@ -1,32 +1,30 @@
-var BillDetails ={
-
-    Viraj : {unit :121 , bill :0},
-    pranali : {unit :200 , bill :0},
-    kailas : {unit :300 , bill:0},
-    manisha : {unit :350 ,bill:0}
-
+var BillDetails = {
+    virat:{unit:500 ,bill :0},
+    Rohit:{unit:212,bill :0},
+    Rahul:{unit :321,bill : 0},
+    Sachin:{unit : 431 ,bill:0}
 }
 
 for(var customer in BillDetails)
 {
-
-    var unit=BillDetails[customer].unit
-
+    var unit = BillDetails[customer].unit;
+    
     if(unit <=100)
     {
         BillDetails[customer].bill=unit*10;
     }
-    else if(unit <=200)
+    else if(unit >=150 && unit <=200)
     {
-        BillDetails[customer].bill=unit*12;
+        BillDetails[customer].bill=unit*12
     }
-    else if(unit <=250)
+    else if(unit >=200 && unit <=300)
     {
         BillDetails[customer].bill=unit*15
     }
-    else{
+    else {
         BillDetails[customer].bill=unit*20
     }
-
+   
 }
+
 console.log(BillDetails)
