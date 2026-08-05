@@ -5,10 +5,11 @@ var vowels ="aeiouAEIOU"
 var count =0;
 
 for(var val of s1){
-    if(vowels.includes(val))
+    if(vowels.includes(val)){   
         count +=1;
 }
-console.log(count)
+}
+console.log("number of vowels:", count)
 
 //******************************************* *//
 
@@ -26,29 +27,94 @@ var str1 ="Rohit Virat Vaibhav Abhishek Surya"
 var result_array = str1.split(" ")
 var output = " "
 for (let word of result_array) {
-    console.log(word)
+   // console.log(word)
     var firstChar =word[0]
-    var newWord =`${firstChar}+${word}`
-
-   // console.log(word.charAt(0).repeat(2)+result);
+    var newWord =`${firstChar}${word}`
+    //console.log(newWord)
+    output = output +" "+ newWord
 } 
-output = output + " " + newWord
+console.log(output)
 
-//******************************************* *//
 
-// //
+//*********************************************//
 
-// var str2 = "Rohit Virat Vaibhav Abhishek Surya Rohit Surya";
+// remove duplicate words
+var str2 = "Rohit Virat Vaibhav Abhishek Surya Rohit Surya";
 
-// let words = str2.split(" ");
-// console.log(words)
-// let result = [];
+var words = str2.split(" ");
+console.log(words);
+var result = [];
 
-// for (let word of words) {
-//     if (result.includes.words) {
-//         continue
-//     }
-//     result=result
-// }
+for (var word of words) {
+    if (!result.includes(word)) {
+        result.push(word);
+    }
+}
+console.log(result);
 
-// console.log();
+// remove duplicate characters from string
+
+var str = "cricket is lovely game to play"
+var output = ""
+for(var chr of str){
+    if(output.includes(chr))
+    {
+        continue
+    }else{
+        output += chr
+    }
+}
+console.log("output:", output)
+
+
+//1. Get the First and Last Characters of each word
+var str3 = "Rohit Virat Vaibhav Abhishek Surya Rohit Surya";
+
+var result_array = str3.split(" ")
+var output = " "
+for (var word of result_array) {
+
+    var firstChar =word[0]
+    var lastchar =word[word.length-1]
+    var newWord =`${firstChar}${lastchar}`
+    
+    output = output +" "+ newWord
+} 
+console.log(output)
+
+// Remove duplicate words from string
+var str4 = "Rohit Virat Vaibhav Virat Abhishek Surya Rohit Surya";
+var output = ""
+var array_words= str4.split(" ")
+for(var word of array_words){
+if(output.includes(word)){
+    continue
+}else{
+    output = output + " "+ word
+}
+}
+console.log(output)
+
+
+//Find the Most Frequently Repeated Character
+//Description: Find the character with the highest frequency.
+
+
+var Input= "Programming"
+var MFchar = ""
+var MCOunt = 0
+var output = {}
+for(var char of Input) {
+    if (Object.hasOwn(output, char)) {
+        output[char] += 1
+        if (output[char] >= MCOunt) {
+            MCOunt = output[char]
+            MFchar = char
+        }
+    } else {
+        output[char] = 1
+    }
+    console.log("Max frequency character :", MFchar, MCOunt)
+}
+console.log(output)
+console.log("Max frequency character :", MFchar, MCOunt)

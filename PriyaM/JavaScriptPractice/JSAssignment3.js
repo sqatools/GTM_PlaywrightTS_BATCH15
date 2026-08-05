@@ -47,3 +47,40 @@ for (var i=1; i<=rows; i++) {
      console.log(star)
 }
 
+var str = "Rohit Virat Vaibhav"
+var arr = [] 
+var result =""
+arr = str.split(" ")
+console.log(arr)
+
+for (var i of arr) {
+    result += (i[0] + i) +" "
+}
+console.log("Result is :",result)
+
+var str = "Rohit Virat Vaibhav"
+var arr = [] 
+var result = ""
+arr = str.split(" ")
+console.log(arr)
+
+for (var i of arr) {
+    result += (i[0] + i[arr.length-1]) +" "
+}
+console.log("Result is :",result)
+
+//Remove duplicates from string
+var str = "Rohit Virat Seth Vaibhav Rohit Virat Vaibhav Vaibhav" 
+var arr = [] 
+var result = []
+arr = str.split(" ")
+
+for (var i = 0; i < arr.length; i++) {
+    if (result.indexOf(arr[i]) === -1) {   // only add if not already in result
+        result.push(arr[i])
+    }
+}
+
+console.log(result + " ")
+
+
