@@ -12,3 +12,19 @@ for(let key in obj1){
 }
 
 console.log(maxvalue)
+
+
+// Write a Program to calculate the total bill and fruits purchase by customer 
+var fruits={
+    apple:100,
+    banana:50,
+    orange:70,
+    grapes:200
+}
+var totalbill=0 
+for(let key in fruits){ 
+fruits[key]=fruits[key]*2
+totalbill+=fruits[key]
+}   
+console.log(fruits)
+console.log(totalbill)
