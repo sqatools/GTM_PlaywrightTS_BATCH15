@@ -8,6 +8,17 @@
       "program": "${workspaceFolder}/Hema_Manjunath/JavaScriptPractice/jSOperators.js",
       "console": "internalConsole",
       "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run Current JS File",
+      "program": "${file}",
+      "cwd": "${fileDirname}",
+      "console": "integratedTerminal",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
     }
   ]
 }

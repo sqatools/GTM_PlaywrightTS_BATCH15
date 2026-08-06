@@ -1,3 +1,4 @@
+//https://sqatools.in/javascript-loop/
 //Print 1 to 10 numbers using for loop
 
 for(var i=0;i<=10;i++){
@@ -39,4 +40,145 @@ for(var val of array1){
 var arr1=["Hello" ,"js"]
 for(var val of arr1){
     console.log(val)
+}
+
+
+//Prime number
+var num=14
+var prime=true
+for(var i=2;i<num;i++)
+{
+    if(num%i==0)
+    {
+        prime=false
+        break
+    }
+}
+if(prime){
+    console.log("It is a prime number")
+}else{
+    console.log("It is not a prime number")
+}
+//package delivery using nested for loop
+
+for(var i=1;i<=5;i++){
+    console.log("Address:i:",i)
+    for(var j=1;j<=3;j++)
+    {
+        console.log("Package:j:",j)
+    }
+    console.log("----------")
+}
+
+//get list of all prime numbers between 1 to 100
+
+for(var num=2;num<=100;num++){
+var prime=true
+for(var i=2;i<num;i++)
+{
+    if(num%i==0)
+    {
+        prime=false
+        break
+    }
+}
+if(prime){
+    console.log(num)
+}
+}
+
+//specific number is prime or not
+var arr1 = [5,9,10,45,11,100,23]
+for(var num of arr1){
+var prime=true
+for(var i=2;i<num;i++)
+{
+    if(num%i==0)
+    {
+        prime=false
+        break
+    }
+}
+if(prime){
+    console.log(num)
+}
+}
+
+//while loop
+/*while(cond){
+    code of block
+}*/
+
+var n=0
+while(n<=10)
+{
+    console.log("value of n:", n)
+    n += 1
+}
+
+//do while(will execute the code atleast once)
+var m=1
+do{
+    console.log("value",m)
+    m += 1
+}while(m<=10)
+
+    //another example of do while loop
+
+    var db_user = "Admin"
+    var db_password = "Password"
+
+    var username = "Admin"
+    var password = "Password"
+    var ActiveStatus = true
+    var num = 3
+    do{
+        if (db_user == username && db_password == password){
+            console.log("Login successful")
+        }else{
+            console.log("Login fail")
+            ActiveStatus=false
+        }
+        if(ActiveStatus)
+        {
+            for(var i=1;i<=10;i++)
+                console.log(i, "*", num,":",i*num)
+        }
+        num += 1
+        if(num==10){
+            break
+        }
+    }while(ActiveStatus)
+
+        //Reverse a string using loop
+        var str= "divya"
+        var rev = " "
+        for(var i=str.length-1 ; i>=0 ; i--) 
+        {
+            
+            rev += str[i]
+
+        }
+        console.log(rev)
+
+        //Find largest number in array
+        var arr1 = [3 , 13, 2, 11, 0]
+        var temp = 0
+        for(var val of arr1){
+            if(val > temp){
+                 temp = val
+               
+            }
+            
+           }
+        console.log(temp)
+
+        //Create star pattern using nested loop
+        
+        for (let i = 1; i <= 3; i++) {
+  let row = "";
+  for (let j = 1; j <= 3; j++) {
+    row += "* ";
+  }
+  console.log(row);
 }
