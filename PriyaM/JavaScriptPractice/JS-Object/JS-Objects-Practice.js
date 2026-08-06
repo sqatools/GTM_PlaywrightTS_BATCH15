@@ -200,7 +200,7 @@ Object.seal(EmployeeDetails)
 
 // update existing property.
 
-EmployeeDetails.age = 40.00.
+EmployeeDetails.age = 40
 console.log(EmployeeDetails)
 // { name: 'Adam', age: 40, email: 'adam@gmail.com', phone: 56734243 }
 
