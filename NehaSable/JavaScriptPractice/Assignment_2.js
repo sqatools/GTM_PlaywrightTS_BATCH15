@@ -177,3 +177,12 @@ for (var i = 0; i < array2.length; i++) {
         }
     }
 }
+//Write a program find the max value from object
+var Obj={'a':300,'b':400,'c':500,'d':7788}
+var maxValue=0;
+for(var key in Obj){
+    if(Obj[key]>maxValue){
+        maxValue=Obj[key];
+    }
+}
+console.log("The maximum value in the object is: ", maxValue);
