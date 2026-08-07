@@ -34,7 +34,7 @@ var FuritPurchased={Apple:20, Banana:50, Mango:30,WaterMelon:10, Litchi:25}
 // if total units>=100 <=300 perunit charge is 50
 // if total unit >300 per unit charge is 100
 var CustDet={
-    Rahul:200:0, Mohan:250:0,ravi:300,Rohan:350,Raghav:450}
+    Rahul:200, Mohan:250,ravi:300,Rohan:350,Raghav:450}
 
 for(var un in CustDet)
 {
@@ -53,6 +53,39 @@ for(var un in CustDet)
         bill=CustDet[un]*100
     
     }
+    
 
     console.log(un,'Units:',CustDet[un],'Bill Amount is',bill);
 }
+const products = {
+    p1: { category: "Electronics" },
+    p2: { category: "Furniture" },
+    p3: { category: "Electronics" },
+    p4: { category: "Books" },
+    p5: { category: "Books" }
+};
+cat=""
+catg={}
+for(var p in products)
+{
+    //to chekc that the categrory is already counted or not if yes then continue to next category
+    if(Object.hasOwn(catg,products[p].category)==true)
+         {
+            continue;
+         }
+    var cat=products[p].category //store the ccateogory in a variable
+    count=0
+    for (var i in products)
+    {
+        if(products[i].category==cat)
+        {
+            count+=1;
+          
+        }
+
+    }
+    catg[cat]=count;   
+}
+console.log(catg)
+
+//***************************************************************
