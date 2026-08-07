@@ -138,3 +138,51 @@ for(var i=0; i<words.length; i++){
 }
 console.log("The string with duplicate words removed is: ", uniqueWords.join(" "));
 
+// write a program to get value from array which are prime number
+var primeValues=[4,6,7,11,13,16,25,29]
+var primeNumbers=[];
+for(var i=0; i<primeValues.length; i++){
+    var isPrime=true;
+    for(var j=2; j<primeValues[i]; j++){
+        if(primeValues[i]%j==0){
+            isPrime=false;
+            break;
+        }
+    }
+    if(isPrime==true && primeValues[i]>1){
+        primeNumbers.push(primeValues[i]);
+    }   
+    console.log("The prime numbers in the array are: ", primeNumbers);
+
+}
+
+//write a program to get combination of two values who sum is 10
+
+var array2 = [4, 6, 7, 12, 9, 3, -2, 8, 2, 1]
+
+var sum = 10;
+var combinations = [];
+var addition = 0;
+for (var i = 0; i < array2.length; i++) {
+    for (var j = i + 1; j < array2.length; j++) {
+
+        addition = array2[i] + array2[j];
+        if (addition === sum) {
+            console.log("The combination of two values whose sum is 10: ", array2[i], array2[j]);
+
+        }
+        else{
+            console.log("The combination of two values whose sum is not 10: ", array2[i], array2[j]);
+
+        }
+    }
+}
+//Write a program find the max value from object
+var Obj={'a':300,'b':400,'c':500,'d':7788}
+var maxValue=0;
+for(var key in Obj){
+    if(Obj[key]>maxValue){
+        maxValue=Obj[key];
+    }
+}
+console.log("The maximum value in the object is: ", maxValue);

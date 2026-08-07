@@ -1,4 +1,4 @@
-var str="dnyaneshwar"
+var str="hello"
 
 var count ={}
 

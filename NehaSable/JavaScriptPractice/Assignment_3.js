@@ -64,3 +64,28 @@ else{
     console.log("The string does not contain numbers: ", numbers);
 }
 
+var ConsumerDetails={
+Rahul:200,
+Mohan:250,
+Ravi:300,
+Rohan:350,
+Raghav:400
+}
+//TotalUnit<=100 then charges is 25 reupee
+//TotalUnit>=100 and <=300 then charges is 50 Rupee
+//TotalUnit>300 per unit is 100 
+
+for(var consumer in ConsumerDetails){
+if(ConsumerDetails[consumer]<=100){
+    var charges=25;
+    console.log("Consumer: ", consumer, "Total Unit: ", ConsumerDetails[consumer], "Charges: ", charges);
+    if(ConsumerDetails[consumer]>=100 && ConsumerDetails[consumer]<=300){
+        var charges=50;
+        console.log("Consumer: ", consumer, "Total Unit: ", ConsumerDetails[consumer], "Charges: ", charges);
+    }
+    if(ConsumerDetails[consumer]>300){
+        var charges=100;
+        console.log("Consumer: ", consumer, "Total Unit: ", ConsumerDetails[consumer], "Charges: ", charges);
+    }
+}
+}
