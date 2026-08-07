@@ -98,3 +98,82 @@ Write a JavaScript program to print a butterfly pattern.
 Write a JavaScript program to print a sandglass pattern.
 Write a JavaScript program to print a zigzag pattern.
 Write a JavaScript program to create a simple number guessing game using loops.
+
+String Practice questions
+Get the First and Last 2 Characters
+Find the Length of the Longest String in an Array
+Repeat the Last Two Characters Four Times
+Reverse a String if Its Length is a Multiple of 4
+Count Occurrences of a Substring
+Check Whether a Character is a Vowel or Consonant
+Find the Longest and Shortest Word
+Find the Most Frequently Repeated Character
+Calculate String Length Without Using length Property
+Replace Every Second Occurrence of a Character with '$'
+Swap the First and Last Character
+Swap the First and Last Character of Every Word
+Count Vowels in Each Word
+Repeat Vowels Three Times and Consonants Twice
+Check Whether a String is a Palindrome
+Reverse the Entire String
+Calculate String Length
+Count Frequency of Every Character
+Combine Two Strings
+Print Characters at Even Positions
+Check Whether the String Contains Numbers
+Count Total Vowels
+Count Total Consonants
+Print Characters at Odd Positions
+Remove Duplicate Characters
+Check Whether a String Contains Special Characters
+Exchange the First and Last Character of the Entire String
+Convert All Characters to Uppercase
+Remove Newline Characters
+Split and Join a String
+Format a Floating-Point Number
+Convert Number Words into Digits
+Find the Position of a Word
+Count Occurrences of a Word
+Find the Least Frequent Character
+Find Words Greater Than a Given Length
+Get the First Four Characters
+Create a String Using the First Two and Last Two Characters
+Print the Mirror Image of a String
+Split a String on Vowels
+Replace Multiple Words
+Replace Multiple Characters
+Remove Empty Strings from an Array
+Remove Punctuation
+Find Duplicate Characters
+Check Whether One String is a Subset of Another
+Sort Characters in a String
+Generate a Random Binary String
+Check Whether a Substring Exists
+Find Frequency of All Substrings
+Check Whether Two Strings are Rotations of Each Other
+Remove All Whitespaces from a String
+Capitalize the First Letter of Every Word
+Convert the First Letter of Every Word to Lowercase
+Find the ASCII Value of Each Character
+Count the Number of Digits in a String
+Remove All Digits from a String
+Replace Spaces with Hyphens
+Count the Number of Words in a Sentence
+Find the Middle Character of a String
+Remove the First Occurrence of a Character
+Remove the Last Occurrence of a Character
+Find All Positions of a Character
+Find the First Non-Repeated Character
+Find the First Repeated Character
+Reverse Every Word in a Sentence
+Reverse the Order of Words
+Find the Longest Palindromic Word
+Count Uppercase and Lowercase Letters
+Check Whether a String Starts and Ends with the Same Character
+Remove Consecutive Duplicate Characters
+Compress a String Using Character Count
+Expand a Compressed String
+Find the Common Characters Between Two Strings
+Remove Common Characters from Two Strings
+
+
