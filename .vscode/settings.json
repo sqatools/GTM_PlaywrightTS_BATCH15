@@ -13,7 +13,8 @@
         "*": true,
         "markdown": false,
         "scminput": false,
-        "javascript": false,
+        "javascript": true,
+        "typescript": true,
         "plaintext": true
     },
     "workbench.editor.enablePreview": false

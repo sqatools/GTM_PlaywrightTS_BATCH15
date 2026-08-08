@@ -54,17 +54,38 @@ console.log(output)
 
 // write a program to find out the second max value from array
 
-var arr3=[20,30,10,15,25.50,100,75,64]
-var max_value =[]
-var second_max=[]
+var arr3=[20,30,10,15,25,50,100,75,64]
+var max_value =0
+var second_max=0
 for (var num of arr3){
-    if (num>max_value) { //  20>0  |30>20
-        second_max=max_value  //0
-        max_value=num // 20
+    if (num>max_value) { //  20>0  |30>20 -true| 10>30-false
+        second_max=max_value  //0 | 20
+        max_value=num // 20     |30
     } 
-    else if(num> second_max  && num<second_max)
-        second_max=num
+    else if(num> second_max  && num<max_value)  //10> 
+        second_max=num    //30
         
 }
 
 console.log("second max value :", second_max)
+
+// write a program to get the values from array which are prime numbers
+
+var arr4 = [2, 3, 12, 17, 18, 19, 21, 23, 27, 30];
+
+for (var num of arr4) {
+    var prime = true;
+
+    for (var i = 2; i < num; i++) {
+        if (num % i == 0) {
+            prime = false;
+            break;
+        }
+    }
+
+    if (prime) {
+        console.log("This is prime number:", num);
+    }
+}
+
+//
