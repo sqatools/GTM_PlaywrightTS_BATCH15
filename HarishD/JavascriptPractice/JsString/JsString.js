@@ -76,6 +76,7 @@ console.log("#################################")
 var s6 = "JavaScript Programming"
 console.log(s6.slice(0, 10)) // JavaScript
 console.log(s6.slice(11))
+console.log(s6.slice(0, 5))
 
 
 console.log("#################################")
