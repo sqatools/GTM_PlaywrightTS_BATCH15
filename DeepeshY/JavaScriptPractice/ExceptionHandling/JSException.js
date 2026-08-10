@@ -112,6 +112,8 @@ function GetArraySum(arrValues) {
 
 
 console.log("#############################")
+// Nested exception : when we declare one exception block on another exception block than it is
+// called nested exception.
 
 function  nestedExceptionHandling() { 
     try {
@@ -120,7 +122,7 @@ function  nestedExceptionHandling() {
         var d = 10
         console.log("addition :", a+b)
         var c = 5*d
-        console.log("value of :", c)
+        console.log("value of c:", c)
 
         try {
             console.log("we are inner code block")
