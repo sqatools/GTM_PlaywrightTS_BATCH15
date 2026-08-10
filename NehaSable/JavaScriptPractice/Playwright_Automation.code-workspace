@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../../../probenchautomationtest/Playwright_Automation"
+		},
+		{
+			"name": "GTM_PlaywrightTS_BATCH15",
+			"path": "../.."
+		}
+	],
+	"settings": {}
+}
