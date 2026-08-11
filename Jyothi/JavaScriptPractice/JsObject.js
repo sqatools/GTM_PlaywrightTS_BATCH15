@@ -29,3 +29,28 @@ for(var electric in Customerdetails)
     totalbill=totalbill+bill
 }
 console.log("TotalBill:",totalbill)
+
+var arr=[7,8,5,6,7,8,9]
+var result=0
+for(var val of arr)
+{
+    if(!result.includes(val))
+    {
+        result.push(val)
+    }
+}
+console.log(result)
+
+const countryCodes = {
+    India: "IN",
+    America: "US",
+    Japan: "JP"
+};
+
+let result = {};
+
+for (let val in countryCodes) {
+    result[countryCodes[val]] = val;
+}
+
+console.log(result);

@@ -105,6 +105,42 @@ function GetArraySum(arrValues) {
     
 }
 
-GetArraySum([4, 5, 6, 7, 8, 2, 5, 6])
+//GetArraySum([4, 5, 6, 7, 8, 2, 5, 6])
 // error.message: value can not be more than 20
 // Error name : Error
+
+
+
+console.log("#############################")
+
+function  nestedExceptionHandling() { 
+    try {
+        var a = 20
+        var b = 60
+        var d = 10
+        console.log("addition :", a+b)
+        var c = 5*d
+        console.log("value of :", c)
+
+        try {
+            console.log("we are inner code block")
+            var x = 100
+            var y = 200
+            console.log(x !== y)
+            console.log(x !== z)
+
+        } catch(error) {
+            console.log("inner exception  :", error.message)
+            console.log("inner exception name :", error.name)
+        }
+
+    } catch(error) {
+        console.log("outer exception  :", error.message)
+        console.log("outer exception name :", error.name)
+    }
+
+
+}
+
+
+nestedExceptionHandling()
