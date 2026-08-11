@@ -153,6 +153,27 @@ for (var char of s10) {
 
 console.log("Duplicate count:", count);  
 
+//8. Find the Most Frequently Repeated Character
+
+var Input= "mpromgrammingppm"
+var MFchar = ""
+var MCOunt = 0
+var output = {}
+for(var char of Input) {
+    if (Object.hasOwn(output, char)) {
+        output[char] += 1
+        if (output[char] >= MCOunt) {
+            MCOunt = output[char]
+            MFchar = char
+        }
+    } else {
+        output[char] = 1
+    }
+}
+console.log(output)
+console.log("Max frequency character :", MFchar, MCOunt)
+
+
 
 //9. Calculate String Length Without Using length Property
 
