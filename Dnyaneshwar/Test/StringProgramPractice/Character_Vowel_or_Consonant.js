@@ -6,3 +6,4 @@ if("aeiou".includes(ch)){
 else{
     console.log("its not vovels")
 }
+
