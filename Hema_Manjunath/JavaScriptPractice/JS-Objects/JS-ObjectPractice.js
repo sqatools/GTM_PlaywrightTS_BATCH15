@@ -147,3 +147,14 @@ console.log(combinedUsers)
 
 console.log(nonAdminUser.user03)
 console.log(AdminUser.user05)
+
+
+
+var student = {
+    name: 'Hema',
+    age: 35,
+    details() {
+        console.log("The name of Student is", this.name, "and age is", this.age)
+    }
+}
+student.details()

@@ -12,7 +12,9 @@ for(var i=0;i<str.length;i++)
     }
 }
 
-if(hasnumber){
+if(hasnumber)
+     {
+
     console.log("string has number")
 }
 else{
