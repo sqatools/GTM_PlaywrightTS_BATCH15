@@ -2,6 +2,7 @@ var str="dnyaneshwar"
 
 var count={}
 
+
 for(var ch of str)
 {
     if(count[ch])
@@ -10,7 +11,6 @@ for(var ch of str)
     }
     else{
         count[ch]=1
-
     }
 }
 console.log(count)

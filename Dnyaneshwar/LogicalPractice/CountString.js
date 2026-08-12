@@ -1,8 +1,8 @@
-var str="aabbb"
+var str="aabbbccccddddd"
 
 var count={}
 
-var result=""
+var reult=""
 
 for(var ch of str)
 {
@@ -14,10 +14,10 @@ for(var ch of str)
         count[ch]=1
     }
 }
-console.log(count)
 
 for(var ch in count)
 {
-    result = result +count[ch]+ch
+    reult=reult+count[ch]+ch+" "
 }
-console.log(result)
+
+console.log(reult)
