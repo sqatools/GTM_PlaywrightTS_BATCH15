@@ -37,3 +37,4 @@ var userDetails:{name:string, age:number, email:string} =
     email:'mohan@yopmail.com'
 }
 console.log(userDetails)//{ name: 'Mohan', age: 40, email: 'mohan@yopmail.com' }
+
