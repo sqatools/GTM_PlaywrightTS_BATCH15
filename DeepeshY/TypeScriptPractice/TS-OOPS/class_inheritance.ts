@@ -21,6 +21,7 @@ class PQR extends ABC {
     p2: number
 
     constructor(p1: number, p2: number, n1:number, n2:number) {
+        // super keyword is used to call the parent class constructor
         super(n1, n2)
         this.p1 = p1
         this.p2 = p2
@@ -36,7 +37,7 @@ class PQR extends ABC {
         console.log("b1 value:", this.b1)
     }
 
-    }
+}
 
 
 // Object of the clas
