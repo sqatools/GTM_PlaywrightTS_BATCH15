@@ -34,3 +34,9 @@ var setValues = new Set(["rohit", "virat", "vaibhav", "abhishek", "surya","Ram"]
 for(var val of setValues){
     console.log(val)
 }
+
+
+//Map
+var numbers =[1,2,3]
+var result= numbers.map(num => num*3)
+console.log(result)
