@@ -74,12 +74,12 @@ for (var fruit in FruitPurchased) {
     TotalBill += FruitBill
 
     // update the inventory
-    FruitInventory[fruit]=FruitInventory[fruit]-FruitQuantity
+    FruitInventory[fruit] = FruitInventory[fruit] - FruitQuantity
 
 
 }
 console.log("Total Bill:", TotalBill)
-console.log("Inventory of fruit :",FruitInventory )
+console.log("Inventory of fruit :", FruitInventory)
 
 
 
@@ -89,14 +89,35 @@ console.log("Inventory of fruit :",FruitInventory )
 // if totalunit >300 : per unit is 100 rupee
 
 
-CustomersDetails = {
+var CustomersDetails = {
     Rahul: 200,
-    Mohan : 250,
+    Mohan: 250,
     Ravi: 300,
-    Rohan : 350,
-    Raghav: 450 
+    Rohan: 350,
+    Raghav: 450
 }
-for (var bills in CustomersDetails)
-{
-    console.log(CustomersDetails[bills])
+
+for (var customer in CustomersDetails) {
+
+    var totalUnit = CustomersDetails[customer]
+    var perUnitCharge
+
+    if (totalUnit <= 100) {
+        perUnitCharge = 25
+    }
+    else if (totalUnit > 100 && totalUnit <= 300) {
+        perUnitCharge = 50
+    }
+    else {
+        perUnitCharge = 100
+    }
+
+    var totalBill = totalUnit * perUnitCharge
+
+    console.log(
+        "Customer:", customer,
+        "Units:", totalUnit,
+        "Per Unit:", perUnitCharge,
+        "Total Bill:", totalBill
+    )
 }
