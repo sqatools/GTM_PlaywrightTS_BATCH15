@@ -39,7 +39,7 @@ console.log(arr3)
 // [ 3, 3.5, 100, 'Hello', [ 'array1', 'ashish' ], { a: 345 } ]
 
 
-console.log("#############declAre object data type ################")
+console.log("#############declare object data type ################")
 // DECLARE OBJECT DATA TYPE
 var UserDetails: {name: string, age: number, email: string} = {
     name: "Mohan",
