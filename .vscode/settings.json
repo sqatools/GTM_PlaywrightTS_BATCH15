@@ -1,4 +1,24 @@
 {
     "chat.disableAIFeatures": false,
+<<<<<<< HEAD
     "code-runner.enable": false
+=======
+    "code-runner.enable": false,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.inlineSuggest.enabled": true,
+    "javascript.suggest.completeFunctionCalls": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "javascript": true
+    },
+    "workbench.editor.enablePreview": false
+>>>>>>> 29f1427e4589fa5f687a83686ce8c5ab90612950
 }

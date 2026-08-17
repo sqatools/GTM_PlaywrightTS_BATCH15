@@ -12,6 +12,7 @@ console.log("Number of Vowels", count);
 
 //Write a program to repeat of first character of word twice
 //output:"RRohit VVirat VVaibhav ABbhishek SSurya"
+<<<<<<< HEAD
 var str1= "Rohit Virat Vaibhav Abhishek Surya"
 const words_array=str1.split(" ")
 var output = " "
@@ -23,6 +24,21 @@ for(var word of words_array){
     output= output+" "+newWord
 }
 console.log(output)
+=======
+
+var str1 = "Rohit Virat Vaibhav Abhishek Surya";
+const words_array = str1.split(" ");
+var output = "";
+
+console.log("words_array:", words_array);
+
+for (var word of words_array) {
+    var first_char = word[0];
+    var newWord = `${first_char}${word}`;
+    output = output + (output ? " " : "") + newWord;
+}
+console.log(output);
+>>>>>>> 29f1427e4589fa5f687a83686ce8c5ab90612950
 
 //Write a program to get first last characters of each word
 //Outpt: "Rt Vt Vv Ak Sa"
