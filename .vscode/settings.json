@@ -14,10 +14,11 @@
     "javascript.suggest.completeFunctionCalls": true,
     "github.copilot.enable": {
         "*": true,
-        "plaintext": false,
         "markdown": false,
         "scminput": false,
-        "javascript": true
+        "javascript": true,
+        "typescript": true,
+        "plaintext": true
     },
     "workbench.editor.enablePreview": false
 >>>>>>> 29f1427e4589fa5f687a83686ce8c5ab90612950

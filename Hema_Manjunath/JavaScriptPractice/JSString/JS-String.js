@@ -36,3 +36,31 @@ console.log("I want to replace completly :" , s33.replaceAll('Playwright', 'Sele
 //trim method
 var s1="  Programming      Language"
 console.log(s1.trim())
+
+// Split method
+var s2="we-are-learning-java, script"
+var result=s2.split("-")
+console.log("result:", result)
+
+// Indexof method : 
+var v4="Learning  JavaScript is a fun "
+console.log(v4.indexOf("J"))
+
+// if given search character is not avalable it throws -1
+console.log(v4.indexOf("Y"))
+
+//Slice method : This method return small string from long String
+//Slice(Start Index, last Index)
+
+var v2="Javascript learning"
+console.log(v2.slice(0,10))
+console.log(v2.slice(4,10))
+
+//concat method
+//Its combine the two value and combine
+
+var a1="hello"
+var a2="Welcome"
+
+var result=a1.concat(" ",a2)
+console.log(result)
