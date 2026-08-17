@@ -1,1 +1,2 @@
-P1: Good afternoon
+p1,p2: good afternoon, good evening
+
