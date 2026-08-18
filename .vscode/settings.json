@@ -1,5 +1,8 @@
 {
     "chat.disableAIFeatures": false,
+<<<<<<< HEAD
+    "code-runner.enable": false
+=======
     "code-runner.enable": false,
     "editor.quickSuggestions": {
         "other": true,
@@ -18,4 +21,5 @@
         "plaintext": true
     },
     "workbench.editor.enablePreview": false
+>>>>>>> 29f1427e4589fa5f687a83686ce8c5ab90612950
 }

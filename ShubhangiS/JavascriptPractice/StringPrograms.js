@@ -169,6 +169,23 @@ var vowels= "aeiouAEIOU"
 
     // Find the character with the highest frequency.
     var input= "Programming"
+var MFchar = ""
+var MCOunt = 0
+var output = {}
+for(var char of input) {
+    if (Object.hasOwn(output, char)) {
+        output[char] += 1
+        if (output[char] >= MCOunt) {
+            MCOunt = output[char]
+            MFchar = char
+        }
+    } else {
+        output[char] = 1
+    }
+    console.log("Max frequency character :", MFchar, MCOunt)
+}
+console.log(output)
+console.log("Max frequency character :", MFchar, MCOunt)
 
 
     // Find the length of a string using loop logic only
@@ -210,3 +227,87 @@ console.log("String is Palindrome:")
         rev= rev + input.charAt(i)
     }
     console.log("Reverse string is: " + rev)
+
+
+    // Join two strings together:
+
+    var str1="Hello"
+    var str2="World"
+    var joined=str1 + str2
+    console.log("Joined string is: " + joined)
+
+    //  Display characters at even index positions.
+    input="Javascript"
+
+    for(var i=0; i< input.length; i++){
+
+        if(i%2==0){
+
+            console.log("Even characters:" + input.charAt(i))
+        }
+    }
+
+
+   // Determine whether the string contains any numeric digit.
+
+   var input="code123"
+
+   var hasDigit = false;
+
+   for(var i=0; i< input.length; i++){
+
+   if(input.charAt(i) >= "0" && input.charAt(i) <= "9"){
+            hasDigit = true;
+            break;
+
+   }
+}
+    if(hasDigit){
+        console.log("String contains numeric digit")
+    }else{
+        console.log("String does not contain numeric digit")
+    }
+
+    // Count all consonants present in the string.
+
+    var s2 = "JavaScript"
+var count = 0
+var vowels = "aeiouAEIOU"
+for(var char of s2) {
+    if(!vowels.includes(char)) {
+        count += 1
+    } else {
+        continue
+    }
+}
+console.log("Total consonent count :", count)
+
+// Display characters at odd index positions.
+
+var input= "abcdefg"
+for(var i=0; i< input.length; i++){
+
+        if(i%2!==0){
+
+            console.log("Odd characters:" + input.charAt(i))
+        }
+    }
+
+
+    // convert all lowercase letters of a string into uppercase.
+
+    var input= "I live in Pune"
+
+    var upper= input.toUpperCase()
+
+    console.log("Upeercase: " + upper)
+
+
+    // find the position of a specified word in a sentence.
+
+   var  Sentence= "I am solving string problems"
+    var input= sentence.split(" ")
+
+   var result= input.indexOf( "problems")
+
+   console.log("Result is: " + result)
