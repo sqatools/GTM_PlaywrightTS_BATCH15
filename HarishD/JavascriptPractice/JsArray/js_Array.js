@@ -89,15 +89,15 @@ console.log("Array 5 :", str5)
 
 console.log("############################")
 var arrA = [5, 6, 7, 2, 4, 12, 56]
-// Add 3 values at index 3 and remove 1 value
-arrA.splice(3, 1, 100, 200, 'Hello')
+// Add 3 values at index 3 and remove 2 value
+arrA.splice(3, 2, 100, 200, 'Hello')
 console.log("arr A :", arrA)
 // [ 5, 6, 7, 100, 200, 'Hello', 4, 12, 56 ]
 
 
 arrA.splice(2, 3, 500, 700, 'JavaScript')
-console.log("arr A :", arrA)
-// arr A : [ 5, 6, 500, 700, 'JavaScript', 'Hello', 4, 12, 56 ]
+console.log("arr A :", ar6rA)
+// arr A : [ 5, , 500, 700, 'JavaScript', 'Hello', 4, 12, 56 ]
 
 var arrB = [5, 7, 8, 2, 4, 15]
 var out = arrB.pop() * 100
@@ -113,12 +113,12 @@ console.log("##########################")
 // slice method: it will return sub array from target array.
 // slice(start index, end inded)
 // Output will include stat index and exclude to last index. 
-var arrD = ['JOhn', 'jack', 'Frank', 3, 5, 6, 7]
-console.log(arrD.slice(1, 5)) // [ 'jack', 'Frank', 3, 5 ]
+var arrD = ['JOhn', 'jack', 'Frank', 3, 8, 6, 7]
+console.log(arrD.slice(2, 5)) // [ 'jack', 'Frank', 3, 5 ]
 console.log("Arr: ", arrD) // [ 'JOhn', 'jack', 'Frank', 3, 5, 6, 7 ]
 
 console.log("##########################")
-//include method : It will return True or False if value is avalab;e
+//include method : It will return True or False if value is available
 var A1 = [5, 7, 8, 23, 45]
 console.log(A1.includes(35)) // false
 console.log(A1.includes(23)) // true
