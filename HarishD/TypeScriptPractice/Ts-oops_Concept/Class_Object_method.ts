@@ -29,7 +29,7 @@ class person {         // class is a keyword
 
 //Object of the class
 const obj = new person()    //object created 
-//access the method using class onj
+//access the method using class obj
 obj.success()
 obj.addition(50,69)
 //obj.multiplication(20,5)--Static method cannot access by using obj
