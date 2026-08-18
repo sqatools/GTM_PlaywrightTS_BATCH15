@@ -16,6 +16,7 @@ class PQR extends ABC{
     p1:number 
     p2:number
     constructor(m1:number,m2:number,n1:number,n2:number){
+        // super keyword calls the parent class constructor and passes the values to it
         super(n1,n2)
         this.p1=m1
         this.p2=m2
@@ -34,3 +35,4 @@ obj5.showAllDetails()
 4
 30
 40 */
+//a1 and b1 taking values as 30 and 40 instead of 3 and 4

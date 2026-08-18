@@ -112,6 +112,9 @@ console.log("Array 5 :", str5)
 // add JAVA at index 1 and remove 2 values from that position.
 str5.splice(1, 2, "JAVA")
 console.log("Array 5 :", str5)
+<<<<<<< HEAD
+// [ 'we', 'JAVA', 'learning', 'Typescript' ]
+=======
 // [ 'we', 'JAVA', 'learning', 'Typescript' ]
 
 console.log("############################")
@@ -206,3 +209,4 @@ var Users = ["Rahul", "Rohit", "Roman", "Raghav"]
 var result = Users.join(" ")
 console.log("result :", result)
 // Rahul Rohit Roman Raghav
+>>>>>>> 29f1427e4589fa5f687a83686ce8c5ab90612950
