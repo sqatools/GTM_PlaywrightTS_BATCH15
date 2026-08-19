@@ -1,26 +1,16 @@
-var prime=(num) =>{
-
-
- if (num <= 1) {
-        return false;
+var Prime = (num) => {
+    if (num <= 1) {
+        return `${num} is not a Prime Number`;
     }
 
-    for (var i = 2; i <= Math.sqrt(num); i++) {
-        if (num % i == 0) {
-            return false;
+    for (var i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return `${num} is not a Prime Number`;
         }
     }
 
-    return true;
-}
+    return `${num} is a Prime Number`;
+};
 
-
-
-
-if (prime(17)) {
-    console.log(num + " is a Prime Number");
-} else {
-    console.log(num + " is Not a Prime Number");
-}
-
-
+console.log(Prime(17));
+console.log(Prime(18));
