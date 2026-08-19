@@ -113,6 +113,8 @@ console.log("Array 5 :", str5)
 str5.splice(1, 2, "JAVA")
 console.log("Array 5 :", str5)
 // [ 'we', 'JAVA', 'learning', 'Typescript' ]
+<<<<<<< HEAD
+=======
 
 console.log("############################")
 var arrA = [5, 6, 7, 2, 4, 12, 56]
@@ -206,3 +208,4 @@ var Users = ["Rahul", "Rohit", "Roman", "Raghav"]
 var result = Users.join(" ")
 console.log("result :", result)
 // Rahul Rohit Roman Raghav
+>>>>>>> 29f1427e4589fa5f687a83686ce8c5ab90612950

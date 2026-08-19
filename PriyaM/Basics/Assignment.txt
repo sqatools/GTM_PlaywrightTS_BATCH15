@@ -1,0 +1,179 @@
+10th July 2026
+# Program for Operators to practice:
+
+//1.    Area of Triangle	(Base × Height) / 2
+//2	    Perimeter of Triangle:	Side1 + Side2 + Side3
+//3.	Area of Parallelogram:	Base × Height
+//4.	Area of Rhombus:	(Diagonal1 × Diagonal2) / 2
+//5.	Area of Trapezium:	((Base1 + Base2) × Height) / 2
+//6.	Volume of Cylinder:	π × Radius² × Height
+//7.	Surface Area of Cylinder	2 × π × Radius × (Radius + Height)
+// 8	Volume of Cone	(π × Radius² × Height) / 3
+// 9	Volume of Sphere	(4/3) × π × Radius³
+// 10	Surface Area of Sphere	4 × π × Radius²
+// 11	Speed	:Distance / Time
+// 12	Distance	Speed × Time
+// 13	Time 	Distance / Speed
+// 14	Force	Mass × Acceleration
+// 15	Work Done	Force × Distance
+// 16	Power	Work / Time
+// 17	Kinetic Energy	(1/2) × Mass × Velocity²
+// 18	Potential Energy	Mass × Gravity × Height
+// 19	Momentum	Mass × Velocity
+// 20	Pressure	Force / Area
+// 21	Density	Mass / Volume
+// 22	Simple Interest	(Principal × Rate × Time) / 100
+// 23	Compound Interest	Principal × (1 + Rate/100)^Time − Principal
+// 24	Total Amount (SI)	Principal + Simple Interest
+// 25	Discount Amount	(Price × Discount%) / 100
+// 26	Final Price	Price − Discount
+// 27	GST Amount	(Price × GST%) / 100
+// 28	Total Bill with GST	Price + GST
+// 29	Profit	Selling Price − Cost Price
+// 30	Loss	Cost Price − Selling Price
+// 31	Profit Percentage	(Profit / Cost Price) × 100
+// 32	Loss Percentage	(Loss / Cost Price) × 100
+// 33	Percentage	(Obtained / Total) × 100
+// 34	Average of 5 Numbers	(a+b+c+d+e)/5
+
+Filename : NA
+Status : NA
+
+Beginner Level
+Write a JavaScript program to print numbers from 1 to 10 using a for loop.
+Write a JavaScript program to print numbers from 10 to 1 in reverse order.
+Write a JavaScript program to print all even numbers between 1 and 100.
+Write a JavaScript program to print all odd numbers between 1 and 100.
+Write a JavaScript program to calculate the sum of numbers from 1 to N.
+Write a JavaScript program to calculate the product of numbers from 1 to N.
+Write a JavaScript program to print the multiplication table of a given number.
+Write a JavaScript program to print the multiplication tables from 1 to 10.
+Write a JavaScript program to count the total number of digits in a given number.
+Write a JavaScript program to reverse a given number.
+
+Intermediate Level
+Write a JavaScript program to check whether a given number is a palindrome.
+Write a JavaScript program to find the sum of digits of a given number.
+Write a JavaScript program to find the largest digit in a number.
+Write a JavaScript program to find the smallest digit in a number.
+Write a JavaScript program to calculate the factorial of a number.
+Write a JavaScript program to check whether a number is a prime number.
+Write a JavaScript program to print all prime numbers between 1 and N.
+Write a JavaScript program to count the total number of prime numbers between 1 and N.
+Write a JavaScript program to find the sum of all prime numbers between 1 and N.
+Write a JavaScript program to print the Fibonacci series up to N terms.
+
+Pattern Programs
+Write a JavaScript program to print a right-angled triangle using *.
+Write a JavaScript program to print an inverted right-angled triangle.
+Write a JavaScript program to print a pyramid pattern using *.
+Write a JavaScript program to print an inverted pyramid pattern.
+Write a JavaScript program to print a diamond pattern.
+Write a JavaScript program to print Floyd’s Triangle.
+Write a JavaScript program to print Pascal’s Triangle.
+Write a JavaScript program to print a square pattern using *.
+Write a JavaScript program to print a hollow square pattern.
+Write a JavaScript program to print a hollow pyramid pattern.
+
+Advanced Loop Programs
+Write a JavaScript program to find all Armstrong numbers between 1 and N.
+Write a JavaScript program to check whether a given number is an Armstrong number.
+Write a JavaScript program to find the Greatest Common Divisor (GCD) of two numbers.
+Write a JavaScript program to find the Least Common Multiple (LCM) of two numbers.
+Write a JavaScript program to convert a decimal number to binary.
+Write a JavaScript program to convert a binary number to decimal.
+Write a JavaScript program to calculate the power of a number without using built-in methods.
+Write a JavaScript program to print all perfect numbers between 1 and N.
+Write a JavaScript program to check whether a given number is a perfect number.
+Write a JavaScript program to find the sum of all even numbers between 1 and N.
+
+Nested Loop Programs
+Write a JavaScript program to print a multiplication table using nested loops.
+Write a JavaScript program to print a number triangle pattern.
+Write a JavaScript program to print a character triangle pattern.
+Write a JavaScript program to print a checkerboard (# and *) pattern.
+Write a JavaScript program to print a hollow rectangle using nested loops.
+Write a JavaScript program to print an X pattern using *.
+Write a JavaScript program to print a butterfly pattern.
+Write a JavaScript program to print a sandglass pattern.
+Write a JavaScript program to print a zigzag pattern.
+Write a JavaScript program to create a simple number guessing game using loops.
+
+String Practice questions
+Get the First and Last 2 Characters
+Find the Length of the Longest String in an Array
+Repeat the Last Two Characters Four Times
+Reverse a String if Its Length is a Multiple of 4
+Count Occurrences of a Substring
+Check Whether a Character is a Vowel or Consonant
+Find the Longest and Shortest Word
+Find the Most Frequently Repeated Character
+Calculate String Length Without Using length Property
+Replace Every Second Occurrence of a Character with '$'
+Swap the First and Last Character
+Swap the First and Last Character of Every Word
+Count Vowels in Each Word
+Repeat Vowels Three Times and Consonants Twice
+Check Whether a String is a Palindrome
+Reverse the Entire String
+Calculate String Length
+Count Frequency of Every Character
+Combine Two Strings
+Print Characters at Even Positions
+Check Whether the String Contains Numbers
+Count Total Vowels
+Count Total Consonants
+Print Characters at Odd Positions
+Remove Duplicate Characters
+Check Whether a String Contains Special Characters
+Exchange the First and Last Character of the Entire String
+Convert All Characters to Uppercase
+Remove Newline Characters
+Split and Join a String
+Format a Floating-Point Number
+Convert Number Words into Digits
+Find the Position of a Word
+Count Occurrences of a Word
+Find the Least Frequent Character
+Find Words Greater Than a Given Length
+Get the First Four Characters
+Create a String Using the First Two and Last Two Characters
+Print the Mirror Image of a String
+Split a String on Vowels
+Replace Multiple Words
+Replace Multiple Characters
+Remove Empty Strings from an Array
+Remove Punctuation
+Find Duplicate Characters
+Check Whether One String is a Subset of Another
+Sort Characters in a String
+Generate a Random Binary String
+Check Whether a Substring Exists
+Find Frequency of All Substrings
+Check Whether Two Strings are Rotations of Each Other
+Remove All Whitespaces from a String
+Capitalize the First Letter of Every Word
+Convert the First Letter of Every Word to Lowercase
+Find the ASCII Value of Each Character
+Count the Number of Digits in a String
+Remove All Digits from a String
+Replace Spaces with Hyphens
+Count the Number of Words in a Sentence
+Find the Middle Character of a String
+Remove the First Occurrence of a Character
+Remove the Last Occurrence of a Character
+Find All Positions of a Character
+Find the First Non-Repeated Character
+Find the First Repeated Character
+Reverse Every Word in a Sentence
+Reverse the Order of Words
+Find the Longest Palindromic Word
+Count Uppercase and Lowercase Letters
+Check Whether a String Starts and Ends with the Same Character
+Remove Consecutive Duplicate Characters
+Compress a String Using Character Count
+Expand a Compressed String
+Find the Common Characters Between Two Strings
+Remove Common Characters from Two Strings
+
+
