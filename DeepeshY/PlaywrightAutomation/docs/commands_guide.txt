@@ -24,3 +24,18 @@ Inside that directory, you can run several commands:
 
 # command to execute test  in headed.
 -> npx playwright test --headed
+
+#  command to exexcute test with specific browser in headed mode.
+
+->  npx playwright test --debug --headed --project=chromi
+
+
+# command to execute specific test cases
+-> npx playwright test -g "Enter from and destination city" --headed --project=chromium
+
+# command to execute test case by file.
+-> npx playwright test first_test_file.spec.ts --headed --project=chromium
+
+
+# command to execute test fwith filename
+-> npx playwright test first_test_file.spec.ts --headed --project=chromium
