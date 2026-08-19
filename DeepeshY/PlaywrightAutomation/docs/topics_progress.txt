@@ -1,0 +1,3 @@
+- Playwright Installation and configuration
+- Install playwright extension.
+- Execute test cases againt multiple browsers from command as well as play button.
