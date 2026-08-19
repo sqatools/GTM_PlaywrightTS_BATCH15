@@ -116,7 +116,7 @@ for(var char of Input) {
     } else {
         output[char] = 1
     }
-    console.log("Max frequency character :", MFchar, MCOunt)
+    // console.log("Max frequency character :", MFchar, MCOunt)
 }
 console.log(output)
 console.log("Max frequency character :", MFchar, MCOunt)

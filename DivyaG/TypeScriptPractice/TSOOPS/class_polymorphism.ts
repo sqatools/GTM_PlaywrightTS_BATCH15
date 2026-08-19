@@ -1,5 +1,5 @@
-//Inheritance: One class connected to other using Inheritance.
-//This is single inheritance
+// polymorphism:
+
 
 class ABC{
     a1:number =3
@@ -8,6 +8,9 @@ class ABC{
     constructor(n1:number,n2:number){
         this.a1=n1
         this.b1=n2
+    }
+    addition(){
+        console.log(this.a1+this.b1)
     }
 }
 
@@ -22,17 +25,18 @@ class PQR extends ABC{
         this.p2=m2
     }
 
-    showAllDetails(){
-        console.log(this.p1)
-        console.log(this.p2)
-        console.log(this.a1)
-        console.log(this.b1)
+  addition(){
+    console.log(this.p1+this.p2)
+  }
+
+  /* multiplication(n1:number, n2:number,n3:number){
+    console.log(n1*n2*n3)
+ }
+
+ multiplication(n1:number,n2:number){
+    console.log(n1*n2) */
+ }
     }
-}
+
 const obj5 = new PQR(3,4,30,40)
-obj5.showAllDetails()
-/* 3
-4
-30
-40 */
-//a1 and b1 taking values as 30 and 40 instead of 3 and 4
+obj5.addition()
