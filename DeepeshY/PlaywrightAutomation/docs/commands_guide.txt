@@ -27,7 +27,7 @@ Inside that directory, you can run several commands:
 
 #  command to exexcute test with specific browser in headed mode.
 
-->  npx playwright test --debug --headed --project=chromi
+->  npx playwright test --debug --headed --project=chromium
 
 
 # command to execute specific test cases
