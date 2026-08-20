@@ -1,3 +1,17 @@
 - Playwright Installation and configuration
 - Install playwright extension.
 - Execute test cases againt multiple browsers from command as well as play button.
+- Trace viewer on HTML report.
+  ->  npx playwright test --trace=on
+
+- Video Recording on HTMl Report
+  ->  npx playwright test --video=on
+
+- execute the test and debug it 
+  -> npx playwright test --debug
+
+# Starts the interactive UI mode.
+-> npx playwright test --ui
+-> it will launch UI mode and can execute all the test cases.
+
+- Record test cases using codegen
