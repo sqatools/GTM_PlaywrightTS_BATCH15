@@ -14,7 +14,7 @@ class GrandParent{
         this.GrandParentProperty=GPProperty
     }
     ShowtheGrandParentDetails(){
-        console.log("Grandparent name :", this.GrantParentName)
+        console.log("GrandparentName :", this.GrantParentName)
         console.log("GrandparentProperty:",this.GrandParentProperty)
     }
 }
@@ -31,17 +31,22 @@ class Parent extends GrandParent {
 }
 
 class child extends Parent{
-      childoccupation:string
-      constructor(ChildO:string,PBusiness: string, GPname: string, GPProperty: string){
+      ChildName:string
+      constructor(ChildN:string,PBusiness: string, GPname: string, GPProperty: string){
         super(PBusiness,GPname,GPProperty)
-        this.childoccupation=ChildO
+        this.ChildName=ChildN
       }
 
       showdchilddetails(){
-            console.log("child occupation:",this.childoccupation)
+            console.log("child NAMe:",this.ChildName)
+      }
+
+      showFamilydetail(){
+        this.ShowtheGrandParentDetails()
+        this.ShowParentBusiness()
+        this.showdchilddetails()
       }
 }
 
-const obj= new GrandParent("Vital Rao", "200Acrs","TextileShop")
-obj.ShowtheGrandParentDetails()
-obj.ShowParentBusiness()
+const obj= new child("Harish","Textile","Vital Rao","200Acrs")
+obj.showFamilydetail()

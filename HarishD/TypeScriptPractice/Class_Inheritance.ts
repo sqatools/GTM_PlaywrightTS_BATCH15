@@ -15,6 +15,7 @@ class PQR extends ABC{
     p1:number 
     p2:number
     constructor(m1:number,m2:number,n1:number,n2:number){
+        //super Keyword is used to call the parent class constructr
         super(n1,n2)
         this.p1=m1
         this.p2=m2
