@@ -38,11 +38,27 @@ e.g. -> //tagname[@attribute='value']
 // Advance Xpath Methods:
 
 1. parent: this method will target parent elment wit reference of child eleement
-          e.g ref_tagname[@attribute ='value']/parent:target method
+          e.g ref_tagname[@attribute ='value']/parent:target_tag[@attribute=value]
           -> //td[text()='Mumbai']/parent::tr
+          ->  //td[text()='Mumbai']/parent::tr//input
+          ->  //td[text()='Delhi']/parent::tr//input
          
-2. ancestor
-3. following
-4. following-sibling
-5. preceding
+2. ancestor : It will help to indentify acenstor element with the reference grand child element.
+          e.g ref_tagname[@attribute ='value']/ancestor:target_tag[@attribute=value]
+          -> //td[text()='Kolkata']/ancestor::tbody
+          -> //td[text()='Kolkata']/ancestor::table[@id='cities']
+
+3. following : Indentify all elements below side of reference element on webpage
+           e.g ref_tagname[@attribute ='value']/following:target_tag[@attribute=value]
+           -> //input[@id="fromcity"]/following::input[@id='street_address1']
+           -> //input[@id="fromcity"]/following::a[text()='Login Page']
+   
+4. following-sibling :
+           -> //td[text()='Kolkata']/following-sibling::td
+
+5. preceding :  Indentify all elements above side of reference element on webpage.
+             e.g ref_tagname[@attribute ='value']/preceding:target_tag[@attribute=value]
+             -> //input[@id="fromcity"]/preceding::a[text()='Login Page']
+
 6. prededing-sibling
+            -> //td[text()='Kolkata']/preceding-sibling::td/input
