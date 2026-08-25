@@ -62,3 +62,25 @@ e.g. -> //tagname[@attribute='value']
 
 6. prededing-sibling
             -> //td[text()='Kolkata']/preceding-sibling::td/input
+
+
+###########################################################
+CSS Selectors:
+1. via class name.: with class element can be identified using .classname
+                    ->  header.entry-header>h1
+                    -> .oxd-input.oxd-input--focus
+                    -> .orangehrm-login-forgot
+
+2. by element id:  indentify the element with #idvalue
+                -> #fromcity
+                -> #destcity
+                -> input#destcity
+                -> input#whatsapp
+
+3. attributes : tagname[attribute='value']
+                -> [placeholder="Username"]
+                -> [placeholder="Password"]
+                -> button[type="submit"]
+
+4. Navigation : 
+               -> div[align="left"]>ul>li>input[value='radio_123']
