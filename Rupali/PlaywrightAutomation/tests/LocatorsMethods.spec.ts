@@ -14,7 +14,7 @@ import {test, expect} from '@playwright/test'
 test.describe("Playwright Locators Methods", ()=> {
 
     test("getByRole Method", async({page})=> {
-        await page.goto(""https://testautomationpractice.blogspot.com/p/playwrightpractice.html)
+        await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
         const Prbutton = page.getByRole("button", {name: "Primary Action"})
         // assertion and verify button status.
         await expect(Prbutton).toBeVisible()
@@ -40,38 +40,19 @@ test.describe("Playwright Locators Methods", ()=> {
         await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
         await page.getByLabel("Email Address:").fill("user1@gmail.com")
         await page.getByLabel("Password: ").fill("test@12345")
-        await page.getByLabel("Your Age:").fill("35")
-        await page.getByLabel("Standard").check()
-        await page.getByLabel(" Express").check()
-
-        
-    });
-
-    test("getByPlaceholder() method", async({page})=> {
-        //<input type="text" placeholder="Enter your full name" class="full-width">
-         await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
-         await page.getByPlaceholder("Enter your full name").fill("Rahul Sharma")
-         await page.getByPlaceholder("Type your message here...").fill("Lerning PLAYWRGHHT")
+        await page.getByLabel("Your Age:").fill("34")
+        await page.getByLabel("Standard").click()
 
     });
 
 
-     test("getByTestID, title() method", async({page})=> {
-        //<input type="text" placeholder="Enter your full name" class="full-width">
-         await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
-         await page.getByAltText("logo image").isVisible()
-         await page.getByPlaceholder("Type your message here...").fill("Lerning PLAYWRGHHT")
+})
 
-         // get element by title
-         const textValue = await page.getByTitle("Home page link").textContent()
-         console.log(textValue)
+test("getByplaceholder",async({page})=>{
 
-         // identiyfy elelmentus test id
-         console.log(await page.getByTestId("profile-email").textContent())
-         console.log(await page.getByTestId("profile-name").textContent())
-          console.log(await page.getByTestId("product-card-2").textContent())
-
-    });
-   
-
-});
+  await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
+  await page.getByPlaceholder("Enter your full name").fill("rahul sharma")
+  await page.getByPlaceholder("Phone number (xxx-xxx-xxxx)").fill("99-22-3344556")
+  await page.getByPlaceholder("Type your message here...").fill("I am writing message here to continue the practice of xpath");
+  await page.getByPlaceholder("Search products...").fill("shoes")
+})
