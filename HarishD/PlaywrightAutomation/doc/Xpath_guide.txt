@@ -19,20 +19,30 @@ e.g. -> //tagname[@attribute='value']
 
      // user can provide indexing that starts from 1, if multiple elements are matching.
      -> (//input[@name="firstname"])[2]
+     ->(//input[@type="radio"])[1]
+     ->//input[@type="date"]
+
 
 1. text() method : Identify element with text visible on UI.
     e.g. //tagname[text()='text value']
     ->  //h2[text()=" Travel Details "]
+    ->  //h3[text()=" Number of Additional Passangers"]
     -> //a[text()='Blogs']
+    --> //(//a[text()="Login Page"])[1]
+    -> //option[text()='Add 1 more passenger (100%)']
+    
 
 2. contains method : search element with partial attribute and partial text
    -> e.g.    //taggname[contains(@attribute, "partial value")]
           -> //input[contains(@id, 'billing_n')] 
+          -> (//input[contains(@id,"billing")])[1]
           -> //header[contains(@class, 'entry-he')]
+          ->//input[contains(@id,'email')]
 
    -> e.g. //taggname[contains(text(), "partial text value")] 
          -> //h1[contains(text(), 'Dummy Booking')]
          -> //h2[contains(text(), 'Passenger D')]
+         ->//h2[contains(text(),"Delivery")] 
 
 ###################################
 // Advance Xpath Methods:
@@ -40,8 +50,10 @@ e.g. -> //tagname[@attribute='value']
 1. parent: this method will target parent elment wit reference of child eleement
           e.g ref_tagname[@attribute ='value']/parent:target method
           -> //td[text()='Mumbai']/parent::tr
+          //td[text()="Indore"]/parent::tr
          
 2. ancestor
+
 3. following
 4. following-sibling
 5. preceding
