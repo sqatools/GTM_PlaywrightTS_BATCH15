@@ -8,7 +8,7 @@ class supper{
     bike()
     {
         console.log("bike : supper class")
-    }
+    } 
 
 a:number
 b:number
@@ -26,6 +26,8 @@ constructor(a:number,b:number){
 
 class child extends supper{
 
+    
+
      c:number
      d:number    
 
@@ -41,6 +43,7 @@ class child extends supper{
     }
 
 }
+
 
 var c= new child(10,20,30,40)
 c.bike()

@@ -1,6 +1,5 @@
 console.log("Hello World")
 
-
 var a:number = 10
 console.log(a)  
 
