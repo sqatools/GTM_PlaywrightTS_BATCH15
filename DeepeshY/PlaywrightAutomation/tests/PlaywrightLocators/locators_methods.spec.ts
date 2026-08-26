@@ -14,10 +14,36 @@ import {test, expect} from '@playwright/test'
 test.describe("Playwright Locators Methods", ()=> {
 
     test("getByRole Method", async({page})=> {
-        await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
+        await page.goto(""https://testautomationpractice.blogspot.com/p/playwrightpractice.html)
         const Prbutton = page.getByRole("button", {name: "Primary Action"})
         // assertion and verify button status.
         await expect(Prbutton).toBeVisible()
 
-    })
+        await page.getByRole("textbox", {name: "Username:"}).fill("Rahul")
+        await page.getByRole("checkbox", {name: "Accept terms"}).check()
+
+        const menuitem = await page.getByRole("menuitem", {name: "Products"}).textContent()
+        console.log(menuitem)
+
+    });
+
+    test("getByText Method", async({page})=> {
+        await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
+        const button = page.getByText("Submit Form")
+        expect(button).not.toBeDisabled()
+       
+    });
+
+    test("getByLabel() Method", async({page})=> {
+        //<label for="email">Email Address:</label>
+        // we can user getByLabel method when label is tagname or it could be attrribute ass well
+        await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
+        await page.getByLabel("Email Address:").fill("user1@gmail.com")
+        await page.getByLabel("Password: ").fill("test@12345")
+        
+    });
+
+
+
+
 })
