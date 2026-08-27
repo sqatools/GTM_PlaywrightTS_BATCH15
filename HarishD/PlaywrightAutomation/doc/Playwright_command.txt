@@ -1,14 +1,15 @@
-Run these commands from the `PlaywrightAutomation` directory. After cloning the project, install its local dependencies first:
-
--> npm install
-
 Inside that directory, you can run several commands:
 
 -> npx playwright test
 #Runs the end-to-end tests.
 
+npx playwright show-report
+--> For HTML report
+
+# Starts the interactive UI mode.
 -> npx playwright test --ui
-#Starts the interactive UI mode.
+-> it will launch UI mode and can execute all the test cases.
+
 
 -> npx playwright test --project=chromium
 #Runs the tests only on Desktop Chrome.
@@ -19,8 +20,6 @@ Inside that directory, you can run several commands:
 ->npx playwright test --debug
 #Runs the tests in debug mode.
 
-->npx playwright codegen
-#Auto generate tests with Codegen.
 
 #We suggest that you begin by typing:
 # Execute test cases in headles mode.
@@ -43,3 +42,13 @@ Inside that directory, you can run several commands:
 
 # command to execute test fwith filename
 -> npx playwright test first_test_file.spec.ts --headed --project=chromium
+
+# command to exceute test with trace   for this in setting need to select trace config
+--> npx playwright test --trace=on  
+
+#Auto generate tests with Codegen.
+npx playwright codegen
+--record the test case using codegen
+
+
+
