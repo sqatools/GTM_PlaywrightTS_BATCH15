@@ -56,3 +56,15 @@ test("getByplaceholder",async({page})=>{
   await page.getByPlaceholder("Type your message here...").fill("I am writing message here to continue the practice of xpath");
   await page.getByPlaceholder("Search products...").fill("shoes")
 })
+
+test("getByAltText", async({page})=>{
+await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
+await page.getByAltText("logo image").isVisible();
+
+})
+
+test("getBytitle", async({page})=>{
+await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
+await page.getByTitle("Click to save your changes").click()
+await page.getByTestId("edit-profile-btn").click()
+})
