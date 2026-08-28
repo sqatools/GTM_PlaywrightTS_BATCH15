@@ -14,7 +14,7 @@ import {test, expect} from '@playwright/test'
 test.describe("Playwright Locators Methods", ()=> {
 
     test("getByRole Method", async({page})=> {
-        await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
+        await page.goto(""https://testautomationpractice.blogspot.com/p/playwrightpractice.html)
         const Prbutton = page.getByRole("button", {name: "Primary Action"})
         // assertion and verify button status.
         await expect(Prbutton).toBeVisible()
