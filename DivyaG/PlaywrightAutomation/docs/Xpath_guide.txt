@@ -1,0 +1,83 @@
+Absolute Xpath: An absolute XPath is a complete path from the root element to 
+the desired element. It starts with a single forward slash (/) and specifies 
+each node in the hierarchy. For example, /html/body/div[1]/h1 would select the
+ first h1 element within the first div of the body.
+
+ e.g:/html/body/div[1]/div[1]/div/main/article/div/div[1]/div[2]/div/input
+
+ Relative Xpath: A relative XPath is a path that starts from the current node
+or context
+e.g://tagname[@attribute='value]
+//input[@placeholder='Enter username']
+//input[@placeholder='Enter password']
+//input[@id='password']
+//textarea[@id='address']
+//h1[@class='entry-title']
+//*[@class='entry-title']
+(//input[@name='firstname'])[2]
+(//input[@name='firstname'])[1]
+
+text()method
+//h3[text()=" Number of Additional Passangers"]
+//a[text()='Blogs']
+
+contains method:
+//tagname[contains(@attribute,'partial value')]
+eg: //input[contains(@id,'billing_n')]
+    //h1[contains(@class,'entry-title')]
+//tagname[contains(text(),'partial text value)]
+e.g://h1[contains(text(),'Dummy Booking Website')]
+
+advanced xpath:
+
+ancestor:It will help to identitify ancestor element with ref of 
+grand child element
+//ref_name[@attribute='value']/parent::target name[@attribute='value']
+e.g://td[text()='Pune']/ancestor::tbody
+e.g://td[text()='Pune']/ancestor::table[@id='cities']
+
+parent:
+target parent with reference of child element
+//ref_name[@attribute='value']/parent::target name[@attribute='value']
+//td[text()='Mumbai']/parent::tr
+//td[text()='Pune']/parent::tr//input
+
+preceding:Identify elements above reference element
+e.g://input[@name='firstname']/preceding::input
+//input[@name='firstname']/preceding::a[text()='Login Page']
+
+preceding sibling:
+////td[text()='Kolkata']/preceding-sibling::td
+//td[text()='Kolkata']/preceding-sibling::td/input[@type='checkbox']
+
+following:Identify elements below reference element
+e.g://input[@name='firstname']/following::input
+//input[@name='firstname']/following::input[@id='billing_name']
+//input[@name='firstname']/following::a[@data-type='link']
+//input[@name='firstname']/following::a[text()='Login Page']
+
+following sibling:
+//td[text()='Kolkata']/following-sibling::td
+
+css selectors:
+
+1.Via class name:with class element we can identify using .classname
+e.g: 
+ header.entry-header>h1
+.oxd-input.oxd-input--active
+.oxd-text.oxd-text--p.orangehrm-login-forgot-header
+
+2.by element id:Identify with #idvalue
+e.g:
+#fromcity
+#visadate
+input#whatsapp
+
+3. attribute:tagname[attribute='value']
+e.g:
+[name='firstname']
+button[type='submit']
+
+4.navigation
+div[align='left']>ul>li>input[value='radio_345']
+
