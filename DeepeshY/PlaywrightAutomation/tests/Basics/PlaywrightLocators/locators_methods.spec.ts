@@ -73,5 +73,4 @@ test.describe("Playwright Locators Methods", ()=> {
 
     });
    
-
 });
