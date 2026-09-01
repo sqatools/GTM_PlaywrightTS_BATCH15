@@ -172,3 +172,10 @@ else
 {
     console.log("failed in 1st round")
 }
+
+//ternary operator
+var n3=20
+var result=n3%2==0 ? "correct" : "wrong"
+console.log(result)
+
+

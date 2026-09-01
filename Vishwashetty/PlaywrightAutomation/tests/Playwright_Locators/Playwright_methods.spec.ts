@@ -19,5 +19,59 @@ test.describe("Playwright Locators Methods", ()=> {
         // assertion and verify button status.
         await expect(Prbutton).toBeVisible()
 
-    })
-})
+        await page.getByRole("textbox", {name: "Username:"}).fill("Rahul")
+        await page.getByRole("checkbox", {name: "Accept terms"}).check()
+
+        const menuitem = await page.getByRole("menuitem", {name: "Products"}).textContent()
+        console.log(menuitem)
+
+    });
+
+    test("getByText Method", async({page})=> {
+        await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
+        const button = page.getByText("Submit Form")
+        expect(button).not.toBeDisabled()
+       
+    });
+
+    test("getByLabel() Method", async({page})=> {
+        //<label for="email">Email Address:</label>
+        // we can user getByLabel method when label is tagname or it could be attrribute ass well
+        await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
+        await page.getByLabel("Email Address:").fill("user1@gmail.com")
+        await page.getByLabel("Password: ").fill("test@12345")
+        await page.getByLabel("Your Age:").fill("35")
+        await page.getByLabel("Standard").check()
+        await page.getByLabel(" Express").check()
+
+        
+    });
+
+    test("getByPlaceholder() method", async({page})=> {
+        //<input type="text" placeholder="Enter your full name" class="full-width">
+         await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
+         await page.getByPlaceholder("Enter your full name").fill("Rahul Sharma")
+         await page.getByPlaceholder("Type your message here...").fill("Lerning PLAYWRGHHT")
+
+    });
+
+
+     test("getByTestID, title() method", async({page})=> {
+        //<input type="text" placeholder="Enter your full name" class="full-width">
+         await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
+         await page.getByAltText("logo image").isVisible()
+         await page.getByPlaceholder("Type your message here...").fill("Lerning PLAYWRGHHT")
+
+         // get element by title
+         const textValue = await page.getByTitle("Home page link").textContent()
+         console.log(textValue)
+
+         // identiyfy elelmentus test id
+         console.log(await page.getByTestId("profile-email").textContent())
+         console.log(await page.getByTestId("profile-name").textContent())
+          console.log(await page.getByTestId("product-card-2").textContent())
+
+    });
+   
+
+});

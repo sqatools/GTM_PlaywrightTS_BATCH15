@@ -1,26 +1,20 @@
 // Q1 : remove duplicate characters from string
 var str1 = "Cricbuzz is not associated";
 var output = "";
-<<<<<<< HEAD
 
 for (var chr1 of str1) {
 
-=======
 for (var chr1 of str1) {
->>>>>>> 29f1427e4589fa5f687a83686ce8c5ab90612950
     if (output.includes(chr1)) {
         continue;
     }
     else {
         output += chr1;
     }
-<<<<<<< HEAD
 
 }
 
-=======
 }
->>>>>>> 29f1427e4589fa5f687a83686ce8c5ab90612950
 console.log("output :", output);
 
 console.log("################################")
@@ -86,10 +80,8 @@ var result = store.repeat(4)
 console.log(result)
 
 
-<<<<<<< HEAD
 
 
-=======
 //5. Count Occurrences of a Substring
 
 var str5 = "banana"
@@ -242,4 +234,3 @@ console.log(count)
     }
   }
   console.log(output)
->>>>>>> 29f1427e4589fa5f687a83686ce8c5ab90612950
