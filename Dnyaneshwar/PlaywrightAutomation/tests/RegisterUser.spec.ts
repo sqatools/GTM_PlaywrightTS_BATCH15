@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
-test.only('Register user', async ({ page }) => {
-  await page.goto('https://rahulshettyacademy.com/client/#/auth/login');  
+test('Register user', async ({ page }) => {
+  await page.goto('https://rahulshettyacademy.com/client/#/auth/login');
   await page.locator(".text-reset").click();
   await page.locator("#firstName").fill("Dnyaneshwar");
   await page.locator("#lastName").fill("Patil");
@@ -17,11 +17,11 @@ test.only('Register user', async ({ page }) => {
 
   //await page.locator(".col-md-1").check();
 
- //await page.locator(".col-md-1").uncheck();
+  //await page.locator(".col-md-1").uncheck();
 
   await page.locator("#login").click();
 
 
   //page.pause();
-  
+
 })
