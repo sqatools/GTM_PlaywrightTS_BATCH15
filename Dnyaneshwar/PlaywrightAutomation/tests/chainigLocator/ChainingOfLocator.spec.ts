@@ -18,10 +18,7 @@ await page.locator("tr").filter({hasText :'Orangabad'}).getByRole("checkbox").ch
 // select the redio with the help of text filter
 
 await page.getByRole("listitem").filter({hasText: 'Dummy return ticket – $300 '}).getByRole("radio").check();
-
-
-
-    
+   
 })
 test("select item with the help of itemName",async ({page})=>{
 
@@ -35,10 +32,7 @@ test("select item with the help of itemName",async ({page})=>{
  const inventory=page.locator(("div[class='inventory_item']")).filter({hasText:"Sauce Labs Backpack"})
 
  await inventory.getByRole('button', {name: "Add to cart"}).click()
-
-
-
-             
+            
 })
 
 
