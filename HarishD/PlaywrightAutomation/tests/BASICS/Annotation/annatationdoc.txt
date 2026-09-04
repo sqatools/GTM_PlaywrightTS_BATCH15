@@ -1,0 +1,46 @@
+Playwright supports tags and annotations that are displayed in the test report.
+
+You can add your own tags and annotations at any moment, but Playwright comes with a few built-in ones:
+
+test.skip() marks the test as irrelevant. Playwright does not run such a test. Use this annotation when the test is not applicable in some configuration.
+test.fail() marks the test as failing. Playwright will run this test and ensure it does indeed fail. If the test does not fail, Playwright will complain.
+test.fixme() marks the test as failing. Playwright will not run this test, as opposed to the fail annotation. Use fixme when running the test is slow or crashes.
+test.slow() marks the test as slow and triples the test timeout.
+Annotations can be added to a single test or a group of tests.
+
+
+URL:https://playwright.dev/docs/test-annotations
+
+
+test.skip are two type
+1. Unconditionalskip
+In Playwright, unconditional skip means the test is always skipped, regardless of the browser, 
+OS, environment, or any other condition.
+
+2. Conditional skip
+Conditional skip the test only when a particular condition is true.
+
+Here, browserName === 'webkit' is the condition.
+Chromium → condition is false → test runs ✅
+Firefox → condition is false → test runs ✅
+WebKit → condition is true → test is skipped
+
+test.fixme() is used when a test is currently broken or not ready to run, and you want Playwright
+ to skip it until the issue is fixed
+  // it will skip the test cases , until certain issue is not resolved
+
+
+test.fail() is used when you expect a test to fail. Playwright runs the test, b
+ut instead of treating the failure as an unexpected failure, it considers the expected failure.
+
+test.info().annotations.push(...) is typically used in Playwright tests to add an annotation to
+ the current test.
+
+npx playwright test --grep '@sanity' Playwright_tag.spec.ts : it will execute only the test cases
+ which are tag name
+Example :[Tagname : sanity]
+
+npx playwright test --grep-invert '@smoke' Playwright_tag.spec.ts: it will execute all the test cases except 
+the test cases which are tag name
+Example :[Tagname : smoke]
+
