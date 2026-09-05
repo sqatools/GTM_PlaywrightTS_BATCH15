@@ -1,0 +1,6 @@
+{
+    "code-runner.enable": true,
+    "code-runner.executorMap": {
+        "typescript": "npx --no-install ts-node"
+    }
+}
