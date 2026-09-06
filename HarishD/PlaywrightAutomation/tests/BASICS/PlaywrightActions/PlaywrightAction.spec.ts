@@ -86,21 +86,21 @@ test.describe("playwright action", async () => {
     })
 
     test("Keyboard action", async ({ page }) => {
-    await page.goto("https://sqatools.in/automation-practice-page/")
+        await page.goto("https://sqatools.in/automation-practice-page/")
 
-    await test.step("Copy and paste using keyboard action", async () => {
-        const Username = page.getByPlaceholder("Enter username")
+        await test.step("Copy and paste using keyboard action", async () => {
+            const Username = page.getByPlaceholder("Enter username")
 
-        await Username.fill("User@123gmail.com")
-        await Username.press("Control+A")
-        await Username.press("Control+C")
+            await Username.fill("User@123gmail.com")
+            await Username.press("Control+A")
+            await Username.press("Control+C")
 
-        const Address = page.locator("#address")
+            const Address = page.locator("#address")
 
-        await Address.clear()
-        await Address.press("Control+V")
+            await Address.clear()
+            await Address.press("Control+V")
+        })
     })
-})
 
 
 })  
