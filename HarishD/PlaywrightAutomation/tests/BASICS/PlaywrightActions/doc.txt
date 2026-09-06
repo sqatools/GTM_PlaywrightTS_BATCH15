@@ -1,0 +1,40 @@
+exact: true tells Playwright to find an element whose accessible name matches exactly "male".
+Example :
+    name: "male",
+    exact: true
+
+############################################
+// Generic click
+await page.getByRole('button').click();
+
+// Double click
+await page.getByText('Item').dblclick();
+
+// Right click
+await page.getByText('Item').click({ button: 'right' });
+
+// Shift + click
+await page.getByText('Item').click({ modifiers: ['Shift'] });
+
+// Ctrl + click on Windows and Linux
+// Meta + click on macOS
+await page.getByText('Item').click({ modifiers: ['ControlOrMeta'] });
+
+// Hover over element
+await page.getByText('Item').hover();
+
+// Click the top left corner
+await page.getByText('Item').click({ position: { x: 0, y: 0 } });
+
+
+##################---------KEY AND SHORTCUTS------------####################
+
+// Hit Enter
+await page.getByText('Submit').press('Enter');
+
+// Dispatch Control+Right
+await page.getByRole('textbox').press('Control+ArrowRight');
+
+// Press $ sign on keyboard
+await page.getByRole('textbox').press('$');
+
