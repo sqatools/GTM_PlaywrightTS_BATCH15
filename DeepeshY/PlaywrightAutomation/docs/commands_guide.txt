@@ -1,3 +1,7 @@
+Run these commands from the `PlaywrightAutomation` directory. After cloning the project, install its local dependencies first:
+
+-> npm install
+
 Inside that directory, you can run several commands:
 
 -> npx playwright test
@@ -27,7 +31,7 @@ Inside that directory, you can run several commands:
 
 #  command to exexcute test with specific browser in headed mode.
 
-->  npx playwright test --debug --headed --project=chromi
+->  npx playwright test --debug --headed --project=chromium
 
 
 # command to execute specific test cases

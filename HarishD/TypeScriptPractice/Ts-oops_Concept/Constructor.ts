@@ -10,7 +10,6 @@
 // You can use access modifiers like public, private, and protected.
 // In TypeScript, constructor parameters can directly create class properties using public, private, protected, or readonly.
 // If you don't write a constructor, TypeScript provides a default constructor.
-
 //this is a keyword that refers to the current object (instance) of the class. It is used to access or initialize the properties and methods of that object.
 
 //Why constructor is req  : It is required/useful when you want to initialize something when an object is created or run some setup code automatically.
@@ -39,13 +38,7 @@ class Person1 {
     }
 
     // Initialize the properties
-    constructor(
-        fname: string,
-        pn: number,
-        em: string,
-        lname: string,
-        age: number
-    ) {
+    constructor(fname: string,pn: number,em: string,lname: string,age: number ) {
         this.firstname = fname
         this.lastname = lname
         this.email = em
@@ -55,9 +48,8 @@ class Person1 {
         this.Person(age)
     }
 
-    // Reading/accessing the properties
-    showUserDetails(age: number) {
-
+       // Reading/accessing the properties
+        showUserDetails(age: number) {
         console.log("First name:", this.firstname)
         console.log("Last name:", this.lastname)
 

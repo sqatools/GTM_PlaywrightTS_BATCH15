@@ -1,0 +1,86 @@
+// 1. Absolute XPath: This is the complete path from the root element to the 
+desired element. It starts with a single forward slash (/) and specifies each 
+node in the hierarchy. For example, /html/body/div[1]/h1 would select the
+ first h1 element inside the first div of the body.
+
+ e.g. -> /html/body/div[1]/div[1]/div/main/article/div/div[1]/div[2]/div/input
+
+
+// 2. Relative XPath: This is a shorter path that starts from a specific 
+node and does not require the full path from the root. It starts with a 
+double forward slash (//) and can be used to select elements based on their 
+attributes or text content. For example, //h1[@class='title'] would select any 
+h1 element with the class 'title'.`
+
+e.g. -> //tagname[@attribute='value']
+     -> //input[@placeholder='Enter username']
+     -> //h1[@class='entry-title']
+     -> //*[@class='entry-title']
+
+     // user can provide indexing that starts from 1, if multiple elements are matching.
+     -> (//input[@name="firstname"])[2]
+
+1. text() method : Identify element with text visible on UI.
+    e.g. //tagname[text()='text value']
+    ->  //h2[text()=" Travel Details "]
+    -> //a[text()='Blogs']
+
+2. contains method : search element with partial attribute and partial text
+   -> e.g.    //taggname[contains(@attribute, "partial value")]
+          -> //input[contains(@id, 'billing_n')] 
+          -> //header[contains(@class, 'entry-he')]
+
+   -> e.g. //taggname[contains(text(), "partial text value")] 
+         -> //h1[contains(text(), 'Dummy Booking')]
+         -> //h2[contains(text(), 'Passenger D')]
+
+###################################
+// Advance Xpath Methods:
+
+1. parent: this method will target parent elment wit reference of child eleement
+          e.g ref_tagname[@attribute ='value']/parent:target_tag[@attribute=value]
+          -> //td[text()='Mumbai']/parent::tr
+          ->  //td[text()='Mumbai']/parent::tr//input
+          ->  //td[text()='Delhi']/parent::tr//input
+         
+2. ancestor : It will help to indentify acenstor element with the reference grand child element.
+          e.g ref_tagname[@attribute ='value']/ancestor:target_tag[@attribute=value]
+          -> //td[text()='Kolkata']/ancestor::tbody
+          -> //td[text()='Kolkata']/ancestor::table[@id='cities']
+
+3. following : Indentify all elements below side of reference element on webpage
+           e.g ref_tagname[@attribute ='value']/following:target_tag[@attribute=value]
+           -> //input[@id="fromcity"]/following::input[@id='street_address1']
+           -> //input[@id="fromcity"]/following::a[text()='Login Page']
+   
+4. following-sibling :
+           -> //td[text()='Kolkata']/following-sibling::td
+
+5. preceding :  Indentify all elements above side of reference element on webpage.
+             e.g ref_tagname[@attribute ='value']/preceding:target_tag[@attribute=value]
+             -> //input[@id="fromcity"]/preceding::a[text()='Login Page']
+
+6. prededing-sibling
+            -> //td[text()='Kolkata']/preceding-sibling::td/input
+
+
+###########################################################
+CSS Selectors:
+1. via class name.: with class element can be identified using .classname
+                    ->  header.entry-header>h1
+                    -> .oxd-input.oxd-input--focus
+                    -> .orangehrm-login-forgot
+
+2. by element id:  indentify the element with #idvalue
+                -> #fromcity
+                -> #destcity
+                -> input#destcity
+                -> input#whatsapp
+
+3. attributes : tagname[attribute='value']
+                -> [placeholder="Username"]
+                -> [placeholder="Password"]
+                -> button[type="submit"]
+
+4. Navigation : 
+               -> div[align="left"]>ul>li>input[value='radio_123']
