@@ -39,4 +39,3 @@ var stg1 = "hello"
 var numm = Number(stg1)
 
 console.log(numm," ",typeof(numm))
-
