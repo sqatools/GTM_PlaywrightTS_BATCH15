@@ -13,12 +13,12 @@
     "editor.inlineSuggest.enabled": true,
     "javascript.suggest.completeFunctionCalls": true,
     "github.copilot.enable": {
-        "*": true,
+        "*": false,
+        "plaintext": true,
         "markdown": false,
         "scminput": false,
         "javascript": true,
-        "typescript": true,
-        "plaintext": true
+        "typescript": false
     },
     "workbench.editor.enablePreview": false
 }
