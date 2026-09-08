@@ -1,4 +1,4 @@
-import {test, expect} from '@playwright/test/'
+import {test, expect} from '@playwright/test';
 
 test.describe("Login to the HRM  Website", ()=>{
 test("login to the username and password", async({page}) =>{
