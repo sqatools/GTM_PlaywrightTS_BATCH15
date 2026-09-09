@@ -1,0 +1,11 @@
+// wap to check the number is 4 digit or not.
+var num=  78
+if (num >=1000 && num <=9999)
+{
+    console.log("num is 4 digit number")
+}
+else
+{
+console.log("num is not 4 digit number")
+}
+

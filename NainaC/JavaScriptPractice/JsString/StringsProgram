@@ -1,0 +1,28 @@
+// write a program to repeat the first char. of each word twice
+   
+
+
+
+
+   //write the program to remove duplicate words from given string
+//var str1 = "Rohit Virat Viabhav Surya Rohit Abhishek Surya Virat";
+//var a = str1.split(" ");
+
+
+console.log("output:", output);
+
+// Q1 : remove duplicate characters from
+
+    var str1  ="Cricbuzz is not associated"
+var output = ""
+for(var char of str1){
+    if (output.includes (char))
+    {
+        continue
+    } else {
+        output = output + char 
+    }
+
+}
+console.log("output:", output)
+

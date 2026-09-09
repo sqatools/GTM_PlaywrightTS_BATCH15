@@ -1,0 +1,17 @@
+// wap to check the number is postive and even .
+var a = 100
+var b = -2
+if(b>0 && b% 2==0)
+{
+console.log("num is positive and even number")
+}
+else if(b>0 && b % 2!=0)
+{
+console.log("num is positive and odd number")
+}
+else
+{
+console.log("num is negative number")
+}
+
+ 
