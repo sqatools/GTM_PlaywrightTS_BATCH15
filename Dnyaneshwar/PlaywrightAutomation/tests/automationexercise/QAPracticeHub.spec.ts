@@ -47,7 +47,9 @@ test.describe("QA Practice Hub",async()=>{
         test.step("enetr booking details",async()=>{
 
 
-            await page.locator("form.space-y-4 div.flex div.gap-3").click()
+           await page.locator("#customerName").fill("Dnyaneshwar Dandale")
+           await page.locator("#customer-email").fill("ddandale14@gmail.com")
+           
 
         })
 
