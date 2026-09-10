@@ -3,7 +3,6 @@ import { promises } from 'node:dns';
 
 test.describe("Handle multiple window",async()=>{
 
-
     test("Scenerio 1: One Browser and two Tab's",async({browser})=>{
 
 
@@ -15,6 +14,7 @@ test.describe("Handle multiple window",async()=>{
 
        // page open webside 
 
+       
        await page1.goto("https://www.amazon.in/");
 
        await page1.getByPlaceholder("Search Amazon.in").fill("samsung")
@@ -28,8 +28,6 @@ test.describe("Handle multiple window",async()=>{
     })
 
     test("Scenerio:2 Two Browser Instance and two tab",async({browser})=>{
-
-        
 
        const context1 :BrowserContext= await browser.newContext();
        const context2: BrowserContext =await browser.newContext();
@@ -66,7 +64,7 @@ test.describe("Handle multiple window",async()=>{
     test("Scenerio:3 One browser and Tab with Click Event",async({browser})=>{
 
 
-       const context:BrowserContext= await browser.newContext();
+     const context:BrowserContext= await browser.newContext();
 
       const page1 :Page= await context.newPage();
 
@@ -81,7 +79,7 @@ test.describe("Handle multiple window",async()=>{
        await page2.getByPlaceholder("Email address or phone number").fill("user1@gmail.com");
 
        await page2.getByPlaceholder("Password").fill("user@123")
-
+2
        await page2.getByRole("button",{name:'Log in'}).click();
 
        await page1.getByPlaceholder("Enter username").fill("dnyaneshwar")
@@ -129,9 +127,6 @@ test.describe("Handle multiple window",async()=>{
         await page2.waitForTimeout(5_000)
 
     })
-
-    
-
 
 })
 
