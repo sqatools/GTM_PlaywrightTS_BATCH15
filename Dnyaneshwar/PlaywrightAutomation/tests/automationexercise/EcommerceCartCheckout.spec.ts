@@ -118,4 +118,29 @@ test.describe("Ecommerce Cart Check Out",async()=>{
 
     })
 
+    test("Validate checkout with empty mandatory fields",async({page})=>{
+
+        await page.goto("https://www.qapractice.com/practice-ecommerece-website")
+
+        await page.getByTestId("add-to-cart-6").click();
+
+        await page.locator(".btn-outline-primary").click();
+
+        await page.getByRole("button",{name:'Proceed to Buy'}).click();
+
+        await page.getByTestId("ecom-address-street").fill("Mumbai")
+
+        await page.getByTestId("ecom-address-city").fill("mumbai")
+
+        await page.getByTestId("ecom-address-state").fill("Maharastra")
+
+        await page.getByTestId("ecom-address-zip").fill("21212")
+
+        const Continue_To_Payment= await page.getByRole("button",{name:'Save Address & Continue to Payment'})
+
+       await expect(Continue_To_Payment).toBeEnabled();
+       await Continue_To_Payment.click();
+
+    })
+
 })
