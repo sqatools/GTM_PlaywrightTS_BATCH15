@@ -28,6 +28,13 @@ export default defineConfig({
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
 
+    headless: false,
+    viewport: { width: 800, height: 500 },
+    launchOptions: {
+      slowMo: 500,
+      args: ['--window-size=800,500', '--window-position=0,0'],
+    },
+
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
     video: 'on',

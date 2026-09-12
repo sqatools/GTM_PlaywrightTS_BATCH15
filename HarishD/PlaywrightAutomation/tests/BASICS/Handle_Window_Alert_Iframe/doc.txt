@@ -1,0 +1,15 @@
+How test case will execute
+1. Fixture 'Browser' :First it will launch the fixature  browser
+2.  Fixture "context" :It will create the context
+3. Fixture 'page' :Then page will launch
+
+
+
+  test.setTimeout(60_000)  // the test case will  //sets the maximum time allowed for the test case to run.
+
+
+
+##########alerts##########
+alert(), confirm(), prompt() dialogs
+By default, dialogs are auto-dismissed by Playwright, so you don't have to handle them.
+ However, you can register a dialog handler before the action that triggers the dialog to either
