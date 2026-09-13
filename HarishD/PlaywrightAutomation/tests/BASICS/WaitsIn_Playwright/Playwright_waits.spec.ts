@@ -1,24 +1,32 @@
 import { test, expect } from '@playwright/test'
 
-test.describe("Alerts ", async () => {
+test.describe("Alerts ",   async() => {
 
+     test.setTimeout(50_000)   // this timeout for completed test suite
     test("Simple alerts:accept it", async ({ page }) => {
 
+        test.setTimeout(40_000)  // this is for specific timeout for only this test case
         await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
-
         page.on('dialog', dialog => {
             console.log(dialog.message()),
                 dialog.accept()
         });
+        //Static Timeout
+         await page.waitForTimeout(25_000) //Pause the test for 25,000 milliseconds = 25 seconds.
         const Simplealert = page.getByRole('button', { name: 'Simple Alert' })
+        //locator Time Out
+        await Simplealert.waitFor({state :'visible',timeout :10_000})
+        //expect Timeout
+        expect(Simplealert).toBeEnabled({timeout:10_000})
         await Simplealert.scrollIntoViewIfNeeded()
-        await Simplealert.click()
+        //action Timeout
+        await Simplealert.click({timeout:10_000})
     })
 
-    test("Confirm alerts: accept it", async ({ page }) => {
+    test("Navigation Timeout", async ({ page }) => {
 
         await page.goto(
-            "https://testautomationpractice.blogspot.com/p/playwrightpractice.html"
+            "https://testautomationpractice.blogspot.com/p/playwrightpractice.html",{timeout :20_000}
         )
         page.on('dialog', async dialog => {
             console.log(dialog.message())
@@ -44,30 +52,4 @@ test.describe("Alerts ", async () => {
     })
 
 
-    test("Prompt alerts:accept it", async ({ page }) => {
-
-        await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
-        const UserInput= "Hari"
-        page.on('dialog', dialog => {
-            console.log(dialog.message()),
-                dialog.accept(UserInput)
-        });
-        const PromptAlert = page.getByRole('button', { name: 'Prompt Alert' })
-        await PromptAlert.click()
-        const text = await page.locator('#demo').textContent()
-         expect(text).toEqual(`Hello ${UserInput}! How are you today?`)
-    })
-
-     test("Prompt alerts:dismiss it", async ({ page }) => {
-
-        await page.goto("https://testautomationpractice.blogspot.com/p/playwrightpractice.html")
-        page.on('dialog', dialog => {
-            console.log(dialog.message()),
-                dialog.dismiss()
-        });
-        const PromptAlert = page.getByRole('button', { name: 'Prompt Alert' })
-        await PromptAlert.click()
-        const text = await page.locator('#demo').textContent()
-         expect(text).toEqual("User cancelled the prompt.")
-    })
 })

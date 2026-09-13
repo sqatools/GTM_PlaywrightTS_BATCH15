@@ -13,3 +13,10 @@ How test case will execute
 alert(), confirm(), prompt() dialogs
 By default, dialogs are auto-dismissed by Playwright, so you don't have to handle them.
  However, you can register a dialog handler before the action that triggers the dialog to either
+
+
+ alerts Syntax
+  page.on('dialog', dialog => {
+            console.log(dialog.message()),
+                dialog.dismiss()
+  })
