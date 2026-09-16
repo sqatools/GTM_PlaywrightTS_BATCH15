@@ -11,10 +11,10 @@ export class LoginPage {
     constructor(page: Page) {
         this.page = page;
 
-        this.username = page.locator('#username');
+        this.username = page.locator('#user-name');
         this.password = page.locator('#password');
-        this.loginBtn = page.locator('#loginBtn');
-        this.dashboardText = page.locator('text=Dashboard');
+        this.loginBtn = page.locator('#login-button');
+        this.dashboardText = page.locator('.title');
     }
 
     async gotoLoginPage() {

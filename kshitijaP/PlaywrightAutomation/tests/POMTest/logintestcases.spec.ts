@@ -7,7 +7,7 @@ test('User Login Test', async ({ page }) => {
 
     await loginPage.gotoLoginPage();
 
-    await loginPage.login('admin', 'admin123');
+    await loginPage.login('standard_user', 'secret_sauce');
 
     await loginPage.verifyDashboardVisible();
 });
