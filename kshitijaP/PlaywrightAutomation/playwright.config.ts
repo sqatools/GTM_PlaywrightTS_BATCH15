@@ -29,7 +29,7 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on',await page.goto('https://www.google.com/account/about/?hl=en-US');
+    trace: 'on',
   },
 
   /* Configure projects for major browsers */
