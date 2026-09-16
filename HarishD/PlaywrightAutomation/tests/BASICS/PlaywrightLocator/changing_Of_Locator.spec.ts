@@ -50,6 +50,7 @@ test.describe("locators to identify", () => {
                 }
         // remove items using element as filter
         // has is used to locate an element
+        // hastText is used to locate an element that contains the specified text.
 
        const RemoveitemDIV=page.locator("div[class='inventory_item']").filter({has: page.locator("div[class='inventory_item']") })
         await RemoveitemDIV.getByRole("button", { name: 'Remove' }).click()

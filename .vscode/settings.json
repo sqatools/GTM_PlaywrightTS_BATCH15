@@ -1,6 +1,9 @@
 {
     "chat.disableAIFeatures": false,
     "code-runner.enable": false,
+    "code-runner.executorMap": {
+        "typescript": "npx ts-node"
+    },
     "editor.quickSuggestions": {
         "other": true,
         "comments": false,
@@ -13,7 +16,9 @@
         "*": true,
         "plaintext": true,
         "markdown": false,
-        "scminput": false
+        "scminput": false,
+        "javascript": true,
+        "typescript": false
     },
     "workbench.editor.enablePreview": false
 }
