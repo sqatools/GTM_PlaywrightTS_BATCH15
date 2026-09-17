@@ -1,6 +1,5 @@
 import { expect, test } from '@playwright/test'
 
-
 test.describe("E-commerce Automation Practice", async () => {
 
     test("LTest Case 1 Launch Url and Add product to Card", async ({ page }) => {
@@ -22,12 +21,9 @@ test.describe("E-commerce Automation Practice", async () => {
         await LaptopProduct.getByRole("button",{name:'Add to Cart'}).click();
     
         await page.getByTestId("ecom-cart-button").click();
-
-
     })
 
     test("proceed to buy and complete the order",async({page})=>{
-
         
          await page.goto("https://www.qapractice.com/practice-ecommerece-website")
 
@@ -39,11 +35,8 @@ test.describe("E-commerce Automation Practice", async () => {
 
         await page.locator("#ecom-proceed-to-buy").click();
 
-
     })
 test("enetr shipping address details",async({page})=>{
-
-
     
          await page.goto("https://www.qapractice.com/practice-ecommerece-website")
 
@@ -80,12 +73,14 @@ test("enetr shipping address details",async({page})=>{
            console.log(HeadingText)
 
            const textMsg= await page.getByText("Woohoo!! Successfully purchased").textContent();
+
            console.log(textMsg)
 
            expect(textMsg).toEqual("Woohoo!! Successfully purchased")
 
 
      const splitString=textMsg?.split(" ")[1]
+     
       console.log("split String :- ",splitString)
 })
 
