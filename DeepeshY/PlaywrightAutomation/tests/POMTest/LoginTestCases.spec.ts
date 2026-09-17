@@ -1,5 +1,4 @@
 import { test } from '@playwright/test';
-//import { LoginPage } from '../../pages/saucelab/LoginPage.ts';
 import { PageManager } from '../../pages/common/pageManager.ts';
 import * as TestData from '../../testdata/testdata.ts'
 
