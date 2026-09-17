@@ -20,7 +20,7 @@ test.describe("Playwright actions", () => {
 
         console.log(enetrValue)
         expect(enetrValue).toEqual(username)
-
+ 
 
     })
 
@@ -129,7 +129,25 @@ test.describe("Playwright actions", () => {
 
         await TextFiled.press("Control+V")
 
-
     })
+
+    test("Drag and Drop Operation", async({page})=> {
+        await page.setViewportSize({width: 2000, height: 1080})
+        await page.goto("https://sqatools.in/automation-practice-page/")
+        const sourceElement = page.locator("#drag1")
+        const targetElement = page.locator(".drop")
+        await sourceElement.scrollIntoViewIfNeeded()
+        await sourceElement.dragTo(targetElement)
+        expect(targetElement).toContainText("Drag Me")
+     });
     
+     test("Upload File and Verify", async({page})=> {
+        await page.setViewportSize({width: 2000, height: 1080})
+        await page.goto("https://sqatools.in/automation-practice-page/")
+        const FileUpload = page.locator("#fileUpload")
+        await FileUpload.scrollIntoViewIfNeeded()
+        await FileUpload.setInputFiles("C:\Test")
+
+
+     })
 })

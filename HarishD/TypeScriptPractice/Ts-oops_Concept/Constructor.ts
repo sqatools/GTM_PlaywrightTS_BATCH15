@@ -32,7 +32,7 @@ class Person1 {
     PhoneNumebr: number
     email: string
 
-    // Age method
+    //  person method
     Person(age: number) {
         console.log("Age of the person:", age)
     }
@@ -49,7 +49,8 @@ class Person1 {
     }
 
        // Reading/accessing the properties
-        showUserDetails(age: number) {
+        showUserDetails(age: number) //  it a
+         {
         console.log("First name:", this.firstname)
         console.log("Last name:", this.lastname)
 

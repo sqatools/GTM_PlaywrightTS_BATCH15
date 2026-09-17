@@ -12,8 +12,7 @@ test.describe("playwright automation",()=>{
         await page.locator("#userPassword").fill("dandale");    
 
         await page.getByRole("button",{name:'login'}).click();
-        
-       
+              
         const AllProducts = await page.locator("div.row .card").all();
          
         for(const product of AllProducts){
