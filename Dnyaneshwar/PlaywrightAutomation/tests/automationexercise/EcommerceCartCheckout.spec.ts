@@ -86,8 +86,6 @@ test.describe("Ecommerce Cart Check Out",async()=>{
 
          await page.getByRole("button",{name:'Proceed to Buy'}).click();
 
-         
-
         await page.locator("#ecom-address-name").fill("Danyaneshwar Dandale")
 
         await page.getByTestId("ecom-address-street").fill("mumbai")
