@@ -18,7 +18,6 @@ test.describe("Create User", () => {
 
     await page.getByRole("button", { name: 'Add' }).click();
 
-
     const userRole = page.locator(".oxd-select-text").first();
 
     await userRole.click();
