@@ -1,0 +1,35 @@
+Step by step to read value from environment file.
+
+Step1 : install required package in project directory.
+      ->  npm install dotenv
+
+
+Step2 : Create and with name as .env in the project directory.
+    -> create a file with name : .env
+    -> add content to the file.
+       BASE_URL=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+       USERNAME=Admin
+       PASSWORD=admin123
+
+Step3 : Load environment variables.
+    -> playwright.config.ts file
+    -> Add below content to file : required content is already available in playwrigt.config.ts file
+       we need to just uncomment the file content.
+    -> 
+
+    ```
+    import { defineConfig, devices } from '@playwright/test';
+    /**
+    * Read environment variables from file.
+    * https://github.com/motdotla/dotenv
+    */
+    import dotenv from 'dotenv';
+    import path from 'path';
+    dotenv.config({ path: path.resolve(__dirname, '.env') });
+    use {
+        // it will read BASE_URL value from .env file.
+        baseURL: process.env.BASE_URL,
+    }
+    ```
+
+
