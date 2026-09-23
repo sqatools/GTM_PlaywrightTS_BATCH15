@@ -44,3 +44,15 @@ npx playwright test --grep-invert '@smoke' Playwright_tag.spec.ts: it will execu
 the test cases which are tag name
 Example :[Tagname : smoke]
 
+test.step() is used in test automation to group a few test actions under a named step.
+waitForLoadState() in Playwright is used to wait until a specific page loading state is reached.
+domcontentloaded() is a page load event in Playwright/browser automation.
+load : page is loaded completely sucessfully
+networkidle :  network calls happening in the background are part of what
+ networkidle is concerned with.
+
+Whenever the method return the promise "await" is required , and also whenever we are doing any action "await" is required
+
+
+
+

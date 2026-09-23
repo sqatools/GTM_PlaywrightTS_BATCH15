@@ -26,8 +26,8 @@ test("add product to card ", async ({ page }) => {
       console.log(productName, 'added to cart');
     }
   }
- // await page.getByText("View Cart").click();
+  await page.getByText("View Cart").click();
 
-  //await page.locator(".cart_quantity_delete").click();
+  await page.locator(".cart_quantity_delete").click();
 
 })
