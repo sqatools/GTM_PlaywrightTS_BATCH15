@@ -7,10 +7,10 @@ import { defineConfig, devices } from '@playwright/test';
 import dotenv from 'dotenv';
 import path from 'path';
 
-// const environment = process.env.TEST_ENV || 'qa'
-// dotenv.config({ path: path.resolve(__dirname, `.env.${environment}`) });
+const environment = process.env.TEST_ENV || 'qa'
+dotenv.config({ path: path.resolve(__dirname, `.env.${environment}`) });
 
-dotenv.config({ path: path.resolve(__dirname, `.env.qa`) });
+//dotenv.config({ path: path.resolve(__dirname, `.env.qa`) });
 // dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 /**

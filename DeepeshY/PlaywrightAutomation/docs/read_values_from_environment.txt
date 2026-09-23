@@ -32,4 +32,46 @@ Step3 : Load environment variables.
     }
     ```
 
+Step3 : Update config file to read values from environment.
+      -> update playwright.config file with below content and save it.
+      ```
+        import { defineConfig, devices } from '@playwright/test';
+        /**
+        * Read environment variables from file.
+        * https://github.com/motdotla/dotenv
+        */
+        import dotenv from 'dotenv';
+        import path from 'path';
+        const environment = process.env.ENV
+        dotenv.config({ path: path.resolve(__dirname, `.env.${environment}`) });
+    ```
+
+
+step4 : Create a test file and read values from environment variables.
+    
+    filename : read-environment-values.spec.ts
+    ```
+     test.describe("Read values from environment",() => {
+
+            test("Read data from env", async()=> {
+                console.log(process.env.BASE_URL)
+                console.log(process.env.USERNAME_VALUE)
+                console.log(process.env.PASSWORD_VALUE)
+                console.log(process.env.ENV)
+            })
+
+    })
+    ```
+
+
+step5 : follow below steps to commandline to set environment
+     ->  run command to set environment
+     -> $env:ENV="prod"  : powershell in VScode
+     -> set ENV=qa : windows CMD
+     -> ENV=qa npx playwright test : Linux or Mac machine.
+
+step6 : Execute the test file, it should read values from different environment file as per we have set the environments.
+     -> npx playwright test read_environment_values.spec.ts
+     -> It will be execute on environment specific values and execute the test cases.
+
 
