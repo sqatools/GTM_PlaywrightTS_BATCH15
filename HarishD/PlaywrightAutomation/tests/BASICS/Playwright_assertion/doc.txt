@@ -1,0 +1,45 @@
+ -->toBe() :is an assertion used to check whether a value is exactly equal to the expected value.
+
+ -->toEqual() is an assertion used to check whether two values are equal in content/value.
+
+ -->any  : allows a variable to hold any type of value.
+
+-->toBeTruthy() : is an assertion used to check whether a value is truthy or not.
+ A truthy value is a value that evaluates to true in a boolean context. In JavaScript, all values are 
+ truthy except for false, 0, "", null, undefined, and NaN.
+ const loginStatus = true;
+expect(loginStatus).toBeTruthy();
+
+
+-->toBeFalsy() : is an assertion used to check whether a value is falsy or not.
+ A falsy value is a value that evaluates to false in a boolean context. In JavaScript, the following values are falsy: false, 0, "", null, undefined, and NaN.
+ const loginStatus = false;
+expect(loginStatus).toBeFalsy();
+
+-->toContain()
+const browsers = ["Chrome", "Firefox", "Edge"];
+expect(browsers).toContain("Chrome");
+
+-->toBeInstanceOf()
+class Employee {}
+const employee = new Employee();
+expect(employee).toBeInstanceOf(Employee);
+
+
+| Assertion                  | Mainly used for                 | Example                                     |
+| -------------------------- | ------------------------------- | ------------------------------------------- |
+| `toBe()`                   | Exact value                     | `expect(age).toBe(30)`                      |
+| `toEqual()`                | Same value/content              | `expect(user).toEqual(expectedUser)`        |
+| `toBeTruthy()`             | Value is truthy                 | `expect(isLoggedIn).toBeTruthy()`           |
+| `toBeFalsy()`              | Value is falsy                  | `expect(isLoggedIn).toBeFalsy()`            |
+| `toBeNull()`               | Value is `null`                 | `expect(data).toBeNull()`                   |
+| `toBeUndefined()`          | Value is `undefined`            | `expect(data).toBeUndefined()`              |
+| `toBeDefined()`            | Value is not `undefined`        | `expect(data).toBeDefined()`                |
+| `toContain()`              | Array/string contains something | `expect(names).toContain("Harish")`         |
+| `toHaveLength()`           | Check length                    | `expect(names).toHaveLength(3)`             |
+| `toBeGreaterThan()`        | Number > value                  | `expect(age).toBeGreaterThan(18)`           |
+| `toBeLessThan()`           | Number < value                  | `expect(age).toBeLessThan(60)`              |
+| `toBeGreaterThanOrEqual()` | Number ≥ value                  | `expect(age).toBeGreaterThanOrEqual(18)`    |
+| `toBeLessThanOrEqual()`    | Number ≤ value                  | `expect(age).toBeLessThanOrEqual(60)`       |
+| `toBeInstanceOf()`         | Check class instance            | `expect(employee).toBeInstanceOf(Employee)` |
+

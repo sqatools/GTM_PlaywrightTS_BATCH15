@@ -51,10 +51,57 @@ e.g. -> //tagname[@attribute='value']
           e.g ref_tagname[@attribute ='value']/parent:target method
           -> //td[text()='Mumbai']/parent::tr
           //td[text()="Indore"]/parent::tr
+          //option[text()='Playwright']/parent::select
+          //td[text()="Hyderabad"]/parent::tr
+          (//td[text()="Hyderabad"]/parent::tr/td)[2]
+          //td[text()="Hyderabad"]/parent::tr/td/input
          
-2. ancestor
+2. ancestor : It will help to indentify acenstor element with the reference grand child element.
+          e.g ref_tagname[@attribute ='value']/ancestor:target_tag[@attribute=value]
+          //td[text()="Hyderabad"]/ancestor::tbody
+          //td[text()="Hyderabad"]/ancestor::table[@id="cities"]
 
-3. following
-4. following-sibling
-5. preceding
+3. following : Indentify all elements below side of reference element on webpage
+           e.g ref_tagname[@attribute ='value']/following:target_tag[@attribute=value]
+                     //input[@id="billing_name"]/following::input[@id="street_address1"]
+                     //input[@id="billing_name"]/following::a[text()="Login Page"]
+                    (//input[@id="billing_name"]/following::td/input[@type="checkbox"])[1]
+
+4. following-sibling :
+               //td[text()="Orangabad"]/following-sibling::td
+
+5. preceding :  Indentify all elements above side of reference element on webpage.
+             e.g ref_tagname[@attribute ='value']/preceding:target_tag[@attribute=value]
+             -> //input[@id="fromcity"]/preceding::a[text()='Login Page']
+             (//a[text()="Login Page"])/preceding::td[text()="Kolkata"]
+
 6. prededing-sibling
+              (//td[text()="Orangabad"]/preceding-sibling::td)[2]
+              //td[text()="Orangabad"]/preceding-sibling::td/input
+
+
+##################################################################
+
+CSS Selectors:
+
+1. via class name.: with class element can be identified using .classname
+                    ->  header.entry-header>h1
+                    User : .oxd-input.oxd-input--active showing 2 matches
+                    -> .oxd-input.oxd-input--focus
+                    PWD : oxd-input oxd-input--active  this is showing 2 match 
+                    -> .orangehrm-login-forgot
+
+2. by element id:  indentify the element with #idvalue
+                -> #fromcity    
+                -> #destcity
+                -> input#destcity   
+                -> input#billing_name
+
+3. attributes : tagname[attribute='value']
+without tagname, it will search for all elements with that attribute and value.
+                -> [placeholder="Username"]
+                -> [placeholder="Password"]
+                -> button[type="submit"]    
+
+4. Navigation :   div[align="left"]>ul>li>input[value="radio_123"]
+It is not used mosyly but it is used to identify the element with reference of other element.so Navigation we can ignore
