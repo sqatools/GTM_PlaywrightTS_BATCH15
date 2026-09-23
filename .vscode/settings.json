@@ -1,6 +1,6 @@
 {
     "chat.disableAIFeatures": false,
-    "code-runner.enable": true,
+    "code-runner.enable": false,
     "code-runner.executorMap": {
         "typescript": "npx ts-node"
     },
@@ -13,7 +13,7 @@
     "editor.inlineSuggest.enabled": true,
     "javascript.suggest.completeFunctionCalls": true,
     "github.copilot.enable": {
-        "*": false,
+        "*": true,
         "plaintext": true,
         "markdown": false,
         "scminput": false,

@@ -1,0 +1,14 @@
+In Playwright, a fixture is a pre-created setup or object that Playwright provides to your test,
+Fixture :A fixture in Playwright is a pre-configured and reusable setup provided to tests. 
+It helps us initialize required objects like page, browser, context, or request without creating 
+them manually in every test.
+
+syntax :
+type MyFixtures = {
+    loginPage: LoginPage;
+};
+
+MyFixtures  : Fixture name
+
+
+Fixture Notes :https://sqatools.in/playwright-fixtures-explained-step-by-step/

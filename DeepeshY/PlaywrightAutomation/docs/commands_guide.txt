@@ -42,4 +42,4 @@ Inside that directory, you can run several commands:
 
 
 # command to execute test fwith filename
--> npx playwright test first_test_file.spec.ts --headed --project=chromium
+-> npx playwright test first_test.spec.ts --headed --project=chromium

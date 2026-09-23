@@ -41,7 +41,9 @@ for (var val of obj1) {
 
 var obj2 = { 'a': 300, 'b': 800, 'c': 500, 'd': 778 }
 
-for (var val of Object.entries(obj2))  // of value cannot apply on obj2 because  does not have the indexing.so we have to use the method called object.entries
+for (var val of Object.entries(obj2)) 
+ // of value cannot apply on obj2 because  does not have the indexing.
+// so we have to use the method called object.entries
 {
     console.log(val)
 }

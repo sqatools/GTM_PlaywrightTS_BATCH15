@@ -1,0 +1,52 @@
+
+Different types of TimeOut
+Test TimeOut:  1.Default timeout of each of test case is 30 sec
+               2.User can set different timeout for test case  using  "test.setTimeout(40_000)", 
+               so it will override default timeout
+               3. User can set for different tomeout for complete suite Using
+
+               test.describe("TEST suite Use case ", async () => {
+                test.setTimeout(50_000)
+               })
+               4. User can provide Global test timeout fron Config file
+               export default defineConfig({
+                 timeout:60_000,       // global timeout for each testcase
+               }) 
+
+ 
+Navigation Timeout : Total timeout take to load an wibsite
+                    -->  await page.goto(
+              "https://testautomationpractice.blogspot.com/p/playwrightpractice.html",{timeout :20_000}
+               )
+
+               --> config level navigationTimeout
+                      navigationTimeout : 25_000,
+
+
+
+Global Timeout  :  -->Total test cases execution  [timeout will be update in connfig file]
+                   -->globalTimeout:3*1000*60*60
+                   --> all execution will be complete in given period of time
+
+Actions Timeout  :  -->await Simplealert.click({timeout:10_000})
+                   --> > config level Action timeout:
+                    -> use: {
+                                actionTimeout: 15_000,
+                              }  
+
+Assertion Timeout
+Locator TimeOut   :   -->locator timeout dependon user requirement
+                     const Simplealert = page.getByRole('button', { name: 'Simple Alert' })
+                      //locator Time Out
+                       await Simplealert.waitFor({state :'visible',timeout :10_000})
+
+Static Timeout : Runner has to wait till the test case excution is paused
+                  await page.waitForTimeout(25_000) 
+
+Expect Timeout :  expect(Simplealert).toBeEnabled({timeout:10_000})
+                --> config level Action timeout:
+                   expect : {
+                            timeout:20_000
+                           },
+
+
