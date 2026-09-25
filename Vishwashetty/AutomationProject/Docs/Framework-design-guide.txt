@@ -1,0 +1,45 @@
+1. Create a folder with name as "AutomationProject"
+2. Open intergrated terminal in ""AutomationProject"
+3. Install playwright in "AutomationProject" with below command
+    -> npm init playwright@latest
+    -> go with all default option continue press enter and complete the installation.
+    -> wait till Happy hacking message visible on console.
+
+
+4. Create a folder structure as per automation framework.
+
+Framework Structure
+
+- pages
+      - common
+          - BasePage.ts
+          - PageManager.ts
+      - saucelab
+          - Login
+              - loginPageLocator.ts
+              - loginPage.ts
+          - inventory
+              - inventoryPageLocators.ts
+              - inventoryPage.ts
+
+- tests 
+     - saucelab
+         - login-testcases.spec.ts
+         - inventory-testcases.spec.ts
+
+- testdata
+     - testdata.ts
+
+- fixtures
+     - baseFixtures.ts
+- utilities
+     - utilsTools.ts
+- playwright.config.ts
+- package.json
+- package-lock.json
+- .env.qa
+- .env.stage
+- .env.prod
+
+---------------------------------------
+5. write code to BasePage.ts
