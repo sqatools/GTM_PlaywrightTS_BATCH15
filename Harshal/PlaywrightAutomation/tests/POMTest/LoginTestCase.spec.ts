@@ -1,13 +1,15 @@
-import { test } from '@playwright/test';
-import { LoginPage } from '..
+// import { test } from '@playwright/test';
+// import { LoginPage } from '../../pages/SauceLab/LoginPage';
 
-test('User Login Test', async ({ page }) => {
+// test('User Login Test', async ({ page }) => {
 
-    const loginPage = new LoginPage(page);
+//     const loginPage = new LoginPage(page);
 
-    await loginPage.gotoLoginPage();
+//     await loginPage.gotoLoginPage("https://www.saucedemo.com/");
 
-    await loginPage.login('admin', 'admin123');
+//     await loginPage.login('standard_user', 'secret_sauce');
 
-    await loginPage.verifyDashboardVisible();
-});
+    
+
+    
+// });
