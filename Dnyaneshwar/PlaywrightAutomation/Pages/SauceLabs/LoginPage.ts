@@ -3,7 +3,6 @@ import {Page, Locator, expect} from '@playwright/test'
 
 import {LoginPageLocator} from './LoginPageLocator'
 
-
 export class LoginPage extends LoginPageLocator{
     // readonly page: Page 
     // readonly usernameField : Locator

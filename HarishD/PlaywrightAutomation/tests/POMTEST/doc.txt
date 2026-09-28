@@ -1,0 +1,25 @@
+POM NOTES : https://sqatools.in/playwright-page-object-model/
+
+
+readonly :means a value can be assigned only once and cannot be changed or reassigned later.
+ It is used to protect a property from being modified accidentally.
+
+
+ Q .In the constructor, why do we initialize the page first, and how are the remaining locators initialized?
+ “I declare the page and locators at the class level. In the constructor, I receive the Playwright
+  page and initialize it first. Then I use that page to initialize the username, password, login
+  button, and dashboard locators. I use readonly so these properties cannot be reassigned.”
+
+
+Base file>Locator file > page file > test file
+
+Base File : Base file contains common properties and methods that can be reused by different page files.
+
+Locator File :Locator file contains the locators of the elements on the application.
+
+page File :Page file contains the methods/actions that we perform on a particular page.
+
+Test File: Test file contains the actual test scenarios and verifies whether the expected result is achieved.
+
+
+////Json data should be " "  quotes

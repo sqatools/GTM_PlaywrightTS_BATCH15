@@ -28,10 +28,10 @@ class Person {
     // }
 
     // parametrize constructor
-    constructor(fname: string, lname: string, email: string, phone: number){
+    constructor(FirstName: string, lname: string, email: string, phone: number){
         console.log("---- Welcome to Person class ----")
         // initialize the porperty of the class.
-            this.FirstName = fname
+            this.FirstName = FirstName
             this.LastName = lname
             this.email = email
             this.phone = phone
