@@ -20,6 +20,27 @@ test.describe("Playwight Assertion and verification", async()=>{
         
             });
 
+
+            test("Verify the locators elements and their status", async({page})=>{
+                await page.goto("https://sqatools.in/automation-practice-page/")
+const Usernamefield = await page.getByPlaceholder("Enter username")
+const status = await Usernamefield.isEnabled()
+await expect(status).toBeTruthy()
+await expect(Usernamefield).toBeFocused()
+await expect(Usernamefield).toBeAttached()
+await Usernamefield.fill("user1@gmail.com")
+const GetFieldValue = await Usernamefield.inputValue()
+expect(GetFieldValue).toEqual("user1@gmail.com")
+
+
+const GenderBox = await page.locator('#male')
+expect(GenderBox).not.toBeChecked()
+GenderBox.check()
+expect(GenderBox).toBeChecked()
+
+            });
+
              test("verify for undefined and values", ()=> {
                     console.log("Hello")
     })
+})
