@@ -1,18 +1,16 @@
-import {test} from '@playwright/test'
+import { test } from "../../fixture/baseFixture";
+import * as testdata from '../../testdata/testdata.ts'
 
-import { LoginPage } from '../../Pages/saucelab/Login/LoginPage'
+test("login test case with valid credential", async ({ pManager }) => {
 
-test("Test sauce lab Login ",async({page})=>{
+    await pManager.loginpage.navigate(testdata.saucelab.login.url);
 
-    const loginPage = new LoginPage(page)
+    await pManager.loginpage.login(
+        testdata.saucelab.login.validCred.username,
+        testdata.saucelab.login.validCred.password
+    );
 
-    await loginPage.navigate("https://www.saucedemo.com/")
+    await pManager.page.waitForTimeout(15_000)
+    //await pManager.loginpage.loginButton.click();
 
-    await loginPage.login('standard_user','secret_sauce')
-
-    const text =await loginPage.DashboadingHeading.textContent();
-
-    console.log(text)
-    await loginPage.DashboadingHeading.isVisible();
-
-})
+});
