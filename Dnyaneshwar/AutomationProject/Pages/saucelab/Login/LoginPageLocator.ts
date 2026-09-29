@@ -20,7 +20,7 @@ export class loginPageLocator extends BasePage {
            return this.page.locator("#login-button")
        }
    
-       get DashboadingHeading() {
-           return this.page.locator(".app_logo")
-       }
+    //    get DashboadingHeading() {
+    //        return this.page.locator(".app_logo")
+    //    }
    }
