@@ -14,7 +14,7 @@ export class loginpagelocators extends basepage{
         return this.page.getByPlaceholder("Password")
     }
     get loginButton(){
-        return this.page.getByPlaceholder("#login-button")
+        return this.page.getByRole("button", { name: "Login" })
     }
     get DashboardHeading(){
         return this.page.locator(".app_logo")
