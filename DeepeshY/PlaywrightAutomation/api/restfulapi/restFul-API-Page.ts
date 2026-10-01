@@ -25,8 +25,30 @@ export class RestFullAPI extends APIBase {
             TestData.RestFullAPI.Headers,
         )
         console.log(await response.json())
-        return [await response.json(), response.status()]
+        return response
     }
 
+    async update_object_info() {
+        const response = await this.add_new_object()
+        const ResJSON = await response.json()
+        const id = ResJSON['id']
+        const new_url = `${TestData.RestFullAPI.common_url}/${id}`
+        const response1 = await this.put_method(
+            new_url, 
+            TestData.RestFullAPI.update_request_body)
+        console.log(response1)
+        return response
+    }
 
+    async patch_object_info() {
+        const response = await this.add_new_object()
+        const ResJSON = await response.json()
+        const id = ResJSON['id']
+        const new_url = `${TestData.RestFullAPI.common_url}/${id}`
+        const response1 = await this.patch_method(
+            new_url, 
+            TestData.RestFullAPI.patch_request_body)
+        console.log(response1)
+        return response
+    }
 }

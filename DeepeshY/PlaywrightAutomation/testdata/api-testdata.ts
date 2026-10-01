@@ -13,5 +13,23 @@ export const RestFullAPI = {
                 "CPU model": "Intel Core i9",
                 "Hard disk size": "1 TB"
             }
-        }
+    },
+
+    update_request_body : 
+                {
+                "name": "Apple MacBook Pro 200",
+                "data": {
+                    "year": 2026,
+                    "price": 2049.99,
+                    "CPU model": "Intel Core i9",
+                    "Hard disk size": "4TB",
+                    "color": "Gold"
+                    }
+            },
+
+    patch_request_body : 
+                {
+                "name": "Apple MacBook Pro 250",
+            }
 }
+

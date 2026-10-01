@@ -24,11 +24,26 @@ test.describe("Restfull API Test cases", ()=> {
     });
 
      test("Create new object and verify", async({apiPageM})=> {
-        const data:any = await apiPageM.restfapi.get_one_object_details()
-        console.log(data)
-        const response = data[0]
-        console.log(response)
-        const status = data[1]
+        const reposne = await apiPageM.restfapi.add_new_object()
+        const responseJSON = await reposne.json()
+        console.log(responseJSON)
+        const status = reposne.status()
+        expect(status).toBe(200)
+    });
+
+     test("Update new object and verify", async({apiPageM})=> {
+        const reposne = await apiPageM.restfapi.update_object_info()
+        const responseJSON = await reposne.json()
+        console.log(responseJSON)
+        const status = reposne.status()
+        expect(status).toBe(200)
+    });
+
+     test("patch new object and verify", async({apiPageM})=> {
+        const reposne = await apiPageM.restfapi.patch_object_info()
+        const responseJSON = await reposne.json()
+        console.log(responseJSON)
+        const status = reposne.status()
         expect(status).toBe(200)
     });
 })
