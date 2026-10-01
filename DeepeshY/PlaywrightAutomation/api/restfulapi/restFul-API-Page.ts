@@ -18,5 +18,15 @@ export class RestFullAPI extends APIBase {
         return [await response.json(), response.status()]
     }
 
+    async add_new_object() {
+        const response = await this.post_method(
+            TestData.RestFullAPI.common_url,
+            TestData.RestFullAPI.creat_object_request_body,
+            TestData.RestFullAPI.Headers,
+        )
+        console.log(await response.json())
+        return [await response.json(), response.status()]
+    }
+
 
 }

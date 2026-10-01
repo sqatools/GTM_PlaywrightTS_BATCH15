@@ -21,5 +21,14 @@ test.describe("Restfull API Test cases", ()=> {
         const status = data[1]
         expect(response.id).toBe("8")
         expect(status).toBe(200)
-    })
+    });
+
+     test("Create new object and verify", async({apiPageM})=> {
+        const data:any = await apiPageM.restfapi.get_one_object_details()
+        console.log(data)
+        const response = data[0]
+        console.log(response)
+        const status = data[1]
+        expect(status).toBe(200)
+    });
 })
