@@ -1,10 +1,15 @@
-import { expect } from '@playwright/test';
-import {test}  from '../../fixtures/BaseFixture.ts'
+import { expect } from '@playwright/test'
+import {test} from '../../fixtures/baseFixture.ts'
+import * as TestData from '../../testdata/Testdata.ts'
 
-test.describe('login feature test cases', () => {
-    test('login with valid credentials', async ({PManager}) => {
-        await PManager.loginPage.navigate('https://www.saucedemo.com/');
-        await PManager.loginPage.login('standard_user', 'secret_sauce');
-        await expect(PManager.loginPage.verifydashboardheading()).toBeTruthy();
-    });
-});
+test.describe("Login Feature Test Cases :", ()=> {
+    test("Login with valid credentials and verify", async({PManager})=> {
+        await PManager.loginpage.navigate(TestData.SauceLab.login.url)
+        await PManager.loginpage.login(
+            TestData.SauceLab.login.validcred.username,
+            TestData.SauceLab.login.validcred.password
+        )
+        await PManager.loginpage.verifydashboardheading()
+        await PManager.page.waitForTimeout(3_000)
+    })
+})
