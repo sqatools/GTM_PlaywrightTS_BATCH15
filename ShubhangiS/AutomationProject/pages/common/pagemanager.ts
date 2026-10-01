@@ -1,7 +1,12 @@
-import { Page } from "@playwright/test";
-import{LoginPage} from "../saucelab/login/loginpage"
+import {Page} from '@playwright/test';
+import { LoginPage } from "../saucelab/login/loginpage";
 
-export class pagemanager{
+export class PageManager {
+    readonly page: Page
+    readonly loginpage: LoginPage
 
-    readonly page
+    constructor(page: Page){
+        this.page = page
+        this.loginpage = new LoginPage(page)
+    }
 }

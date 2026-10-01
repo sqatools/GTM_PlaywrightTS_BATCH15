@@ -11,7 +11,11 @@ export class LoginPage extends loginPageLocator {
         await this.UsernameField.fill(username)
         await this.PasswordField.fill(password)
         await this.loginButton.click()
-        await this.DashboadingHeading.click();
+        //await this.DashboadingHeading.click();
 
     }
+    // async Dashboarding()
+    // {
+      
+    // }
 }
