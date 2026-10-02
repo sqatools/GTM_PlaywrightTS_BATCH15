@@ -1,12 +1,15 @@
 import {Page} from '@playwright/test'
-import{LoginPage} from '../saucelab/login/loginpage'
+import { LoginPage } from "../saucelab/login/loginPage.ts";
+import { InventoryPage } from '../saucelab/inventry/inventrypage.ts'
 
 export class PageManager {
     readonly page: Page
-    readonly loginPage: LoginPage
+    readonly loginpage: LoginPage
+    readonly InventPage: InventoryPage
 
-    constructor(page: Page) {
+    constructor(page: Page){
         this.page = page
-        this.loginPage = new LoginPage(page)
+        this.loginpage = new LoginPage(page)
+        this.InventPage = new InventoryPage(page)
     }
 }

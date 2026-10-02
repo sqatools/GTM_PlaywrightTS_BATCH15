@@ -6,7 +6,7 @@ export class basepage{
     constructor(page: Page){
         this.page=page
     }
-    navigate(url: string){
-        this.page.goto(url)
+    async navigate(url: string){
+        await this.page.goto(url)
     }
 }

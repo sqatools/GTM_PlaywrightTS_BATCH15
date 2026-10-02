@@ -1,7 +1,7 @@
 import { loginpagelocators } from "./loginpagelocators";
-import { Page } from "@playwright/test";
 
-export class loginpage extends loginpagelocators{
+import {Page, expect} from '@playwright/test'
+export class LoginPage extends loginpagelocators{
 
     constructor(page:Page){
 
@@ -12,5 +12,13 @@ export class loginpage extends loginpagelocators{
 
         await this.UsernameField.fill(username)
         await this.PasswordField.fill(password)
+         await this.loginButton.click()
+    }
+
+    async VerifyDashBoardHeading() {
+        //await this.DashboadingHeading.waitFor({state: 'visible', timeout: 15_000})
+        await expect(this.DashboardHeading).toBeVisible()
     }
 }
+
+

@@ -43,3 +43,66 @@ Framework Structure
 
 ---------------------------------------
 5. write code to BasePage.ts
+
+import {Page} from '@playwright/test'
+
+export class BasePage {
+    readonly page: Page
+
+    constructor(page: Page){
+        this.page = page
+    }
+
+    navigate(url: string) {
+        this.page.goto(url)
+
+    }
+}
+
+
+---------------------------------------
+6. write code to LoginPageLocators.ts and stablish connect between "BasePage" and "LoginPageLocators"
+
+import {Page} from '@playwright/test'
+import { BasePage } from '../../common/BasePage.ts';
+
+export class loginPageLocators extends BasePage {
+
+    constructor(page: Page) {
+        super(page)
+    }
+
+    get UsernameField() {
+        return this.page.getByPlaceholder("Username")
+    }
+
+    get PasswordField() {
+        return this.page.getByPlaceholder("Password")
+    }
+
+    get loginButton() {
+        return this.page.locator("#login-button")
+    }
+
+    get DashboadingHeading() {
+        return this.page.locator(".app_logo")
+    }
+}
+
+-----------------------------------------------------------------
+7. write a code to loginPage.ts and stanlish connection between "LoginPage.ts" and "LoginPageLocators.ts"
+
+import { loginPageLocators } from "./loginPageLocators.ts";
+import {Page} from '@playwright/test'
+
+export class LoginPage extends loginPageLocators {
+    constructor(page: Page) {
+        super(page)
+    }
+    
+    async login(username: string, password: string) {
+        await this.UsernameField.fill(username)
+        await this.PasswordField.fill(password)
+        await this.loginButton.click()
+    }
+}

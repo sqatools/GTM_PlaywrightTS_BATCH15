@@ -3,7 +3,7 @@ import { Locator, Page, } from "@playwright/test";
 import { BasePage } from '../Common/BasePage.ts'
 
 export class LoginPageLocators extends BasePage {
-          
+
     constructor(page: Page) {
         super(page)
     }

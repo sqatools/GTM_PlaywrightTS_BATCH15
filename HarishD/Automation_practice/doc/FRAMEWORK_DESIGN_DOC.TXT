@@ -1,0 +1,48 @@
+1.Create a folder with name as "Automation_Practice"
+2.Open the integrated terminal in Automation_practice
+3.Install playwright in "Automation_practice" with below command
+-->npm init playwright@latest
+-->Go with all the default option continue with press enter and complete the instillation 
+--> wait till Happy hacking message shown in console
+
+4.Create a folder structure as per the framework
+Framework Structure :
+
+--pages
+      - common
+          - BasePage.ts
+          - PageManager.ts
+      - saucelab
+          - Login
+              - loginPageLocator.ts
+              - loginPage.ts
+          - inventory
+              - inventoryPageLocators.ts
+              - inventoryPage.ts
+
+--tests  
+       --Saucelab
+            -login_testcase.spec.ts
+            -inventory_testcase.spec.ts
+
+--testdata 
+       -testdata.ts
+
+--fixtures
+       -baseFixtures.ts
+--utilities
+       -utilisTool.ts
+--playwright.config.ts  //inbuit
+--package.json   //inbuilt
+--package-lock.json  //inbult
+--.env.qa
+--.env.stage
+--.env.prod
+
+
+
+////basepage >locator page>page>pagemanager>fixture>testcase
+
+
+
+

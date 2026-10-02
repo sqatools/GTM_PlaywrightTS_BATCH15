@@ -1,0 +1,37 @@
+API : Application Programming Interface
+
+1. SOAP API : SOAP is a protocol that primarily takes the input in XML format. 
+It supports HTTP, SNMP, and TCP-like protocols. SOAP API is heavier in weight
+ because it maintains the cache and is operation-oriented. Generally, enterprise
+applications use the SOAP APIs due to its heavy architecture. 
+
+2. Rest API : 
+     Primarily use HTTP and HTTPS protocol. It is resource-oriented.
+    There are a few methods available in REST: GET, POST, PUT, PATCH, and DELETE,
+    and it is lighter in weight. Nowadays, all mobile apps, microservices, and web apps are using REST.
+
+
+HTTP Methods :
+1. GET : Get method, generally, we use to get the information from the server. 
+2. POST : The POST method helps to create any new entry to the server. 
+3. PUT : Put method helps us to update all the values of an existing entry or create a new entry. 
+4. PATCH : Page method helps us to update any existing field in an existing entry in the database. 
+5. DELETE : The delete method helps us to delete the data from the server using any of the test IDs 
+            or any of the existing property. 
+
+status code
+1. 100-199 : information data
+2. 200 - 299 : SuccessOperation
+3. 300 - 399 : It helps to indentify the direction existing API.
+4. 400 - 499 : This for client error
+5. 500 - 599 : This is for server error. 
+
+
+1. Presentation Layer
+2. Business Layer (API works on Business layer)
+3. Database Layer
+
+
+command to execute API test cases with custom script in package.json file
+-> npm run test:api
+-> npm run test:ui

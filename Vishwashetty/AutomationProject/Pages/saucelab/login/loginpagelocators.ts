@@ -8,7 +8,7 @@ export class LoginPageLocators extends BasePage {
     }       
 
     get FirstNameField() {
-        return this.page.locator('#first-name');
+        return this.page.locator('#user-name');
     }   
     get FirstPasswordField() {
         return this.page.locator('#password');
