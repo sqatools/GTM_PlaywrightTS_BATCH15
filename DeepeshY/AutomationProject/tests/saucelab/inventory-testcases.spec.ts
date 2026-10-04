@@ -11,6 +11,7 @@ test.describe("Inventory test cases", ()=> {
         await PManager.loginpage.VerifyDashBoardHeading()
        await PManager.InventPage.AddItemToCart(TestData.saucelab.itemname)
        await PManager.InventPage.checkItemInCart(TestData.saucelab.itemname)
+
        await PManager.InventPage.RemoveItemFromCart(TestData.saucelab.itemname)
 
     });

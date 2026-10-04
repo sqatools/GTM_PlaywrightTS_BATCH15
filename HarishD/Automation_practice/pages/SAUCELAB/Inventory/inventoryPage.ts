@@ -1,28 +1,26 @@
 //basepage >locator page>page>pagemanager>fixture>testcase
- 
-import { InventoryLocatorPage }   from './inventoryPageLocators.ts'
-import {expect, Page} from '@playwright/test' 
 
-export class  inventorypage extends InventoryLocatorPage{
+import { InventoryLocatorPage } from './inventoryPageLocators.ts'
+import { expect, Page } from '@playwright/test'
 
-   constructor(page: Page) {
+export class InventoryPage extends InventoryLocatorPage {
+
+    constructor(page: Page) {
         super(page)
-    } 
+    }
 
-    async addItem(Itemname:string){
+    async addItem(Itemname: string) {
         await this.addtocartButton(Itemname).click()
     }
 
-     async  checkIteminCart(Itemname:string){
+    async checkIteminCart(Itemname: string) {
         await this.cartlink.click()
-
-        expect(this.IteminCart(Itemname)).toBeVisible()
+       await expect(this.IteminCart(Itemname)).toBeVisible()
     }
 
-    async  RemoveItemFromCart(Itemname:string){
+    async RemoveItemFromCart(Itemname: string) {
         await this.cartlink.click()
-
-        expect(this.RemooveButtonIncart(Itemname)).toBeVisible()
-
+        await expect(this.RemooveButtonIncart(Itemname)).toBeVisible()
+    }
 }
 
