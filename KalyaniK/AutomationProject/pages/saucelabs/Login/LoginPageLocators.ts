@@ -1,4 +1,4 @@
-import {BasePage} from  '../../common/BasePage.ts'
+import {BasePage} from  "../../common/BasePage"
 import {Page} from '@playwright/test'
 
 export class LoginPageLocators extends BasePage{
