@@ -1,0 +1,98 @@
+step by step read the valuse from environment file
+
+Step 1 :install the required package in project using the following command:
+     command : npm install dotenv
+
+Step 2:create a file with name .env in the project 
+     --> add content to the file
+     --> Base Url :https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+     Username :Admin
+     Password :admin123
+
+
+Step 3  Load environment variables.
+    -> playwright.config.ts file
+    -> Add below content to file : required content is already available in playwrigt.config.ts file
+       we need to just uncomment the file content.
+
+      --> Un comment in playwright config file
+
+      import { defineConfig, devices } from '@playwright/test';
+    /**
+    * Read environment variables from file.
+    * https://github.com/motdotla/dotenv
+    */
+    import dotenv from 'dotenv';
+    import path from 'path';
+    dotenv.config({ path: path.resolve(__dirname, '.env') });
+    --> playwright config file in the use section we need to update
+    use {
+        // it will read Base_Url value from .env file.
+        baseURL: process.env.Base_Url,
+    }
+
+
+// we have one more approch for different env file like dev, qa, uat, prod etc
+
+Step3 : Update config file to read values from environment.
+      -> update playwright.config file with below content and save it.
+      ```
+        import { defineConfig, devices } from '@playwright/test';
+        /**
+        * Read environment variables from file.
+        * https://github.com/motdotla/dotenv
+        */
+        import dotenv from 'dotenv';
+        import path from 'path';
+        const environment = process.env.ENV
+        dotenv.config({ path: path.resolve(__dirname, `.env.${environment}`) });
+
+tep4 : Create a test file and read values from environment variables.
+    
+    filename : read-environment-values.spec.ts
+    ```
+     test.describe("Read values from environment",() => {
+
+            test("Read data from env", async()=> {
+                console.log(process.env.BASE_URL)
+                console.log(process.env.USERNAME_VALUE)
+                console.log(process.env.PASSWORD_VALUE)
+                console.log(process.env.ENV)
+            })
+
+    })
+
+ // if we want to run the file in specific environment we need to use below commands
+    //Here we are running in "qaenv"
+    // 1.$env:Test_ENV='qa'
+    //2.npx playwright test Read_ENV_filedata.spec.ts --project=chromium
+
+    //Here we are running in "stage"
+    // 1.$env:Test_ENV='stage'
+    //2.npx playwright test Read_ENV_filedata.spec.ts --project=chromium
+
+step5 : follow below steps to commandline to set environment
+     ->  run command to set environment
+     -> $env:ENV="prod"  : powershell in VScode
+     -> set ENV=qa : windows CMD
+     -> ENV=qa npx playwright test : Linux or Mac machine.
+
+step6 : Execute the test file, it should read values from different environment file as per we have set the environments.
+     -> npx playwright test read_environment_values.spec.ts
+     -> It will be execute on environment specific values and execute the test cases.
+
+
+step 7 : If we want to run the POM FILE
+$env:Test_ENV='qa'
+npx playwright test LoginPage_ENV.spec.ts --project=chromium --headed
+
+
+
+
+
+
+    
+
+
+
+
