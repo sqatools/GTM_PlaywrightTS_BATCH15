@@ -24,11 +24,27 @@ expect(status).toBe(200)
 })
 
 
-   test("Create new object and verify", async({apiPageM}) =>{
-     const response= await apiPageM.restfapi.get_new_object_details()
-const responseJSON = await response.json()
- console.log(responseJSON)
-const status = response.status()
-expect(status).toBe(200)
+ test("Create new object and verify", async({apiPageM})=> {
+        const response = await apiPageM.restfapi.add_new_object()
+        const responseJSON = await response.json()
+        console.log(responseJSON)
+        const status = response.status()
+       expect(status).toBe(200)
    })
+
+ test("Update new object and verify", async({apiPageM})=> {
+        const response = await apiPageM.restfapi.update_object_info()
+        const responseJSON = await response.json()
+        console.log(responseJSON)
+        const status = response.status()
+        expect(status).toBe(200)
+    })
+
+//  test("patch new object and verify", async({apiPageM})=> {
+//         const response = await apiPageM.restfapi.patch_object_info()
+//         const responseJSON = await response.json()
+//         console.log(responseJSON)
+//        // const status = response.status()
+//         expect(response.status()).toBe(200)
+//     });
 })
