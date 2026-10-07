@@ -68,3 +68,28 @@ for(var i=numa; i>0;i--){
 }
     console.log(fact)
  
+    //write a program to calculate the factorial of given no
+ 
+var num =4;
+var factorial = 1;
+for(var i =1; i <=num; i ++){
+factorial= factorial * i;
+}
+console.log("factorial value:", + factorial)
+
+
+var num =22;
+var prime = true;
+for(var i = 2; i <num; i++){
+if(num%i== 0) {
+    prime =false
+    break;
+
+}
+}
+if(prime) {
+    console.log("this is prime no:",  num)
+}
+else {
+    console.log(" not a prime")
+}
