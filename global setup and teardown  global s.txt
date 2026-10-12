@@ -1,0 +1,15 @@
+global setup and teardown : global setup and teardown are specific more to the project level. It doesn't work on a test case level. Wherever you want to execute the test cases on a browser level and/or do the cleanup part that we want to do, we can use global setup and teardown.
+
+
+Fixture :  Test , Worker 
+Test : Access Page for each test case.
+worker : login to website : setup
+         logout from website : teardown
+
+
+Hooks : hooks works with each test suites
+beforeAll : execute before all test cases in test suite.
+Afterall : execute after all tests are executed in that file
+beforeach : execute before each test case execution starts.
+aftereach : execute after each test case execution is completed. 
+
