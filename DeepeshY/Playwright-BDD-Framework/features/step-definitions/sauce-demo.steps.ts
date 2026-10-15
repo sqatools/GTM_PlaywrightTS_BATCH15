@@ -15,20 +15,20 @@ Given("I am on the SauceDemo login page", async function (this: SauceDemoWorld) 
 
 When(
   "I sign in as {string} with password {string}",
-  async function (this: SauceDemoWorld, username: string, userPassword: string) {
-    await new LoginPage(this.page).signIn(username, userPassword);
+  async function (this: SauceDemoWorld, url: string, username: string, userPassword: string) {
+    await new LoginPage(this.page).signIn(url, username, userPassword);
   }
 );
 
 When(
   "I submit the login form with username {string} and password {string}",
-  async function (this: SauceDemoWorld, username: string, userPassword: string) {
-    await new LoginPage(this.page).signIn(username, userPassword);
+  async function (this: SauceDemoWorld, url: string, username: string, userPassword: string) {
+    await new LoginPage(this.page).signIn(url, username, userPassword);
   }
 );
 
 Given("I am signed in as {string}", async function (this: SauceDemoWorld, username: string) {
-  await new LoginPage(this.page).signIn(username, password);
+  await new LoginPage(this.page).signIn("https://www.saucedemo.com", username, password);
   await this.page.locator('[data-test="inventory-container"]').waitFor();
 });
 

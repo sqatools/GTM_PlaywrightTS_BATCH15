@@ -6,19 +6,19 @@ Feature: SauceDemo authentication
   @smoke
   Scenario: Sign in with a valid standard account
     Given I am on the SauceDemo login page
-    When I sign in as "standard_user" with password "secret_sauce"
+    When I sign in "saucedemo.com" as "standard_user" with password "secret_sauce"
     Then I should see the product catalog
 
   @regression
-  Scenario: Reject an invalid password
+  Scenario: Reject an invalid passwordv
     Given I am on the SauceDemo login page
-    When I sign in as "standard_user" with password "wrong_password"
+    When I sign in "saucedemo.com" as "standard_user" with password "wrong_password"
     Then I should see the login error "Username and password do not match any user in this service"
 
   @regression
   Scenario: Show an error for a locked account
     Given I am on the SauceDemo login page
-    When I sign in as "locked_out_user" with password "secret_sauce"
+    When I sign in "saucedemo.com" as "locked_out_user" with password "secret_sauce"
     Then I should see the login error "Sorry, this user has been locked out."
 
   @regression

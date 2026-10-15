@@ -20,7 +20,7 @@ Validate the customer-facing shopping journey at [SauceDemo](https://www.saucede
 | Test isolation | New browser and context per scenario; no shared cart or cookies |
 | Selectors | Stable `data-test` attributes where available; product cards scoped by product name |
 | Assertions | User-visible state, item names, counts, sorting order, validation messages, and confirmation |
-| Evidence | Cucumber HTML report and attached full-page screenshots for failed scenarios |
+| Evidence | Cucumber HTML and Allure reports; failure screenshots are attached to both |
 | Browser baseline | Chromium desktop at 1280 x 800 |
 | Priorities | `@smoke` for critical journey checks; `@regression` for broader functional checks |
 
@@ -63,10 +63,13 @@ npx playwright install chromium
 npm test
 npm run test:smoke
 npm run test:regression
+npm run test:allure
 npm run typecheck
 ```
 
-To target another compatible deployment, set `BASE_URL` before running Cucumber. Set `HEADLESS=false` to show the browser during local debugging. Reports are generated at `reports/cucumber.html`; failure screenshots are attached to the report.
+`npm test`, `npm run test:smoke`, and `npm run test:regression` write Allure result data to `reports/allure-results` alongside the Cucumber HTML report at `reports/cucumber.html`. Run `npm run allure:generate` to build the browsable Allure report at `reports/allure-report`; `npm run test:allure` runs the full suite and generates that report in one command. Use `npm run allure:open` to open a generated report. Failed-scenario screenshots are attached to the reports.
+
+To target another compatible deployment, set `BASE_URL` before running Cucumber. Set `HEADLESS=false` to show the browser during local debugging.
 
 ## Entry, exit, and triage
 

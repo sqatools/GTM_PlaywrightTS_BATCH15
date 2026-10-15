@@ -1,0 +1,2 @@
+//  Run test cases with model
+-> npm run test
