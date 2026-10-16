@@ -1,0 +1,33 @@
+Feature: Swag Labs login
+  As a shopper
+  I want to sign in to Swag Labs
+  So that I can access the product catalog with my account
+
+  @smoke
+  Scenario: Sign in with a valid standard account
+    Given I am on the Swag Labs login page
+    When I sign in as "standard_user" with password "secret_sauce"
+    Then I should see the product catalog
+
+  @regression
+  Scenario: Reject an invalid password
+    Given I am on the Swag Labs login page
+    When I sign in as "standard_user" with password "wrong_password"
+    Then I should see the login error "Username and password do not match any user in this service"
+
+  @regression
+  Scenario: Reject a locked account
+    Given I am on the Swag Labs login page
+    When I sign in as "locked_out_user" with password "secret_sauce"
+    Then I should see the login error "Sorry, this user has been locked out."
+
+  @regression
+  Scenario Outline: Require both login fields
+    Given I am on the Swag Labs login page
+    When I submit the login form with username "<username>" and password "<password>"
+    Then I should see the login error "<message>"
+
+    Examples:
+      | username      | password     | message                      |
+      |               | secret_sauce | Username is required         |
+      | standard_user |              | Password is required         |
