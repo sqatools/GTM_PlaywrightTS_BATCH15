@@ -35,3 +35,13 @@ status code
 command to execute API test cases with custom script in package.json file
 -> npm run test:api
 -> npm run test:ui
+
+If we want to execute the API test cases with we need to add some commands in package.json file. 
+scripts": {
+    "test:ui": "playwright test --config=playwright.config.ts",
+    "test:api": "playwright test --config=playwright-api.config.ts"
+  },
+
+playwright.config also we need to create a new config file for API testing. playwright-api.config.ts
+
+

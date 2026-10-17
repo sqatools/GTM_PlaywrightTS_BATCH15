@@ -1,0 +1,13 @@
+--pages
+      - common
+          - apiPage.ts
+          - api_PageManager.ts
+      - restAPI
+          - restMethod_API_page.ts
+--tests  
+        restfull_api_testcase.spec.ts
+--testdata 
+       -api_testdata.ts.ts
+
+--fixtures
+       -APIbaseFixtures.ts
