@@ -1,0 +1,40 @@
+Variable : variable are used to store the data
+three types of variable : Var , let,const
+
+Properties of var
+1. var variable can be re-declare and re-assign
+2. It has a function scope
+3. we can re use n number of times
+4. we can declare a variable without initializing it
+
+
+// declare avariable with name as 'a' and assign the value '20'
+var a=20;
+//var is akeyword
+// a: varaiable name
+// = assignment operator
+//20 : value assign to a variable
+
+
+Let variable
+1.let variable cannot re declare
+2.user can reassign value
+3.it has block scope
+
+Block scope means a variable can be accessed only inside the block { } where it is declared, when you use let or const.
+
+
+const variable
+       //const variable cannot be re declare and re assign
+       //it has block scope
+       //const variable must be initialized at the time of declaration
+
+
+// Rules to declare a variable name
+1.Variable name should not start with number
+2.varaible name should not contain special character except $
+3.Variable name should not be a reserved keyword
+4.Variable name should not contain space
+5.variable name should be meaningful
+6. variable name should be in camel case
+7.variable name are case sensitive

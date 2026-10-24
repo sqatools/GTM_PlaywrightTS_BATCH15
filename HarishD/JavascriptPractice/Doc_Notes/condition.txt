@@ -1,0 +1,10 @@
+ if statement : is a conditional statement that executes a block of code only when the given condition is true.
+
+If else statement :is a conditional statement used to execute one block of code when a condition is true
+ and another block when the condition is false.
+
+else if statement : The else if statement is used to check multiple conditions in sequence. If a condition
+ is true, its corresponding block executes, and the remaining conditions in that chain are skipped.
+
+ A nested if : means writing one if statement inside another if statement to check an additional condition.
+

@@ -1,0 +1,42 @@
+Variables
+
+var, let, const, declaration, initialization, scope
+
+
+2. Data Types
+
+Number, String, Boolean, Undefined, Null, Object
+
+
+3. Operators
+
+Arithmetic, comparison, logical, assignment
+
+4. Conditions
+
+if, else if, else, switch, logical conditions
+
+5. Loops
+
+for, while, do...while, break, continue
+
+
+6. Strings
+
+Length, indexing, methods, character counting, reverse strings
+
+
+7. Arrays
+
+Indexing, array methods, loops, maximum and minimum values
+
+
+
+8. Objects
+
+Properties, keys, values, accessing and updating data
+
+
+9. Functions
+
+Parameters, arguments, return values, arrow functions

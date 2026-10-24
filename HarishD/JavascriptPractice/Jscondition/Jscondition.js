@@ -207,7 +207,7 @@ if (round1 == "pass") {
         console.log("Failed in 2nd round, try next time.");
     }
 
- } else {
+} else {
     console.log("Failed in 1st round.");
 }
 
@@ -217,9 +217,21 @@ if (round1 == "pass") {
 
 
 var num = 10
-var result = num%2 == 0 ? "even" : "odd"
+var result = num % 2 == 0 ? "even" : "odd"
 console.log(result)
 
 var var1 = 21
-var result2 = var1%5 == 0 ? "divisible by 5": "not divisible by 5"
+var result2 = var1 % 5 == 0 ? "divisible by 5" : "not divisible by 5"
 console.log(result2)
+
+
+
+let age = 20;
+let hasLicense = true;
+if (age >= 18) {
+    if (hasLicense) {
+        console.log("You can drive");
+    } else {
+        console.log("Get a license first");
+    }
+}

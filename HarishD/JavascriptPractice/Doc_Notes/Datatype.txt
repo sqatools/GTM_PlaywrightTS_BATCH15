@@ -1,0 +1,34 @@
+A data type defines the type of data a variable holds, such as a number, string, Boolean, or object.
+ JavaScript has primitive data types and the non-primitive Object type.
+
+Premative Data Types : The datatypes that hold only one value at atime and it is immutable in nature
+1. number :
+       var n1 = 0
+       console.log(n1, ":", typeof n1)
+
+2.string : string is a sequence of characters and it is enclosed in single or double quotes
+       var str1 = 'Hello'
+       console.log(str1, ":", typeof str1)
+3. boolean : boolean data type has only two values true or false
+       var b1 = true
+       console.log(b1, ":", typeof b1)
+4. undefined : when a variable is declared but not assigned any value, it is undefined
+       var u1;
+       console.log(u1, ":", typeof u1)
+5. null : null is an assignment value that represents no value or no object
+       var n1 = null
+       console.log(n1, ":", typeof n1)
+
+Non Premative : data type contain multiple values and mutable in nature
+1. array : array can store all types of value in square bracket
+//Each value of array has its index position as like string
+
+2.object
+// object datatype store value in key value format in curly braces
+//it only store unique key , duplicate keys are not allowed
+//there is no restriction in values
+
+//3.Function
+Block of code that help as to reduce the duplicacy code and we can re -use number of times
+
+ 

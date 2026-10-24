@@ -5,9 +5,9 @@ var secondMax = array[0];
 
 for (var i = 0; i < array.length; i++) {
 
-    if (array[i] > max) {      //4>0 = True|   6>4= true | 7>6=true |11>7=true|13>11=true|116>13=true|25>116=false
-        secondMax = max;        //4  |   second max=4  | secondmax=6|second max=7|secondmax=11|13|
-        max = array[i];         //4  |  max =6  | max=7| max=11|max=13|116
+    if (array[i] > max) {      //4>4 = false|   6>4= true | 7>6=true |11>7=true|13>11=true|116>13=true|25>116=false
+        secondMax = max;        //if block cannot execute |   second max=4  | secondmax=6|second max=7|secondmax=11|13|
+        max = array[i];         //if block cannot execute |  max =6  | max=7| max=11|max=13|116
     }
 
     else if (array[i] > secondMax && array[i] != max)  //25>13 && 25!=116 |29>25 && 29!=116

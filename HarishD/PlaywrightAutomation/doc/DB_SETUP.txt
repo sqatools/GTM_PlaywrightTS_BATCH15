@@ -1,0 +1,36 @@
+in playwright config file added db config 
+
+step 1: 
+    {
+      name: 'setup db',
+      testMatch: /global\.setup\.ts/,
+    },
+
+step2 :  dependencies: ['setup db'],  // in the config file at 
+
+           {
+              name: 'chromium',
+              use: { ...devices['Desktop Chrome'] },
+               dependencies: ['setup db'],
+
+           },
+
+step 3 : create one file global.setup.ts in test folder
+      add this code in global.setup.ts file
+      import { test as setup } from '@playwright/test';
+      setup('create new database', async ({ }) => {
+       console.log('creating new database...');
+       // Initialize the database
+        });
+
+step 4: Delete the database after the test execution is completed. Add this code in global.teardown.ts file
+      import { test as teardown } from '@playwright/test';
+      teardown('delete database', async ({ }) => {
+       console.log('deleting database...');
+       // Delete the database
+        });
+step 5 : add clean up code project in playwright.config.ts file
+          {
+          name: 'cleanup db',
+          testMatch: /global\.teardown\.ts/,
+          },

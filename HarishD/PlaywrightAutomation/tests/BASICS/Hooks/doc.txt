@@ -1,0 +1,12 @@
+“Hooks in Playwright are used to execute setup and teardown code at specific stages of test execution.
+ For example, beforeEach() can open a login page before every test, and afterEach() can perform 
+ cleanup after every test. Hooks help reduce code duplication and make test automation easier to
+  maintain.”
+
+
+  1. Types of hooks in Playwright
+Hook	When it executes
+test.beforeAll()	Once before all tests in a test group
+test.beforeEach()	Before every test case
+test.afterEach()	After every test case
+test.afterAll()	Once after all tests in a test group
