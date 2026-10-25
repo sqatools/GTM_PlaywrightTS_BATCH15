@@ -12,7 +12,10 @@ console.log(b-"200")
 // String into number
 var s1= "65789"
 var n1= Number(s1)
-console.log(n1, typeof(n1))
+var n2=300
+var sum = n1+n2
+console.log(sum, typeof(sum))
+
 
 //number into String
 var n2= 89078

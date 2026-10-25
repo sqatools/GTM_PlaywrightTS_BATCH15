@@ -4,8 +4,9 @@
 var arr1 =[20, 30, 10,5, 15, 18,40,25,22]
 var maxvalue=0
 for (var value of arr1)
-   // console.log(value)
     {
+     console.log(value)
+
       if (value > maxvalue){
         maxvalue =value
       }

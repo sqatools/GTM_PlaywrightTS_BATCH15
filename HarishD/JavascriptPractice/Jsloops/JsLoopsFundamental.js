@@ -36,8 +36,9 @@ console.log("get the factorial of a number:", fact)
 
 
 console.log("#######################")
-const prompt = require("prompt-sync")();
-const numA = prompt("enter the values: ");
+// JULY 17 class
+const prompt = require('promptSync')();
+const numA = ("enter the values: ");
 var fact = 1
 for (var i = Number(numA); i > 0; i--)    // 
 
@@ -47,8 +48,8 @@ for (var i = Number(numA); i > 0; i--)    //
 }
 console.log("get the factorial of a number:", fact)
 
-
 console.log("#######################")
+
 var str = "Hello World"
 for (var word of str) {
     console.log(word)
@@ -96,6 +97,8 @@ for (condition) {
 
 //write a proogram to check prime number form 1to 100
 
+var primenumbers=[]
+var nonprimenumbers=[]
 for (var num = 2; num <= 100; num++) {     //for suppose n=5
     var prime1 = true  //suppose we though thet 5 is prime
     for (var i = 2; i < num; i++) {          //2,5
@@ -105,10 +108,15 @@ for (var num = 2; num <= 100; num++) {     //for suppose n=5
         }
     }
     if (prime1) {
-        console.log("Given num is prime :", num)
+        primenumbers.push(num)
     }
-}
+    else{
+        nonprimenumbers.push(num)
+    }
 
+}
+console.log("Prime numbers between 1 and 100 are:", primenumbers)
+console.log("Non Prime numbers between 1 and 100 are:", nonprimenumbers)
 
 console.log("#######################")
 for (var i = 1; i <= 5; i++) {
@@ -159,6 +167,7 @@ while (n1<=10)
 {
     console.log("print the number of n1 :" , n1)
     n1+=1
+
 }
 
 console.log("infinate loop")

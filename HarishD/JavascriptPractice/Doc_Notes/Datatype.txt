@@ -9,6 +9,7 @@ Premative Data Types : The datatypes that hold only one value at atime and it is
 2.string : string is a sequence of characters and it is enclosed in single or double quotes
        var str1 = 'Hello'
        console.log(str1, ":", typeof str1)
+       
 3. boolean : boolean data type has only two values true or false
        var b1 = true
        console.log(b1, ":", typeof b1)

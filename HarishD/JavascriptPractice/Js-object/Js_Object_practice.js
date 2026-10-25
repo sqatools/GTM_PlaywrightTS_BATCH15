@@ -49,6 +49,7 @@ var object4 = {
     marriedstatus: true
 };
 
+delete object4.hobies.music
 console.log(object4);
 console.log(object4.hobies.games)
 console.log(object4.personLikedCities[1])
@@ -71,14 +72,15 @@ var object6 = { a: 20, b: 45, c: 345, d: 98 }
 console.log(Object.entries(object6))
 
 //apply loop on object values
-for (var data of Object.entries(object6)) {
+var object7 = { a: 20, b: 45, c: 345, d: 98 }
+for (var data of Object.entries(object7)) {
     console.log(data)
 }
 
 //apply loop on object keys
-var object7 = { a: 200, b: 122, c: 234, d: 899, e: 124 }
-for (var key in object7) {
-    console.log(key, " : ", object7[key])
+var object8= { a: 200, b: 122, c: 234, d: 899, e: 124 }
+for (var key in object8) {
+    console.log(key, " : ", object8[key])
 }
 
 

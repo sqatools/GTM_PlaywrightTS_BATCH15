@@ -1,11 +1,10 @@
 // Q1 : remove duplicate characters from string
 var str1 = "Cricbuzz is not associated";
 var output = "";
-
+var duplicateChar = [];
 for (var chr1 of str1) {
-
-for (var chr1 of str1) {
-    if (output.includes(chr1)) {
+    if (output.includes(chr1)) {       // here it will check the  character is already present in output or not, if it is present then it will skip the loop for the character and move to next character
+        duplicateChar.push(chr1);
         continue;
     }
     else {
@@ -13,29 +12,30 @@ for (var chr1 of str1) {
     }
 
 }
-
-}
 console.log("output :", output);
+console.log("Duplicate characters :", duplicateChar);
 
 console.log("################################")
 // write a program to count vowel in the string
 
-var str2 = "we are learning javascript"
+var str2 = "we are learning javascript";
 var vowels = "aeiou";
-var count = 0
+var count = 0;
+
 for (var chr2 of str2) {
     if (vowels.includes(chr2)) {
-        count++
+        // Here it checks whether the character is present in vowels or not.
+        // If it is present, the condition is true, and the count increments by 1.
+        count++;
     }
 }
-
-console.log("vowels of given string :", count)
+console.log("vowels of given string :", count);
 
 //1. Get the First and Last 2 Characters
 var str1 = "JavaScript";
 
 if (str1.length < 2) {
-    console.log("");
+    console.log("");     // here 
 } else {
     let firstTwo = str1.substring(0, 2);
     let lastTwo = str1.substring(str1.length - 2);
@@ -159,15 +159,15 @@ for (var char of s10) {
     }
 }
 
-console.log("Duplicate count:", count);  
+console.log("Duplicate count:", count);
 
 //8. Find the Most Frequently Repeated Character
 
-var Input= "mpromgrammingppm"
+var Input = "mpromgrammingppm"
 var MFchar = ""
 var MCOunt = 0
 var output = {}
-for(var char of Input) {
+for (var char of Input) {
     if (Object.hasOwn(output, char)) {
         output[char] += 1
         if (output[char] >= MCOunt) {
@@ -194,43 +194,42 @@ for (var word of str11) {
 console.log(count)
 
 
- //Combine Two Strings
-    var str1="Hello"
-    var str2="World"
-    var output= str1+" "+str2
-    console.log(output)
+//Combine Two Strings
+var str1 = "Hello"
+var str2 = "World"
+var output = str1 + " " + str2
+console.log(output)
 
-    //Count Total Consonants
-  var str1="JavaScrIpt"
-  var str2="aeiouAEIO"
-  var count=0
-  for(var val of str1)
-  if(!str2.includes(val))
-  {
-    count++
-  }
-  console.log("Count of consonants:",count)
-
-  //Print Characters at Even Positions
-  var str1="JavaScript"
-  var output=""
-  var i=0
-  for(i=0; i<=str1.length-1; i++){
-
-    if(i%2==0){
-        output+=str1[i]
+//Count Total Consonants
+var str1 = "JavaScrIpt"
+var str2 = "aeiouAEIOU"
+var count = 0
+for (var val of str1)
+    if (!str2.includes(val)) {
+        count++
     }
-  }
-  console.log(output)
+console.log("Count of consonants:", count)
 
-  // //Print Characters at odd Positions
-  var str1="abcdefg"
-  var output=""
-  var i=0
-  for(i=0; i<=str1.length-1; i++){
+//Print Characters at Even Positions
+var str1 = "JavaScript"
+var output = ""
+var i = 0
+for (i = 0; i <= str1.length - 1; i++) {
 
-    if(i%2!=0){
-        output+=str1[i]
+    if (i % 2 == 0) {
+        output += str1[i]
     }
-  }
-  console.log(output)
+}
+console.log(output)
+
+// //Print Characters at odd Positions
+var str1 = "abcdefg"
+var output = ""
+var i = 0
+for (i = 0; i <= str1.length - 1; i++) {
+
+    if (i % 2 != 0) {
+        output += str1[i]
+    }
+}
+console.log(output)

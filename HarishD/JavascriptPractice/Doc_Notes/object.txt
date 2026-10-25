@@ -1,0 +1,19 @@
+Object datatypes
+// Object data store the values in Key value pair {key :value}
+//object datatype does not allow duplicate key but it allow duplicate value
+//if we specify any duplicate key then it will take the last value of that key
+//object can contain any type of date
+//object does not allow indexing
+//object is mutable type of data, it can modify any point of time
+
+
+Method	Purpose	Example
+Object.keys()	Returns all property names	Object.keys(student)
+Object.values()	Returns all property values	Object.values(student)
+Object.entries()	Returns key-value pairs	Object.entries(student)
+Object.assign()	 This method  is to combine multiple object values and create anew object
+	Object.assign({}, student)
+Object.freeze()	this method does not allow to modify the object values	Object.freeze(student)
+Object.seal()	This method does not allow to add or delete any property from object	Object.seal(student)
+
+Object.hasOwn()	This method return True if certain key is available in the object	Object.hasOwn(student, "name")

@@ -1,0 +1,34 @@
+Arrays :An array is a special variable used to store multiple values in a single variable. 
+These values can be accessed using their index positions, starting from 0.
+
+ Array can contains any types of data.
+- Array is mutable data type, we can update values at any point of time.
+- Array follows indexing as like string
+
+- push() → Adds an element at the end.
+- unshift() → Adds an element at the beginning.
+
+- pop() → Removes and returns the last element.
+- shift() → Removes and returns the first element.
+ 
+splice method: this method required three parameter. (Index value, Delete Count, new values to add)
+// splice(index; delete count; value to add)
+
+ slice method: it will return sub array from target array.
+// slice(start index, end inded)
+// Output will include stat index and exclude to last index. 
+
+join(): method is used to convert all elements of an array into a single string.
+
+sort() method is used to arrange array elements in a specific order
+a = the first number being compared.
+b = the second number being compared.
+a - b determines which number should come first.
+- Negative result → a comes before b.
+- Positive result → b comes before a.
+- Zero → both numbers are equal.
+syntax: array.sort((a, b) => a - b); // Ascending order  
+syntax: array.sort((a, b) => b - a); // Descending order
+
+
+

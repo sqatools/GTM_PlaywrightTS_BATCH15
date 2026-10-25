@@ -1,0 +1,6 @@
+Loops : when we want to execute a certain condition  "n" number times then we can use loops
+
+while loop :when number of occurance are not fixed , we can use while loop
+for loop : when number of occurance are fixed we can use for loop
+//do while loop : this type of loop is required when we wan to execute atleast once
+

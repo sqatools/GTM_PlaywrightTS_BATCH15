@@ -1,4 +1,18 @@
 //write a program get each value from array and store in object
+
+var arr = [['a', 20], ['b', 45], ['c', 345], ['d', 98]];
+var obj = {};
+
+for (var i = 0; i < arr.length; i++) {
+    var key = arr[i][0];   // arr[0][0] = 'a' | arr[1][1] = b arr[2][0] = c | arr[3][0] = d
+    var value = arr[i][1]; // arr[0][1] = 20 | arr[1][1] = 45 | arr[2][1] = 345 | arr[3][1] = 98
+
+    obj[key] = value;   //obj['a'] = 20 | obj['b'] = 45 | obj['c'] = 345 | obj['d'] = 98
+}
+
+console.log(obj);
+
+
 // where  value is key and its square as value.
 var arr1 = [5, 7, 8, 9, 10]
 var obj1 = {}
@@ -41,8 +55,8 @@ for (var val of obj1) {
 
 var obj2 = { 'a': 300, 'b': 800, 'c': 500, 'd': 778 }
 
-for (var val of Object.entries(obj2)) 
- // of value cannot apply on obj2 because  does not have the indexing.
+for (var val of Object.entries(obj2))
+// of value cannot apply on obj2 because  does not have the indexing.
 // so we have to use the method called object.entries
 {
     console.log(val)

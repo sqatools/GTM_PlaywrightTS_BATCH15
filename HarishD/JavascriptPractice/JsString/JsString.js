@@ -12,11 +12,13 @@ console.log("Character of string :", name[8])
 
 
 //concatination with plus operator 
-var result = " name:" + name + "   age:" + age + "  phonenumber:" + phonenumber + "   email :" + email
+//var result = " name:" + name + "   age:" + age + "  phonenumber:" + phonenumber + "   email :" + email
+   var result= name + '' + age + ' ' + phonenumber + ' ' + email
 console.log(result)
 
 //concatination with backtick 
-var result1 = `name: ${name}, age: ${age}, phonenumber:${phonenumber}, email :${email}`
+//var result1 = `name: ${name}, age: ${age}, phonenumber:${phonenumber}, email :${email}`
+var result1= `${name} ${age} ${phonenumber} ${email}`
 console.log("concatination with backtick of result1:", result1)
 
 console.log("#########################################")
@@ -39,7 +41,7 @@ console.log("###########################")
 var string3 = "we are learning JavaScript and it is easy to learn JavaScript "
 console.log("replace the string :", string3.replace("JavaScript","Java")) 
 
-//replcae all 
+//replcae all :replace all occurent of given string with another string
 console.log(string3.replaceAll("JavaScript", "TypeScript"))
 
 console.log("################################")
@@ -53,6 +55,10 @@ console.log("#################################")
 var s3 = "Hello-we-are-Learning-JavaScript"
 var result = s3.split("-")
 console.log("result :", result) // [ 'Hello', 'we', 'are', 'Learning', 'JavaScript' ] 
+
+var s3="Harish"
+var splitString = s3.split("")
+console.log("splitString :", splitString) // [ 'H', 'a', 'r', 'i', 's', 'h' ]
 
 var s4 = "India won First T20"
 // split string with space 
@@ -74,7 +80,7 @@ console.log("#################################")
 // slice(start index, last index) 
 
 var s6 = "JavaScript Programming"
-console.log(s6.slice(0, 10)) // JavaScript 
+console.log(s6.slice(0, 9)) // JavaScript 
 console.log(s6.slice(11))
 console.log(s6.slice(0, 5))
 
@@ -109,4 +115,8 @@ for (var i = 65; i <= 90; i++) {
 }
 console.log(" result :", result)
 
-// ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+// charAt() method returns the character at a specified index position in a string. Indexing starts from 0
+var str = "Harish";
+console.log(str.charAt(0));
+console.log(str.charAt(3));

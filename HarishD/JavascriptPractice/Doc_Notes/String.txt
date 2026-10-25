@@ -1,0 +1,29 @@
+ Concatenation is the process of joining two or more strings together to form a single string.
+
+ ToUppercase , ToLowerCase :converting the string into upper to lower and lower to upper
+
+ include methode:this method return true if any character/substring is availble in the targated string 
+
+replace method:replace one word from anoth word in given string 
+
+replcae all :replace all occurent of given string with another string
+
+The split() method is used to divide a string into an array of substrings based on a specified separator.
+
+The indexOf() method returns the index position of the first occurrence of a specified character or substring 
+in a string or an element in an array. If the value is not found, it returns -1.
+
+
+The slice() method extracts a portion of a string or array between specified index positions. It includes the
+ starting index but excludes the ending index, and it does not modify the original string or array.
+
+concat method : This methhod combine the string values and generate new string.
+
+The charAt() method returns the character at a specified index position in a string. Indexing starts from 0
+
+
+In JavaScript, the starting index is included and the ending index is excluded in the slice() method. 
+The same rule applies to some other JavaScript methods, but not all methods.
+
+
+

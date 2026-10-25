@@ -114,8 +114,8 @@ console.log("##########################")
 // slice(start index, end inded)
 // Output will include stat index and exclude to last index. 
 var arrD = ['JOhn', 'jack', 'Frank', 3, 8, 6, 7]
-console.log(arrD.slice(2, 5)) // [ 'jack', 'Frank', 3, 5 ]
-console.log("Arr: ", arrD) // [ 'JOhn', 'jack', 'Frank', 3, 5, 6, 7 ]
+console.log(arrD.slice(2, 5)) // [  'Frank', 3, 8]
+console.log("Arr: ", arrD) // [ 'JOhn', 'jack', 'Frank', 3, 8, 6, 7 ]
 
 console.log("##########################")
 //include method : It will return True or False if value is available
@@ -164,3 +164,16 @@ var Users = ["Rahul", "Rohit", "Roman", "Raghav"]
 var result = Users.join(" ")
 console.log("result :", result)
 // Rahul Rohit Roman Raghav
+
+
+
+var arr = [20, 30, 10, 5, 15, 18, 40, 25, 22];
+
+var sum = 0;
+
+for (var value of arr) 
+    {
+    sum = sum + value;
+}
+
+console.log("Sum of array:", sum);
